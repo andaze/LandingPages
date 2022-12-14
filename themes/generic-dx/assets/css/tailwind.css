@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  html {
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+  }
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+@tailwind utilities;
