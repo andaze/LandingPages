@@ -1,0 +1,61 @@
+<footer class="w-full max-w-[1414px] mx-auto pt-[100px] pb-[24px]">
+
+    <div class="flex items-center ml-4 lg:ml-0">
+        {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[91px] lg:w-[101px] mr-4" }}
+        {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+
+            {{ partial "atom/atom-picture.html" . }}
+
+        {{ .Scratch.Delete "src" }}
+        {{ .Scratch.Delete "class" }}
+
+
+        {{ .Scratch.Set "text-span" "Generic DX" }}
+        {{ .Scratch.Set "span-class" "text-[32px] lg:text-[50px]" }}
+
+            {{ partial "atom/span.html" . }}
+
+        {{ .Scratch.Delete "span-class" }}
+        {{ .Scratch.Delete "text-span" }}
+    </div>
+
+    <div class="flex flex-col lg:flex-row justify-center items-center gap-0 lg:gap-[206px]">
+        {{ .Scratch.Set "class" "bg-[#34A7E1] hover:text-[#34A7E1] hover:bg-white border border-[#34A7E1] text-white text-[16px] lg:text-[32px] mt-10 py-5 lg:py-8 rounded-3xl w-72 lg:w-[354px] inline-block text-center" }}
+        {{ .Scratch.Set "link" "#" }}
+        {{ .Scratch.Set "btn-text" "資料ダウンロード" }}
+
+            {{ partial "atom/a.download-button.html" . }}
+
+        {{ .Scratch.Delete "btn-tex" }}
+        {{ .Scratch.Delete "link" }}
+        {{ .Scratch.Delete "class" }}
+
+        {{ .Scratch.Set "class" "bg-[#E01E5B] hover:text-[#E01E5B] hover:bg-white border border-[#E01E5B] text-white text-[16px] lg:text-[32px] mt-5 py-5 lg:py-8 rounded-3xl w-72 lg:w-[354px] inline-block text-center" }}
+        {{ .Scratch.Set "link" "#" }}
+        {{ .Scratch.Set "btn-text" "お問い合わせ" }}
+
+            {{ partial "atom/a.button.html" . }}
+
+        {{ .Scratch.Delete "btn-tex" }}
+        {{ .Scratch.Delete "link" }}
+        {{ .Scratch.Delete "class" }}
+    </div>
+
+    <div class="flex flex-col lg:flex-row justify-between gap-4 lg:gap-0 w-full mt-12 lg:mt-28 text-center lg:text-left">
+        <nav>
+            <ul class="flex justify-center lg:justify-start text-[14px] lg:text-[32px] text-[#1A81B6] font-bold">
+                <li class="mr-14 before:content-['-']"><a href="">運営会社</a></li>
+                <li class="before:content-['-']"><a href="">プライバシーポリシー</a></li>
+            </ul>
+        </nav>
+        {{ .Scratch.Set "text-small" "©ANDAZE Ltd." }}
+        {{ .Scratch.Set "small-class" "text-[14px] lg:text-[32px] text-[#1A81B6] font-bold" }}
+
+            {{ partial "molecule/div.small.html" . }}
+
+        {{ .Scratch.Delete "text-small" }}
+        {{ .Scratch.Delete "small-class" }}
+    </div>
+
+</footer>
+
