@@ -1,0 +1,10 @@
+{{ .Scratch.Set "text" (.Get "text") }}
+{{ .Scratch.Set "text-class" (.Get "text-class") }}
+
+{{ $text := default "" (.Scratch.Get "text") }}
+{{ $opt_class := default "" (.Scratch.Get "text-class") }}
+
+<p class="{{ $opt_class }}">{{ $text | markdownify }}</p> 
+
+{{ .Scratch.Delete "text-class" }}
+{{ .Scratch.Delete "text" }}

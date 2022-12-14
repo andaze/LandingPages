@@ -1,0 +1,261 @@
+{{/*
+
+        The behavior can be changed by scratch in templates that use or call this template.
+        ----------
+
+        {{ .Scratch.Set "alt" "Foo Bar Baz" }}
+        {{ .Scratch.Set "anchor" }}
+        {{ .Scratch.Set "aspect-ratio" "4/3" }}
+        {{ .Scratch.Set "class" "w-full" }}
+        {{ .Scratch.Set "format" "webp" }}
+        {{ .Scratch.Set "hint" "smart" }}
+        {{ .Scratch.Set "quolity" "90" }}
+        {{ .Scratch.Set "src" "https://example.com/foo.jpg" }}
+        {{ .Scratch.Set "type" "full" }}
+
+*/}}
+
+{{ $image := "" }}
+{{ if hugo.IsProduction }}
+        {{ $image = (resources.GetRemote (printf "https://picsum.photos/1920/1080?random=%s" now.UnixNano)) }}
+{{ else }}
+        {{ $image = (resources.GetRemote "https://picsum.photos/1920/1080") }}
+{{ end }}
+
+{{ if $src := (.Scratch.Get "src") }}
+        {{ if (.Page.Resources.GetMatch $src) }}
+                {{ $image = .Page.Resources.GetMatch $src }}
+        {{ else if (resources.GetMatch $src) }}
+                {{ $image = resources.GetMatch $src }}
+        {{ else }}
+                {{ with resources.GetRemote $src }}
+                        {{ with .Err }}
+                                {{ errorf "Not found src target files. %v" . }}
+                        {{ else }}
+                                {{ $image = . }}
+                        {{ end }}
+                {{ end }}
+        {{ end }}
+{{ end }}
+{{ $alt := default $image.Title (.Scratch.Get "alt") }}
+
+{{ $multiply_raito_value := 0 }}
+{{ $aspect_ratio := default "auto" (.Scratch.Get "aspect-ratio") }}
+{{ if ne "auto" $aspect_ratio }}
+        {{ $raito_values := (split (humanize $aspect_ratio) " ") }}
+        {{ $multiply_raito_value = div (float (index $raito_values 1)) (float (index $raito_values 0)) }}
+{{ end }}
+
+{{ $is_lazy := default true (.Scratch.Get "is-lazy") }}
+{{ $anchor := default "Smart" (.Scratch.Get "anchor") }}
+{{ $class := default "w-full" (.Scratch.Get "class") }}
+{{ $format := default "webp" (.Scratch.Get "format") }}
+{{ $hint := default "photo" (.Scratch.Get "hint") }}
+{{ $quolity := default "75" (.Scratch.Get "quolity") }}
+{{ $type := default "thumbnail" (.Scratch.Get "type") }}
+
+{{ $img_scratch := newScratch }}
+{{ $img_sizes := newScratch }}
+{{ $img_sizes_srcset := newScratch }}
+
+{{ if eq $type "content" }}
+
+        {{ $img_sizes = slice
+                (dict
+                "name" "img_jumbo"
+                "min-width" 1920
+                "width" (add 1920 640)
+                )
+                (dict
+                "name" "img_xl"
+                "min-width" 1600
+                "width" (add 1600 320)
+                )
+                (dict
+                "name" "img_lg"
+                "min-width" 1280
+                "width" (add 1280 320)
+                )
+                (dict
+                "name" "img_md"
+                "min-width" 960
+                "width" (add 960 320)
+                )
+                (dict
+                "name" "img_sm"
+                "min-width" 640
+                "width" (add 640 320)
+                )
+                (dict
+                "name" "img_xs"
+                "min-width" 320
+                "width" (add 320 320)
+                )
+        }}
+
+{{ else if eq $type "full" }}
+
+        {{ $img_sizes = slice
+                (dict
+                "name" "img_jumbo"
+                "min-width" 1920
+                "width" (add 1920 640)
+                )
+                (dict
+                "name" "img_xl"
+                "min-width" 1600
+                "width" (add 1600 320)
+                )
+                (dict
+                "name" "img_lg"
+                "min-width" 1280
+                "width" (add 1280 320)
+                )
+                (dict
+                "name" "img_md"
+                "min-width" 960
+                "width" (add 960 320)
+                )
+                (dict
+                "name" "img_sm"
+                "min-width" 640
+                "width" (add 640 320)
+                )
+                (dict
+                "name" "img_xs"
+                "min-width" 320
+                "width" (add 320 320)
+                )
+        }}
+
+{{ else if eq $type "thumbnail-lg" }}
+
+        {{ $img_sizes = slice
+                (dict
+                "name" "img_jumbo"
+                "min-width" 1920
+                "width" (div 1920 2)
+                )
+                (dict
+                "name" "img_xl"
+                "min-width" 1600
+                "width" (div 1600 2)
+                )
+                (dict
+                "name" "img_lg"
+                "min-width" 1280
+                "width" (div 1280 2)
+                )
+                (dict
+                "name" "img_md"
+                "min-width" 960
+                "width" (div 960 2)
+                )
+                (dict
+                "name" "img_sm"
+                "min-width" 640
+                "width" (div 640 1)
+                )
+                (dict
+                "name" "img_xs"
+                "min-width" 320
+                "width" (div 320 1)
+                )
+        }}
+
+{{ else if eq $type "thumbnail" }}
+
+        {{ $img_sizes = slice
+                (dict
+                "name" "img_jumbo"
+                "min-width" 1920
+                "width" (div 1920 3)
+                )
+                (dict
+                "name" "img_xl"
+                "min-width" 1600
+                "width" (div 1600 3)
+                )
+                (dict
+                "name" "img_lg"
+                "min-width" 1280
+                "width" (div 1280 3)
+                )
+                (dict
+                "name" "img_md"
+                "min-width" 960
+                "width" (div 960 2)
+                )
+                (dict
+                "name" "img_sm"
+                "min-width" 640
+                "width" (div 640 2)
+                )
+                (dict
+                "name" "img_xs"
+                "min-width" 320
+                "width" (div 320 2)
+                )
+        }}
+
+{{ end }}
+
+{{/*  元画像のアスペクト比を維持しない場合、必ず変換後の幅と高さ情報が必要。crop, fill ...etc  */}}
+{{/* If the aspect ratio of the original image is not preserved, width and height information after conversion is always required. crop, fill .... .etc */}}
+{{ if ne $multiply_raito_value 0 }}
+
+        {{ range $index, $img_size := $img_sizes }}
+                {{ $img_1x_format := (printf "%dx%d %s q%s %s %s" (int (index $img_size "width")) (int (mul (index $img_size "width") $multiply_raito_value)) $format $quolity $anchor $hint) }}
+                {{ $img_2x_format := (printf "%dx%d %s q%s %s %s" (int (mul (index $img_size "width") 2)) (int (mul (mul (index $img_size "width") 2) $multiply_raito_value)) $format $quolity $anchor $hint) }}
+                {{ $img_sizes_srcset.SetInMap (index $img_size "name") "1x" ($image.Fill $img_1x_format) }}
+                {{ $img_sizes_srcset.SetInMap (index $img_size "name") "2x" ($image.Fill $img_2x_format) }}
+        {{ end }}
+
+
+{{ else }}
+        
+        {{ range $index, $img_size := $img_sizes }}
+                {{ $img_1x_format := (printf "%dx%d %s q%s %s %s" (int (index $img_size "width")) (int (mul (index $img_size "width") $multiply_raito_value)) $format $quolity $anchor $hint) }}
+                {{ $img_2x_format := (printf "%dx%d %s q%s %s %s" (int (mul (index $img_size "width") 2)) (int (mul (mul (index $img_size "width") 2) $multiply_raito_value)) $format $quolity $anchor $hint) }}
+                {{ $img_sizes_srcset.SetInMap (index $img_size "name") "1x" ($image.Resize $img_1x_format) }}
+                {{ $img_sizes_srcset.SetInMap (index $img_size "name") "2x" ($image.Resize $img_2x_format) }}
+        {{ end }}
+
+{{ end }}
+
+<picture>
+
+        {{ range $index, $value := $img_sizes }}
+        
+                {{/* srcset のコード生成 */}}
+                {{/* srcset code generation */}}
+                {{ $srcset := "" }}
+                {{ range $index, $value := $img_sizes_srcset.Get (index $value "name") }}
+                        {{ $srcset = (printf "%s %s %s," $srcset $value.Permalink $index) }}
+                {{ end }}
+                {{ $srcset = trim $srcset " ," }}
+                
+                {{/* picture要素の最後のimg要素を用いてデフォルト画像とする */}}
+                {{/* using the img element at the end of the picture element as the default image */}}
+                {{ if (ne (index $value "name") "img_xs") }}
+                
+                        {{ $min_width := printf "%dpx" (index $value "min-width") }}
+                        <source media='(min-width:{{ $min_width }}'
+                                srcset='{{ $srcset }}'>
+                
+                {{ else }}
+                
+                        {{ $default_img := index ($img_sizes_srcset.Get (index $value "name")) "1x" }}
+                        <img src="{{ $default_img.Permalink }}"
+                        srcset="{{ $srcset }}"
+                        width="{{ $default_img.Width }}"
+                        height="{{ $default_img.Height }}"
+                        class="{{ $class }}"
+                        alt="{{ $alt }}"
+                        loading='{{ cond ($is_lazy) "lazy" "eager" }}'
+                        >
+                {{ end }}
+        
+        {{ end }}
+
+</picture>

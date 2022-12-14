@@ -1,0 +1,9 @@
+{{ .Scratch.Set "num" (.Get "num") }}
+{{ .Scratch.Set "num-text-class" (.Get "num-text-class") }}
+{{ $num := default "" (.Scratch.Get "num") }}
+{{ $opt_class := default "" (.Scratch.Get "num-text-class") }}
+
+<p class="{{ $opt_class }}">{{ $num }}</p> 
+
+{{ .Scratch.Delete "num-text-class" }}
+{{ .Scratch.Delete "num" }}
