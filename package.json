@@ -1,0 +1,31 @@
+{
+    "comments": {
+        "dependencies": {},
+        "devDependencies": {
+            "autoprefixer": "project",
+            "postcss": "project",
+            "postcss-cli": "project",
+            "postcss-import": "project",
+            "prettier": "project",
+            "prettier-plugin-go-template": "project",
+            "prettier-plugin-tailwindcss": "project",
+            "tailwindcss": "project",
+            "tw-elements": "project"
+        }
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.3",
+        "autoprefixer": "^10.4.12",
+        "postcss": "^8.4.17",
+        "postcss-cli": "^10.0.0",
+        "postcss-import": "^15.0.0",
+        "prettier": "^2.7.1",
+        "prettier-plugin-go-template": "^0.0.13",
+        "prettier-plugin-tailwindcss": "^0.1.13",
+        "tailwindcss": "^3.2.4",
+        "tw-elements": "^1.0.0-alpha12"
+    },
+    "dependencies": {
+        "multi-download": "^4.0.0"
+    }
+}
