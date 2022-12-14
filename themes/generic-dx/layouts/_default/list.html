@@ -2,6 +2,10 @@
 
 <main>
 
+    {{ range (where .Site.RegularPages.ByWeight ".Params.isSection" "eq" true) }}
+        {{ .Content }}
+    {{ end }}
+
 </main>
 {{ end }}
 
