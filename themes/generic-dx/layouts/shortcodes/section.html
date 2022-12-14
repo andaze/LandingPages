@@ -1,0 +1,9 @@
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ $opt_class := .Scratch.Get "class" }}
+{{ .Scratch.Set "id" (.Get "id") }}
+{{ $opt_id := .Scratch.Get "id" }}
+<section class="{{ $opt_class }}" id="{{ $opt_id }}">
+    {{ .Inner }} 
+</section>
+{{ .Scratch.Delete "id" }}
+{{ .Scratch.Delete "class" }}

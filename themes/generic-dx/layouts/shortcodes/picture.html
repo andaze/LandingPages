@@ -1,0 +1,31 @@
+{{/* 
+
+Minimum Usage
+{{< picture >}}
+
+Maximum usage
+{{< picture alt="" anchor="" aspect="" class="" format="" hint="" quolity="" src="" type="" >}}
+
+*/}}
+
+{{ .Scratch.Set "alt" (.Get "alt") }}
+{{ .Scratch.Set "anchor" (.Get "anchor") }}
+{{ .Scratch.Set "aspect-ratio" (.Get "aspect") }}
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ .Scratch.Set "format" (.Get "format") }}
+{{ .Scratch.Set "hint" (.Get "hint") }}
+{{ .Scratch.Set "quolity" (.Get "quolity") }}
+{{ .Scratch.Set "src" (.Get "src") }}
+{{ .Scratch.Set "type" (.Get "type") }}
+
+{{ partial "atom/atom-picture.html" . }}    
+
+{{ .Scratch.Delete "alt" }}
+{{ .Scratch.Delete "anchor" }}
+{{ .Scratch.Delete "aspect-ratio" }}
+{{ .Scratch.Delete "class" }}
+{{ .Scratch.Delete "format" }}
+{{ .Scratch.Delete "hint" }}
+{{ .Scratch.Delete "quolity" }}
+{{ .Scratch.Delete "src" }}
+{{ .Scratch.Delete "type" }}

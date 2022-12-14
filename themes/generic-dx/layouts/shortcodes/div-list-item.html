@@ -1,0 +1,30 @@
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ $opt_class := .Scratch.Get "class" }}
+{{ .Scratch.Set "image-wrapper-class" (.Get "image-wrapper-class") }}
+{{ $image_wrapper_class := .Scratch.Get "image-wrapper-class" }}
+
+{{ .Scratch.Set "item-class" (.Get "item-class") }}
+
+
+<div class="{{ $opt_class }}">
+    {{ partial "molecule/div.num.html" . }}
+
+    {{ if .Get "image-src" }}
+        <div class="{{ $image_wrapper_class }}">
+            {{ .Scratch.Set "class" (.Get "image-class") }}
+            {{ .Scratch.Set "src" (.Get "image-src") }}
+            {{ .Scratch.Set "type" (.Get "image-type") }}
+
+                {{ partial "atom/atom-picture.html" . }}
+
+            {{ .Scratch.Delete "type" }}
+            {{ .Scratch.Delete "src" }}
+            {{ .Scratch.Delete "class" }}
+        </div>
+    {{ end }}
+</div>
+
+{{ partial "molecule/div.list-item-inner.html" . }}
+
+{{ .Scratch.Delete "item-class" }}
+
