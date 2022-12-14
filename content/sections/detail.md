@@ -1,0 +1,44 @@
+---
+title: "Detail"
+date: 2022-12-12T10:39:11+09:00
+draft: false
+isSection: true
+weight: 11
+---
+
+{{< section
+    class="bg-white py-10 lg:py-32 px-2"
+>}}
+    {{< header
+        class="mb-10 font-bold"
+    >}}
+        {{< div-title
+            title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
+            title-class="text-[26px] lg:text-[60px] font-bold text-black text-center leading-loose lg:leading-[60px]"
+        >}}
+    {{< /header >}}
+
+    {{< div-text
+        text="アンダーズでは大手物流企業様の案件でも高い実績を誇っています。"
+        class="text-[16px] lg:text-[28px] text-center lg:mt-[80px] font-medium leading-loose lg:leading-[40px]"
+    >}}
+
+    {{< div-wrapper
+        class="relative w-fit mx-auto"
+    >}}
+        {{< div-button
+            class="bg-white border-[5px] border-[#5FBCE7] text-black font-bold text-[16px] lg:text-[26px] mt-10 block w-[340px] lg:w-[440px] text-center rounded-full relative"
+            link="#"
+            btn-text="詳しく見る"
+        >}}
+        {{< div-wrapper
+            class="bg-[#5FBCE7] w-[54px] h-[54px] lg:w-[66px] lg:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4"
+        >}}
+            {{< picture
+                alt="Image Not Available" src="images/arrow.png" type="content" quolity="100" class="w-[22px] h-[22px] mx-auto"
+            >}}
+        {{< /div-wrapper >}}
+    {{< /div-wrapper >}}
+
+
+{{< /section >}}
