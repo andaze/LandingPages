@@ -1,0 +1,10 @@
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ $opt_class := .Scratch.Get "class" }}
+
+<div class="p-12 shadow-xl relative {{ $opt_class }}">
+    {{ partial "atom/span.card-line.html" . }}
+    {{ partial "atom/h2.html" . }}
+    {{ partial "atom/p.html" . }}
+</div>
+
+{{ .Scratch.Delete "class" }}

@@ -1,0 +1,10 @@
+{{ .Scratch.Set "text" (.Get "text") }}
+{{ .Scratch.Set "text-class" (.Get "text-class") }}
+{{ $text := default "" (.Scratch.Get "text") }}
+
+{{ $opt_class := default "" (.Scratch.Get "text-class") }}
+
+<li class="{{ $opt_class }}">{{ $text }}</li>
+
+{{ .Scratch.Delete "text" }}
+{{ .Scratch.Delete "text-class" }}

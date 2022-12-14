@@ -1,0 +1,10 @@
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "text" (.Get "text") }}
+
+<div>
+    {{ partial "atom/h2.html" . }}
+    {{ partial "atom/p.title.html" . }}
+</div>
+
+{{ .Scratch.Delete "title" }}
+{{ .Scratch.Delete "text" }}
