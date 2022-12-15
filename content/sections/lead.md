@@ -7,7 +7,7 @@ weight: 1
 ---
 
 {{< section
-    class="bg-white lg:text-center py-10 lg:pt-32 lg:pb-10 px-2"
+    class="bg-white lg:text-center py-10 md:pt-32 md:pb-10 px-2"
 >}}
     {{< header
         class="mb-[58px] font-bold text-center"
@@ -16,20 +16,20 @@ weight: 1
             word1="アンダーズが"
             strong="DXに革命"
             word2="を！"
-            text-class="text-[26px] lg:text-[60px] font-bold"
-            strong-class="text-[26px] lg:text-[60px] font-bold text-[#1A81B6]"
+            text-class="text-[26px] md:text-[36px] lg:text-[60px] font-bold"
+            strong-class="text-[26px] md:text-[36px] lg:text-[60px] font-bold text-[#1A81B6]"
         >}}
     {{< /header >}}
 
     {{< div-texts >}}
         {{< div-text
             text="ジェネリックDXは、<strong class='text-[16px] lg:text-[20px] font-normal text-[#1A81B6]'>150万円から始められる全社横断型プラットフォーム</strong>です。 自社システムなので会社のやり方に合わせて<strong class='text-[16px] lg:text-[20px] font-normal text-[#1A81B6]'>オーダーメイドで設計</strong>できますし、 各部署に散在するサブスクを整理することで、<strong class='text-[16px] lg:text-[20px] font-normal text-[#1A81B6]'>ITコストを大幅に削減</strong>できます。"
-            class="text-[16px] lg:text-[20px] leading-[45px] lg:w-[748px] mx-auto mb-[78px]"
+            class="text-[16px] lg:text-[20px] leading-[45px] md:w-[748px] mx-auto mb-[78px]"
         >}}
     {{< /div-texts >}}
 
     {{< div-container
-        class="flex flex-col lg:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center lg:items-start"
+        class="flex flex-col md:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center lg:items-start"
     >}}
 
         {{< div-wrapper

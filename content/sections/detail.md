@@ -7,14 +7,14 @@ weight: 11
 ---
 
 {{< section
-    class="bg-white py-10 lg:py-32 px-2"
+    class="bg-white py-10 md:py-32 px-2"
 >}}
     {{< header
         class="mb-10 font-bold"
     >}}
         {{< div-title
             title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
-            title-class="text-[26px] lg:text-[60px] font-bold text-black text-center leading-loose lg:leading-[60px]"
+            title-class="text-[26px] md:text-[36px] lg:text-[60px] font-bold text-black text-center leading-loose lg:leading-[60px]"
         >}}
     {{< /header >}}
 

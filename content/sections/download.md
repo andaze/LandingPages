@@ -12,7 +12,7 @@ weight: 5
 >}}
 
     {{< div-container
-        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col lg:flex-row gap-x-32 relative z-50"
+        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 lg:gap-x-32 relative z-50"
     >}}
         {{< div-texts >}}
             {{< div-text
@@ -26,7 +26,7 @@ weight: 5
 
 
             {{< div-wrapper
-                class="relative w-fit mx-auto hidden lg:block"
+                class="relative w-fit mx-auto hidden md:block"
             >}}
                 {{< div-button
                     class="bg-white border-4 border-[#1A81B6] text-black font-bold text-[16px] lg:text-[26px] mt-10 block w-[340px] lg:w-[440px] text-center rounded-full relative"
@@ -49,7 +49,7 @@ weight: 5
         {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="w-[335px] h-[502px]">}}
 
         {{< div-wrapper
-            class="relative w-fit mx-auto mt-10 lg:hidden"
+            class="relative w-fit mx-auto mt-10 md:hidden"
         >}}
             {{< div-button
                 class="bg-white border-4 border-[#1A81B6] text-black font-bold text-[16px] lg:text-[26px] block w-[340px] lg:w-[440px] text-center rounded-full relative"

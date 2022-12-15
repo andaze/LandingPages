@@ -1,6 +1,6 @@
 <header class="bg-[#1A81B6] max-w-[100%] mx-auto relative pb-4 lg:pb-0 after:content-[''] after:bg-[url('/img/bottom-path.png')] after:bg-contain lg:after:bg-cover after:bg-no-repeat after:w-screen after:h-[137px] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-137px] after:left-0">
     <div class="pt-8 lg:pt-14">
-        <div class="flex items-center ml-4 lg:ml-24">
+        <div class="flex items-center ml-4 md:ml-12 lg:ml-24">
             {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[91px] lg:w-[101px] mr-4" }}
             {{ .Scratch.Set "src" .Site.Params.images.logo }}
 
@@ -18,7 +18,7 @@
             {{ .Scratch.Delete "text-span" }}
         </div>
 
-        <div class="mt-16 lg:mt-32 flex flex-col lg:flex-row">
+        <div class="mt-16 md:ml-12 lg:mt-32 flex flex-col md:flex-row md:gap-20 lg:gap-0">
             <div class="ml-4 lg:ml-24 2xl:ml-64">
                 <p class="text-[32px] lg:text-[60px] font-bold text-white mb-11">
                     <span class="text-[60px] lg:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-100px] before:left-1/2 before:-translate-x-1/2">1</span>
@@ -34,7 +34,7 @@
 
             <div class="relative">
 
-                <div class="bg-[url('/img/fukidashi.png')] bg-contain bg-no-repeat w-[180px] h-[99px] lg:w-[404px] lg:h-[225px] absolute top-[40px] lg:top-[-100px] lg:left-[-150px] flex flex-column items-center">
+                <div class="bg-[url('/img/fukidashi.png')] bg-contain bg-no-repeat w-[180px] h-[99px] lg:w-[404px] lg:h-[225px] absolute top-[40px] lg:top-[-100px] md:left-[-120px] lg:left-[-150px] flex flex-column items-center">
                     <span class="text-[#E01E5B] font-bold text-[20px] lg:text-[37px] w-full text-center">脱 クラウド宣言！</span>
                 </div>
 

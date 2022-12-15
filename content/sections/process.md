@@ -7,19 +7,19 @@ weight: 8
 ---
 
 {{< section
-    class="bg-white py-10 lg:pt-32 lg:pb-24 px-2 bg-[url('/img/patterC.png')] bg-contain"
+    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('/img/patterC.png')] bg-contain"
 >}}
     {{< header
         class="mb-10 font-bold"
     >}}
         {{< div-title
             title="運用までの流れ"
-            title-class="text-[26px] lg:text-[50px] font-bold text-black text-center"
+            title-class="text-[26px] md:text-[36px] lg:text-[50px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 
     {{< ol-list
-        class="mx-auto w-fit md:w-4/5 md:max-w-[1800px] grid lg:grid-cols-3 gap-[100px]"
+        class="mx-auto w-fit lg:w-4/5 md:max-w-[1800px] grid lg:grid-cols-3 gap-[100px]"
     >}}
         {{< li-list-wrapper
             class="w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] bg-[#1264A3] rounded-[117px] flex flex-col justify-center relative z-10 after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0"

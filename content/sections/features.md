@@ -7,14 +7,14 @@ weight: 3
 ---
 
 {{< section
-    class="bg-white py-10 lg:pt-32 lg:pb-10 px-2 bg-[url('/img/patterA.png')] bg-cover"
+    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 bg-[url('/img/patterA.png')] bg-cover"
 >}}
     {{< header
         class="mb-10 font-bold"
     >}}
         {{< div-title
             title="ジェネリックDXで成果が出るヒミツは？"
-            title-class="text-[26px] lg:text-[50px] font-bold text-black text-center"
+            title-class="text-[26px] md:text-[36px] lg:text-[50px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 
