@@ -7,7 +7,7 @@ weight: 3
 ---
 
 {{< section
-    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 bg-[url('/img/patterA.png')] bg-cover"
+    class="bg-white py-10 md:pt-32 md:pb-10 px-2 bg-[url('/img/patterA.png')] bg-cover lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 font-bold"
@@ -19,7 +19,7 @@ weight: 3
     {{< /header >}}
 
     {{< ul-list
-        class="mx-auto md:w-4/5 md:max-w-[1520px]"
+        class="mx-auto md:w-4/5 lg:w-11/12 2xl:w-4/5 md:max-w-[1520px]"
     >}}
 
         {{< li-list-wrapper
@@ -32,10 +32,10 @@ weight: 3
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-[52px] relative"
                 num-class="text-[30px] font-bold text-white bg-[#ECB22D] mr-10 absolute top-0 left-0 block w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] text-center rounded-full"
                 title-class="mb-[40px] text-[32px] lg:text-[60px] text-black font-bold"
-                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full lg:w-4/5"
-                image-wrapper-class="w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
+                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full 2xl:w-4/5"
+                image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
                 image-src="images/feature/A.png"
-                image-class="lg:w-[167px] lg:h-[156px] mx-auto"
+                image-class="lg:w-[127px] lg:h-[116px] 2xl:w-[167px] 2xl:h-[156px] mx-auto"
                 image-type="thumbnail"
             >}}
         {{< /li-list-wrapper >}}
@@ -50,10 +50,10 @@ weight: 3
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-[52px] relative"
                 num-class="text-[30px] font-bold text-white bg-[#ECB22D] mr-10 absolute top-0 left-0 block w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] text-center rounded-full"
                 title-class="mb-[40px] text-[32px] lg:text-[60px] text-black font-bold"
-                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full lg:w-4/5"
-                image-wrapper-class="w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
+                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full 2xl:w-4/5"
+                image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
                 image-src="images/feature/B.png"
-                image-class="lg:w-[167px] lg:h-[156px] mx-auto"
+                image-class="lg:w-[127px] lg:h-[116px] 2xl:w-[167px] 2xl:h-[156px] mx-auto"
                 image-type="thumbnail"
             >}}
         {{< /li-list-wrapper >}}
@@ -68,10 +68,10 @@ weight: 3
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-[52px] relative"
                 num-class="text-[30px] font-bold text-white bg-[#ECB22D] mr-10 absolute top-0 left-0 block w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] text-center rounded-full"
                 title-class="mb-[40px] text-[32px] lg:text-[60px] text-black font-bold"
-                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full lg:w-4/5"
-                image-wrapper-class="w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
+                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full 2xl:w-4/5"
+                image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
                 image-src="images/feature/C.png"
-                image-class="lg:w-[167px] lg:h-[156px] mx-auto"
+                image-class="lg:w-[127px] lg:h-[116px] 2xl:w-[167px] 2xl:h-[156px] mx-auto"
                 image-type="thumbnail"
             >}}
         {{< /li-list-wrapper >}}
@@ -86,10 +86,10 @@ weight: 3
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-[52px] relative"
                 num-class="text-[30px] font-bold text-white bg-[#ECB22D] mr-10 absolute top-0 left-0 block w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] text-center rounded-full"
                 title-class="mb-[40px] text-[32px] lg:text-[60px] text-black font-bold"
-                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full lg:w-4/5"
-                image-wrapper-class="w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
+                text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full 2xl:w-4/5"
+                image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
                 image-src="images/feature/D.png"
-                image-class="lg:w-[167px] lg:h-[156px] mx-auto"
+                image-class="lg:w-[127px] lg:h-[116px] 2xl:w-[167px] 2xl:h-[156px] mx-auto"
                 image-type="thumbnail"
             >}}
         {{< /li-list-wrapper >}}
@@ -105,10 +105,10 @@ weight: 3
             class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-[52px] relative"
             num-class="text-[30px] font-bold text-white bg-[#ECB22D] mr-10 absolute top-0 left-0 block lg:w-[80p w-[60px] h-[60px] lg:h-[80px] text-center rounded-full"
             title-class="mb-[40px] text-[32px] lg:text-[60px] text-black font-bold"
-            text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full lg:w-4/5"
-            image-wrapper-class="w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
+            text-class="mb-4 text-[20px] lg:text-[28px] text-black font-bold w-full 2xl:w-4/5"
+            image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]"
             image-src="images/feature/E.png"
-            image-class="lg:w-[167px] lg:h-[156px] mx-auto"
+            image-class="lg:w-[127px] lg:h-[116px] 2xl:w-[167px] 2xl:h-[156px] mx-auto"
             image-type="thumbnail"
         >}}
         {{< /li-list-wrapper >}}

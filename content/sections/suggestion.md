@@ -7,10 +7,10 @@ weight: 12
 ---
 
 {{< section
-    class="bg-[#34A7E1] border border-[#707070] py-10 md:py-32 px-2"
+    class="bg-[#34A7E1] border border-[#707070] py-10 md:py-32 px-2 lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< div-container
-        class="bg-white px-2 py-10 md:px-10 lg:px-[239px] lg:py-[134px] rounded-[74px]"
+        class="bg-white px-2 py-10 md:px-10 2xl:px-[239px] 2xl:py-[134px] rounded-[74px]"
     >}}
         {{< header
             class="mb-8 font-bold"

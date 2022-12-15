@@ -7,26 +7,26 @@ weight: 5
 ---
 
 {{< section
-    class="py-10 px-2 bg-[url('/img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50"
+    class="py-10 px-2 bg-[url('/img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 lg:pr-[240px] 2xl:pr-2"
     id="download"
 >}}
 
     {{< div-container
-        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 lg:gap-x-32 relative z-50"
+        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row lg:flex-col 2xl:flex-row gap-x-32 md:gap-x-16 lg:gap-x-32 relative z-50"
     >}}
         {{< div-texts >}}
             {{< div-text
                 text="100万円からはじめられる<br>自社システム構築（PaaS）<br>「ジェネリックDX」のことを<br>もっと詳しく！"
-                class="text-[24px] lg:text-[60px] font-bold leading-loose lg:leading-[60px] mb-[60px] text-white"
+                class="text-[24px] lg:text-[60px] font-bold leading-loose lg:leading-[60px] mb-[60px] text-white lg:text-center 2xl:text-left"
             >}}
             {{< div-text
                 text="自社システム構築（PaaS）についての詳細や、<br>導入事例資料をご用意しています。<br>利用・検討の際にご活用ください。"
-                class="text-[16px] lg:text-[28px] leading-loose lg:leading-[45px] mb-8 text-white"
+                class="text-[16px] lg:text-[28px] leading-loose lg:leading-[45px] mb-8 text-white lg:text-center 2xl:text-left"
             >}}
 
 
             {{< div-wrapper
-                class="relative w-fit mx-auto hidden md:block"
+                class="relative w-fit mx-auto hidden md:block lg:hidden 2xl:block"
             >}}
                 {{< div-button
                     class="bg-white border-4 border-[#1A81B6] text-black font-bold text-[16px] lg:text-[26px] mt-10 block w-[340px] lg:w-[440px] text-center rounded-full relative"
@@ -46,10 +46,10 @@ weight: 5
 
 
 
-        {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="w-[335px] h-[502px]">}}
+        {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="w-[335px] h-[502px] mx-auto">}}
 
         {{< div-wrapper
-            class="relative w-fit mx-auto mt-10 md:hidden"
+            class="relative w-fit mx-auto mt-10 md:hidden lg:block 2xl:hidden"
         >}}
             {{< div-button
                 class="bg-white border-4 border-[#1A81B6] text-black font-bold text-[16px] lg:text-[26px] block w-[340px] lg:w-[440px] text-center rounded-full relative"

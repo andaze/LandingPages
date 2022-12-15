@@ -1,6 +1,6 @@
-<header class="bg-[#1A81B6] max-w-[100%] mx-auto relative pb-4 lg:pb-0 after:content-[''] after:bg-[url('/img/bottom-path.png')] after:bg-contain lg:after:bg-cover after:bg-no-repeat after:w-screen after:h-[137px] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-137px] after:left-0">
+<header class="bg-[#1A81B6] max-w-[100%] mx-auto relative pb-4 lg:pb-0 after:content-[''] after:bg-[url('/img/bottom-path.png')] after:bg-contain 2xl:after:bg-cover after:bg-no-repeat after:w-screen after:h-[137px] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-137px] after:left-0">
     <div class="pt-8 lg:pt-14">
-        <div class="flex items-center ml-4 md:ml-12 lg:ml-24">
+        <div class="flex items-center ml-4 md:ml-12 2xl:ml-24">
             {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[91px] lg:w-[101px] mr-4" }}
             {{ .Scratch.Set "src" .Site.Params.images.logo }}
 
@@ -18,27 +18,27 @@
             {{ .Scratch.Delete "text-span" }}
         </div>
 
-        <div class="mt-16 md:ml-12 lg:mt-32 flex flex-col md:flex-row md:gap-20 lg:gap-0">
-            <div class="ml-4 lg:ml-24 2xl:ml-64">
-                <p class="text-[32px] lg:text-[60px] font-bold text-white mb-11">
-                    <span class="text-[60px] lg:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-100px] before:left-1/2 before:-translate-x-1/2">1</span>
-                    <span class="text-[60px] lg:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-100px] before:left-1/2 before:-translate-x-1/2 ml-[-14px] lg:ml-[-20px]">5</span>
-                    <span class="text-[60px] lg:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-100px] before:left-1/2 before:-translate-x-1/2 ml-[-8px] lg:ml-[-20px]">0</span>
+        <div class="mt-16 md:ml-12 xl:ml-[10%] 2xl:ml-12 lg:mt-32 flex flex-col md:flex-row md:gap-20 lg:gap-0">
+            <div class="ml-4 lg:ml-0 2xl:ml-64">
+                <p class="text-[32px] lg:text-[44px] 2xl:text-[60px] font-bold text-white mb-11">
+                    <span class="text-[60px] lg:text-[100px] 2xl:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-80px] 2xl:before:top-[-100px] before:left-1/2 before:-translate-x-1/2">1</span>
+                    <span class="text-[60px] lg:text-[100px] 2xl:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-80px] 2xl:before:top-[-100px] before:left-1/2 before:-translate-x-1/2 ml-[-14px] 2xl:ml-[-20px]">5</span>
+                    <span class="text-[60px] lg:text-[100px] 2xl:text-[140px] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-50px] lg:before:top-[-80px] 2xl:before:top-[-100px] before:left-1/2 before:-translate-x-1/2 ml-[-8px] 2xl:ml-[-20px]">0</span>
                     万円から<br>はじめられる！
                 </p>
                 <h1 class="font-bold text-white">
-                    <span class="text-[32px] lg:text-[60px]">オーダーITシステムなら</span><br>
-                    <span class="text-[44px] lg:text-[85px]">ジェネリックDX</span>
+                    <span class="text-[32px] lg:text-[44px] 2xl:text-[60px]">オーダーITシステムなら</span><br>
+                    <span class="text-[44px] lg:text-[60px] 2xl:text-[85px]">ジェネリックDX</span>
                 </h1>
             </div>
 
             <div class="relative">
 
-                <div class="bg-[url('/img/fukidashi.png')] bg-contain bg-no-repeat w-[180px] h-[99px] lg:w-[404px] lg:h-[225px] absolute top-[40px] lg:top-[-100px] md:left-[-120px] lg:left-[-150px] flex flex-column items-center">
-                    <span class="text-[#E01E5B] font-bold text-[20px] lg:text-[37px] w-full text-center">脱 クラウド宣言！</span>
+                <div class="bg-[url('/img/fukidashi.png')] bg-contain bg-no-repeat w-[180px] h-[99px] lg:w-[300px] lg:h-[180px] 2xl:w-[404px] 2xl:h-[225px] absolute top-[40px] lg:top-[-100px] md:left-[-120px] lg:left-[-150px] flex flex-column items-center">
+                    <span class="text-[#E01E5B] font-bold text-[20px] lg:text-[28px] 2xl:text-[37px] w-full text-center">脱 クラウド宣言！</span>
                 </div>
 
-                {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[659px] lg:w-[620px] object-cover lg:mt-[-100px] ml-auto lg:ml-32 lg:mr-auto" }}
+                {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[500px] lg:w-[470px] 2xl:h-[659px] 2xl:w-[620px] object-cover lg:mt-[-100px] ml-auto lg:ml-2 2xl:ml-32 lg:mr-auto" }}
                 {{ .Scratch.Set "src" .Site.Params.images.president }}
 
                     {{ partial "atom/atom-picture.html" . }}
@@ -46,7 +46,7 @@
                 {{ .Scratch.Delete "src" }}
                 {{ .Scratch.Delete "class" }}
 
-                <div class="absolute bottom-0 right-8 lg:right-16 bg-black bg-opacity-50 lg:bg-inherit">
+                <div class="absolute bottom-0 right-8 lg:right-24 2xl:right-16 bg-black bg-opacity-50 2xl:bg-inherit">
                     <span class="text-white font-bold text-[14px] lg:text-[20px]">アンダーズ株式会社<br>代表取締役　新井美奈</span>
                 </div>
             </div>

@@ -7,7 +7,7 @@ weight: 2
 ---
 
 {{< section
-    class="bg-white md:text-center py-10 md:pt-32 md:pb-10 px-2"
+    class="bg-white md:text-center py-10 md:pt-32 md:pb-10 px-2 lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-0 font-bold"
@@ -19,7 +19,7 @@ weight: 2
     {{< /header >}}
 
     {{< picture
-        alt="Image Not Available" src="images/mangaA.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-3/4 mx-auto"
+        alt="Image Not Available" src="images/manga/A.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-3/4 mx-auto"
     >}}
 
     {{< div-texts
@@ -36,7 +36,7 @@ weight: 2
     {{< /div-texts >}}
 
     {{< picture
-        alt="Image Not Available" src="images/mangaB.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-3/4 mx-auto"
+        alt="Image Not Available" src="images/manga/B.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-3/4 mx-auto"
     >}}
 
     {{< div-texts

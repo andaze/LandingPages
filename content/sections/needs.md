@@ -7,7 +7,7 @@ weight: 4
 ---
 
 {{< section
-    class="bg-white py-10 lg:pt-32 md:pb-10 px-2"
+    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 lg:mb-[112px] font-bold"
@@ -19,7 +19,7 @@ weight: 4
     {{< /header >}}
 
     {{< div-grid-container
-        class="grid-cols-2  md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-screen md:max-w-[1300px]"
+        class="grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-screen lg:w-11/12 2xl:w-screen 2xl:max-w-[1300px]"
     >}}
 
         {{< div-card-with-image
