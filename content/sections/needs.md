@@ -10,7 +10,7 @@ weight: 4
     class="bg-white py-10 lg:pt-32 lg:pb-10 px-2"
 >}}
     {{< header
-        class="mb-[112px] font-bold"
+        class="mb-10 lg:mb-[112px] font-bold"
     >}}
         {{< div-title
             title="豊富な機能であらゆるニーズに対応"
