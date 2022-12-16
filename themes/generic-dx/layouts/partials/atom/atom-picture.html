@@ -16,11 +16,6 @@
 */}}
 
 {{ $image := "" }}
-{{ if hugo.IsProduction }}
-        {{ $image = (resources.GetRemote (printf "https://picsum.photos/1920/1080?random=%s" now.UnixNano)) }}
-{{ else }}
-        {{ $image = (resources.GetRemote "https://picsum.photos/1920/1080") }}
-{{ end }}
 
 {{ if $src := (.Scratch.Get "src") }}
         {{ if (.Page.Resources.GetMatch $src) }}
@@ -36,7 +31,14 @@
                         {{ end }}
                 {{ end }}
         {{ end }}
+{{ else }}
+        {{ if hugo.IsProduction }}
+                {{ $image = (resources.GetRemote (printf "https://picsum.photos/1920/1080?random=%s" now.UnixNano)) }}
+        {{ else }}
+                {{ $image = (resources.GetRemote "https://picsum.photos/1920/1080") }}
+        {{ end }}
 {{ end }}
+
 {{ $alt := default $image.Title (.Scratch.Get "alt") }}
 
 {{ $multiply_raito_value := 0 }}
@@ -49,6 +51,7 @@
 {{ $is_lazy := default true (.Scratch.Get "is-lazy") }}
 {{ $anchor := default "Smart" (.Scratch.Get "anchor") }}
 {{ $class := default "w-full" (.Scratch.Get "class") }}
+{{ $id := default "" (.Scratch.Get "id") }}
 {{ $format := default "webp" (.Scratch.Get "format") }}
 {{ $hint := default "photo" (.Scratch.Get "hint") }}
 {{ $quolity := default "75" (.Scratch.Get "quolity") }}
@@ -213,7 +216,7 @@
 
 
 {{ else }}
-        
+
         {{ range $index, $img_size := $img_sizes }}
                 {{ $img_1x_format := (printf "%dx%d %s q%s %s %s" (int (index $img_size "width")) (int (mul (index $img_size "width") $multiply_raito_value)) $format $quolity $anchor $hint) }}
                 {{ $img_2x_format := (printf "%dx%d %s q%s %s %s" (int (mul (index $img_size "width") 2)) (int (mul (mul (index $img_size "width") 2) $multiply_raito_value)) $format $quolity $anchor $hint) }}
@@ -226,7 +229,7 @@
 <picture>
 
         {{ range $index, $value := $img_sizes }}
-        
+
                 {{/* srcset のコード生成 */}}
                 {{/* srcset code generation */}}
                 {{ $srcset := "" }}
@@ -234,28 +237,29 @@
                         {{ $srcset = (printf "%s %s %s," $srcset $value.Permalink $index) }}
                 {{ end }}
                 {{ $srcset = trim $srcset " ," }}
-                
+
                 {{/* picture要素の最後のimg要素を用いてデフォルト画像とする */}}
                 {{/* using the img element at the end of the picture element as the default image */}}
                 {{ if (ne (index $value "name") "img_xs") }}
-                
+
                         {{ $min_width := printf "%dpx" (index $value "min-width") }}
                         <source media='(min-width:{{ $min_width }}'
                                 srcset='{{ $srcset }}'>
-                
+
                 {{ else }}
-                
+
                         {{ $default_img := index ($img_sizes_srcset.Get (index $value "name")) "1x" }}
                         <img src="{{ $default_img.Permalink }}"
                         srcset="{{ $srcset }}"
                         width="{{ $default_img.Width }}"
                         height="{{ $default_img.Height }}"
                         class="{{ $class }}"
+                        id="{{ $id }}"
                         alt="{{ $alt }}"
                         loading='{{ cond ($is_lazy) "lazy" "eager" }}'
                         >
                 {{ end }}
-        
+
         {{ end }}
 
 </picture>

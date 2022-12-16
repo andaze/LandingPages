@@ -16,6 +16,8 @@
             </button>
         </div>
 
+        {{ partial "molecule/movie-modal.html" .}}
+
         {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}

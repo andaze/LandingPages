@@ -42,13 +42,14 @@ weight: 1
         {{< /div-wrapper >}}
 
         {{< div-wrapper
-            class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px]"
+            class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px] cursor-pointer select-none"
         >}}
              {{< picture
-                alt="Image Not Available" src="images/paas-no-susume.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[41px] border-[10px] border-[#1A81B6]"
+                alt="Image Not Available" src="images/paas-no-susume.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[41px] border-[10px] border-[#1A81B6] movie-thumbnail"
+                id="j_JhrVnCVFQ"
             >}}
             {{< div-wrapper
-                class="bg-[#1A81B6] w-[66px] h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+                class="bg-[#1A81B6] w-[66px] h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none"
             >}}
                 {{< picture
                     alt="Image Not Available" src="images/arrow.png" type="thumbnail-lg" quolity="100" class="w-[22px] h-[22px] mx-auto"
