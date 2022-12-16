@@ -32,7 +32,7 @@ weight: 9
             btn-text="お問い合わせ"
         >}}
         {{< div-wrapper
-            class="bg-[#5FBCE7] w-[54px] h-[54px] 2xl:w-[66px] 2xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4"
+            class="bg-[#5FBCE7] w-[54px] h-[54px] 2xl:w-[66px] 2xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4 pointer-events-none"
         >}}
             {{< picture
                 alt="Image Not Available" src="images/arrow.png" type="content" quolity="100" class="w-[22px] h-[22px] mx-auto"

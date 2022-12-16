@@ -35,7 +35,7 @@ weight: 5
                     btn-text="資料ダウンロード"
                 >}}
                 {{< div-wrapper
-                    class="bg-[#1A81B6] w-[54px] h-[54px] 2xl:w-[66px] 2xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4"
+                    class="bg-[#1A81B6] w-[54px] h-[54px] 2xl:w-[66px] 2xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4 pointer-events-none"
                 >}}
                     {{< picture
                         alt="Image Not Available" src="images/arrow.png" type="thumbnail-lg" quolity="100" class="w-[22px] h-[22px] mx-auto"
@@ -58,7 +58,7 @@ weight: 5
                 btn-text="資料ダウンロード"
             >}}
             {{< div-wrapper
-                class="bg-[#1A81B6] w-[54px] h-[54px] 2xl:w-[66px] 2xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4"
+                class="bg-[#1A81B6] w-[54px] h-[54px] 2xl:w-[66px] 2xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4  pointer-events-none"
             >}}
                 {{< picture
                     alt="Image Not Available" src="images/arrow.png" type="thumbnail-lg" quolity="100" class="w-[22px] h-[22px] mx-auto"
