@@ -13,16 +13,16 @@ weight: 10
         class="mb-10 lg:mb-[100px] font-bold"
     >}}
         {{< div-title
-            title="A自社システム構築で使用する<br class='hidden 2xl:block'>「PaaS」の利点と特有の課題解決<br class='hidden 2xl:block'>について<br class='hidden 2xl:block'>弊社代表がYouTubeで解説！"
-            title-class="text-[24px] md:text-[36px] lg:text-[60px] font-bold text-white text-center leading-loose lg:leading-[60px]"
+            title="A自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決<br class='hidden lg:block'>について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
+            title-class="text-[24px] md:text-[36px] 2xl:text-[60px] font-bold text-white text-center leading-loose 2xl:leading-[60px]"
         >}}
     {{< /header >}}
 
     {{< div-container
-        class="flex flex-col md:flex-row lg:flex-col 2xl:flex-row gap-y-10 md:gap-y-0 lg:gap-y-10 2xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 md:max-w-[1500px]"
+        class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 2xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 md:max-w-[1500px]"
     >}}
         {{< div-wrapper
-            class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px]"
+            class="relative h-[200px] w-[360px] 2xl:h-[314px] 2xl:w-[560px]"
         >}}
              {{< picture
                 alt="Image Not Available" src="images/paas-no-susume.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[74px]"
@@ -37,7 +37,7 @@ weight: 10
         {{< /div-wrapper >}}
 
         {{< div-wrapper
-            class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px]"
+            class="relative h-[200px] w-[360px] 2xl:h-[314px] 2xl:w-[560px]"
         >}}
              {{< picture
                 alt="Image Not Available" src="images/generic-crm.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[74px]"
