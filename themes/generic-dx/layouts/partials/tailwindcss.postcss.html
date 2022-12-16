@@ -1,0 +1,9 @@
+{{/*  https://www.brycewray.com/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/  */}}
+{{ $styles := resources.Get "css/tailwind.css" }}
+{{ $styles  = $styles  | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+	{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+{{ else }}
+	{{ $styles = $styles | resources.ExecuteAsTemplate (printf "css/tailwind.dev.%v.css" now.UnixMilli) .}}
+{{ end }}
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
