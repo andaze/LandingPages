@@ -3,6 +3,17 @@ languageCode: 'ja-JP'
 theme: ['generic-dx']
 title: 'アンダーズ株式会社 | Generic DX'
 
+# [Configure Modules | Hugo](https://gohugo.io/hugo-modules/configuration/)
+module:
+  hugoVersion:
+    extended: true
+    min: "0.100"
+  mounts:
+  - source: static
+    target: static
+  - source: uploads
+    target: static
+
 markup:
   goldmark:
     renderer:

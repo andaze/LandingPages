@@ -30,7 +30,7 @@ weight: 5
             >}}
                 {{< div-button
                     class="bg-white border-4 border-[#1A81B6] text-black font-bold text-[16px] 2xl:text-[26px] mt-10 block w-[340px] lg:w-[440px] text-center rounded-full relative"
-                    link="#"
+                    link="PaaSのススメ.zip"
                     download=true
                     btn-text="資料ダウンロード"
                 >}}
@@ -53,7 +53,7 @@ weight: 5
         >}}
             {{< div-button
                 class="bg-white border-4 border-[#1A81B6] text-black font-bold text-[16px] 2xl:text-[26px] block w-[340px] lg:w-[440px] text-center rounded-full relative"
-                link="#"
+                link="PaaSのススメ.zip"
                 download=true
                 btn-text="資料ダウンロード"
             >}}

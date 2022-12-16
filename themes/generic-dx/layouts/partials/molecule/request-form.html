@@ -38,9 +38,11 @@
         <div class="text-center">
             {{ .Scratch.Set "class" "bg-[#E01E58] hover:text-[#E01E58] hover:bg-white border border-[#E01E58] text-white rounded-2xl font-bold select-none text-sm" }}
             {{ .Scratch.Set "btn-text" "ダウンロードする" }}
+            {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
 
             {{ partial "atom/a.download-button.html" . }}
 
+            {{ .Scratch.Delete "link" }}
             {{ .Scratch.Delete "btn-text" }}
             {{ .Scratch.Delete "class" }}
         </div>

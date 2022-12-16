@@ -2,5 +2,5 @@
 {{ $link := .Scratch.Get "link" }}
 {{ $text := .Scratch.Get "btn-text" }}
 
-<a href="{{ $link }}" class="{{ $opt_class }} p-5 cursor-pointer" id="download-button" data-files="{{ "generic-crm-2023-1.pdf" | relURL }} {{ "paas-2022.pdf" | relURL }}">{{ $text }}</a>
+<a href="{{ $link | relURL }}" download="{{ $link }}" class="{{ $opt_class }} p-5 cursor-pointer">{{ $text }}</a>
 
