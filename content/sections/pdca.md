@@ -24,7 +24,7 @@ weight: 7
     >}}
 
     {{< ul-list
-        class="mx-auto w-fit lg:w-11/12"
+        class="mx-auto w-fit lg:w-11/12 3xl:w-fit"
     >}}
         {{< li-list-wrapper
             class="flex flex-col xl:justify-center 2xl:justify-start gap-y-8 md:gap-0 md:flex-row items-center mb-8 lg:mb-2"

@@ -6,7 +6,11 @@ module.exports = {
     './node_modules/tw-elements/dist/js/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '3xl': '1921px',
+      },
+    },
   },
   plugins: [
     require('tw-elements/dist/plugin'),
