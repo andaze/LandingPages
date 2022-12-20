@@ -7,7 +7,7 @@ weight: 7
 ---
 
 {{< section
-    class="bg-white py-10 md:pt-32 md:pb-10 px-2 lg:pr-[180px] 2xl:pr-2"
+    class="bg-white py-10 md:pt-32 md:pb-10 px-2 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 lg:mb-[74px] font-bold"
@@ -20,7 +20,7 @@ weight: 7
 
     {{< div-text
         text="「ハードルが高い」「効果が見えづらい」と思われていた自社システム構築の常識を覆し、<br class='hidden 2xl:block'>データに基づいた計画、実行、評価、改善の4つのプロセスを回していきます。"
-        class="text-[16px] leadig-loose 2xl:text-[28px] text-center lg:mt-[80px] mb-16 lg:mb-[123px] lg:w-4/5 2xl:w-full mx-auto"
+        class="text-[16px] leadig-loose 2xl:text-[28px] text-center lg:mt-[80px] mb-16 lg:mb-[123px] lg:w-3/4 2xl:w-full mx-auto"
     >}}
 
     {{< ul-list

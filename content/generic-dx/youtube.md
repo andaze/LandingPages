@@ -7,7 +7,7 @@ weight: 10
 ---
 
 {{< section
-    class="bg-[#34A7E1] border border-[#707070] py-10 md:py-32 px-2 lg:pr-[240px] 2xl:pr-2"
+    class="bg-[#34A7E1] border border-[#707070] py-10 md:py-32 px-2 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 lg:mb-[100px] font-bold"
@@ -19,7 +19,7 @@ weight: 10
     {{< /header >}}
 
     {{< div-container
-        class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 2xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 md:max-w-[1500px]"
+        class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 2xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 lg:w-3/4 2xl:w-11/12 md:max-w-[1500px]"
     >}}
         {{< div-wrapper
             class="relative h-[200px] w-[360px] 2xl:h-[314px] 2xl:w-[560px] cursor-pointer select-none"

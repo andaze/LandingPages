@@ -7,7 +7,7 @@ weight: 1
 ---
 
 {{< section
-    class="bg-white 2xl:text-center py-10 md:pt-32 md:pb-10 px-2 lg:pr-[240px] 2xl:pr-2"
+    class="bg-white 2xl:text-center py-10 md:pt-32 md:pb-10 px-2 2xl:pr-2"
 >}}
     {{< header
         class="mb-[58px] font-bold text-center"
@@ -29,7 +29,7 @@ weight: 1
     {{< /div-texts >}}
 
     {{< div-container
-        class="flex flex-col md:flex-row lg:flex-col 2xl:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center 2xl:items-start"
+        class="flex flex-col md:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center 2xl:items-start"
     >}}
 
         {{< div-wrapper

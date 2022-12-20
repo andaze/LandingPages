@@ -7,7 +7,7 @@ weight: 8
 ---
 
 {{< section
-    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain lg:pr-[240px] 2xl:pr-2"
+    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 font-bold"
@@ -59,10 +59,10 @@ weight: 8
             {{< /div-card-with-image >}}
 
         {{< li-list-wrapper
-            class="w-[300px] h-[300px] 2xl:w-[350px] 2xl:h-[350px] bg-[#1264A3] rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0"
+            class="w-[300px] h-[300px] 2xl:w-[350px] 2xl:h-[350px] bg-[#1264A3] rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-100px] 2xl:after:right-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0"
         >}}
             {{< div-card-with-image
-                class="bg-white w-[250px] h-[250px] 2xl:w-[300px] 2xl:h-[300px] mx-auto rounded-[117px] border-[30px] border-[#34A7E1] flex flex-col justify-center"
+                class="bg-white w-[250px] h-[250px] 2xl:w-[300px] 2xl:h-[300px] mx-auto rounded-[117px] border-[30px] border-[#34A7E1] flex flex-col justify-center z-10"
             >}}
                 {{< picture
                     alt="Image Not Available" src="images/process/step3.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
