@@ -1,4 +1,4 @@
-baseURL: 'http://example.org/'
+baseURL: 'http://example.org/landing-pages'
 languageCode: 'ja-JP'
 theme: ['generic-dx', 'AndGo']
 title: 'アンダーズ株式会社 | Generic DX'
