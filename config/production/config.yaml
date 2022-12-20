@@ -1,0 +1,7 @@
+baseURL: 'https://andaze.com/landing-pages'
+
+params:
+  smtpjs:
+    # Below token is restricted *.andaze.com
+    # Created accounts at https://app.elasticemail.com/marketing/settings/new/manage-smtp, Encrypt at https://smtpjs.com/
+    secureToken: f943e729-72d1-4122-811c-fd291e35543d
