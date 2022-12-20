@@ -1,6 +1,6 @@
 baseURL: 'http://example.org/'
 languageCode: 'ja-JP'
-theme: ['generic-dx']
+theme: ['generic-dx', 'AndGo']
 title: 'アンダーズ株式会社 | Generic DX'
 
 # [Configure Modules | Hugo](https://gohugo.io/hugo-modules/configuration/)
