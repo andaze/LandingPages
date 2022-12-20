@@ -1,6 +1,7 @@
 {{/*  https://www.brycewray.com/posts/2022/03/making-tailwind-jit-work-hugo-version-3-edition/  */}}
+{{ $options := dict "config" "./assets/css/postcss.config.js" }}
 {{ $styles := resources.Get "css/main.css" }}
-{{ $styles  = $styles  | resources.PostCSS }}
+{{ $styles  = $styles  | resources.PostCSS $options }}
 {{ if hugo.IsProduction }}
 	{{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
 {{ else }}
