@@ -7,7 +7,7 @@ weight: 8
 ---
 
 {{< section
-    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('/img/patterC.png')] bg-contain lg:pr-[240px] 2xl:pr-2"
+    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 font-bold"
@@ -77,7 +77,7 @@ weight: 8
             {{< /div-card-with-image >}}
 
         {{< li-list-wrapper
-            class="w-[300px] h-[300px] 2xl:w-[350px] 2xl:h-[350px] bg-[#1264A3] rounded-[117px] flex flex-col justify-center relative z-50 after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[150px] after:rotate-90 lg:after:rotate-0 before:content-[''] before:w-[72px] before:h-[84px] before:bg-none lg:before:bg-[url('/img/arrow_triangle.png')] before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-72px]"
+            class="w-[300px] h-[300px] 2xl:w-[350px] 2xl:h-[350px] bg-[#1264A3] rounded-[117px] flex flex-col justify-center relative z-50 after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[150px] after:rotate-90 lg:after:rotate-0 before:content-[''] before:w-[72px] before:h-[84px] before:bg-none lg:before:bg-[url('../img/arrow_triangle.png')] before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-72px]"
         >}}
             {{< div-card-with-image
                 class="bg-white w-[250px] h-[250px] 2xl:w-[300px] 2xl:h-[300px] mx-auto rounded-[117px] border-[30px] border-[#34A7E1] flex flex-col justify-center"

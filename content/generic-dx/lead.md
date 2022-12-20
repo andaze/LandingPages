@@ -33,7 +33,7 @@ weight: 1
     >}}
 
         {{< div-wrapper
-            class="bg-[url('/img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:h-[240px] lg:w-[240px] mt-4 flex flex-col justify-center bg-no-repeat"
+            class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:h-[240px] lg:w-[240px] mt-4 flex flex-col justify-center bg-no-repeat"
         >}}
             {{< div-text
                 text="<strong class='text-[#1A81B6]'>自社システム</strong><br>の<br>メリットって？"
@@ -58,7 +58,7 @@ weight: 1
         {{< /div-wrapper >}}
 
         {{< div-wrapper
-            class="bg-[url('/img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[240px] lg:w-[240px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center"
+            class="bg-[url('../img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[240px] lg:w-[240px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center"
         >}}
             {{< div-text
                 text="<strong class='text-[#1A81B6] text-[20px] 2xl:text-[26px]'>解説動画</strong>と<strong class='text-[#1A81B6] text-[20px] 2xl:text-[26px]'>マンガ</strong>で<br>詳しく知ろう！"
