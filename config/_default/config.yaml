@@ -2,6 +2,7 @@ baseURL: 'http://example.org/landing-pages'
 languageCode: 'ja-JP'
 theme: ['generic-dx', 'AndGo']
 title: 'Generic DX | アンダーズ株式会社'
+timeout: 180s
 
 # [Configure Modules | Hugo](https://gohugo.io/hugo-modules/configuration/)
 module:
