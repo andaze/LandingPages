@@ -1,0 +1,7 @@
+{{ $word1 := default "" (.Scratch.Get "word1") }}
+{{ $strong := default "" (.Scratch.Get "strong") }}
+{{ $word2 := default "" (.Scratch.Get "word2") }}
+{{ $opt_class := default "" (.Scratch.Get "text-class") }}
+{{ $opt_class_strong := default "" (.Scratch.Get "strong-class") }}
+
+<h2 class="{{ $opt_class }}">{{ $word1 }}<strong class="{{ $opt_class_strong }}">{{ $strong }}</strong>{{ $word2 }}</h2>

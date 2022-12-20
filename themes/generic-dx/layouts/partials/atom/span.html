@@ -1,0 +1,3 @@
+{{ $text := default "" (.Scratch.Get "text-span") }}
+{{ $opt_class := default "" (.Scratch.Get "span-class") }}
+<span class="{{ $opt_class }}">{{ $text }}</span> 

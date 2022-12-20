@@ -1,0 +1,14 @@
+{{ .Scratch.Set "ul-class" "flex justify-between gap-x-8 font-bold" }}
+{{ $ul_class := .Scratch.Get "ul-class" }}
+
+<nav>
+    <ul class="{{ $ul_class }}">
+        {{ range $elem_index, $elem_val := .Site.Params.navigation }}
+            {{ if (and (isset $elem_val "text") (isset $elem_val "link") ) }}
+                <li><a href="{{ index $elem_val "link" }}" target="_blank" rel="noopener noreferrer">{{ index $elem_val "text" }}</a></li>
+            {{ end }}
+        {{ end }}
+    </ul>
+</nav>
+
+{{ .Scratch.Delete "ul-class" }}

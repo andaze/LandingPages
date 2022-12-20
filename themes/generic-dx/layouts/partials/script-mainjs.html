@@ -1,0 +1,8 @@
+{{ $opts := "" }}
+{{ if hugo.IsProduction }}
+    {{ $opts = dict "targetPath" "main.js" "minify" true }}
+{{ else }}
+    {{ $opts = dict "targetPath" "main.js" "minify" false }}
+{{ end }}
+{{ $built := resources.Get "js/main.js" | js.Build $opts }}
+<script defer type="text/javascript" src="{{ $built.RelPermalink }}"></script>

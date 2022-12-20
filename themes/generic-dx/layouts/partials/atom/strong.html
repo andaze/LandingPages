@@ -1,0 +1,4 @@
+{{ $text := default "" (.Scratch.Get "strong") }}
+{{ $opt_class := default "" (.Scratch.Get "strong-class") }}
+<strong class="{{ $opt_class }}">{{ $text }}</strong> 
+

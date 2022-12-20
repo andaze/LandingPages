@@ -1,0 +1,13 @@
+{{ .Scratch.Set "text-span" (.Get "text-span") }}
+{{ .Scratch.Set "strong" (.Get "strong") }}
+{{ .Scratch.Set "span-class" (.Get "span-class") }}
+{{ .Scratch.Set "strong-class" (.Get "strong-class") }}
+
+<div>
+    {{ partial "molecule/h2.title-with-strong.html" . }}
+</div>
+
+{{ .Scratch.Delete "strong-class" }}
+{{ .Scratch.Delete "span-class" }}
+{{ .Scratch.Delete "strong" }}
+{{ .Scratch.Delete "text-span" }}

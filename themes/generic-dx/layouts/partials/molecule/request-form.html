@@ -1,0 +1,51 @@
+<aside id="accordion-collapse" data-accordion="collapse" class="bg-white w-64 py-6 px-2 border border-gray-600 rounded-3xl opacity-0 invisible transition-opacity duration-1000 lg:opacity-100 lg:visible">
+    <div id="accordion-collapse-heading-request">
+        <p class="text-center !text-[#1A81B6] font-bold mb-5 !bg-white hidden lg:block" data-accordion-target="#accordion-collapse-body-request" aria-expanded="false" aria-controls="accordion-collapse-body-request">
+            ジェネリックDXの資料<br>ダウンロードはこちら
+        </p>
+    </div>
+    <div id="accordion-collapse-body-request" aria-labelledby="accordion-collapse-heading-request">
+        <div class="flex justify-between mb-2 text-sm">
+            <div class="text-left border border-gray-600 rounded p-2 w-28">
+                <label for="lastname" class="block font-bold">姓</label>
+                <input class="w-full border-none text-black placeholder-gray-300 focus:outline-none px-0 py-2" type="text" id="name" placeholder="例）山田">
+            </div>
+            <div class="text-left border border-gray-600 rounded p-2 w-28">
+                <label for="firstname" class="block font-bold">名</label>
+                <input class="w-full border-none text-black placeholder-gray-300 focus:outline-none px-0 py-2" type="text" id="name" placeholder="例）太郎">
+            </div>
+        </div>
+        <div class="text-left mb-2 border border-gray-600 rounded p-2 text-sm">
+            <label for="email" class="block font-bold">メールアドレス</label>
+            <input class="w-full border-none text-black placeholder-gray-300 focus:outline-none px-0 py-2" type="email" id="email" placeholder="例）andaze@example.com">
+        </div>
+        <div class="text-left border border-gray-600 rounded p-2 text-sm">
+            <label for="company" class="block font-bold">企業名</label>
+            <input class="w-full border-none text-black placeholder-gray-300 focus:outline-none px-0 py-2" type="text" id="company" placeholder="例）アンダーズ株式会社">
+        </div>
+        <div class="p-2 mt-4 text-xs">
+            <p>
+                {{ with .Site.GetPage "privacy-policy"}}
+                <a href="{{ .Permalink }}" class="underline text-[#1A81B6]">プライバシーポリシー</a>に同意いただいた上でお問い合わせください。
+                {{ end }}
+            </p>
+        </div>
+        <div class="text-left p-2 flex items-start mt-2 mb-8">
+            <input class="mt-[0.1px] scale-75" type="checkbox" id="privacy">
+            <label for="privacy" class="block ml-2 text-xs font-bold">ご提供いただく個人情報のお取り扱いに同意する</label>
+        </div>
+
+        <div class="text-center">
+            {{ .Scratch.Set "class" "bg-[#E01E58] hover:text-[#E01E58] hover:bg-white border border-[#E01E58] text-white rounded-2xl font-bold select-none text-sm" }}
+            {{ .Scratch.Set "btn-text" "ダウンロードする" }}
+            {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
+
+            {{ partial "atom/a.download-button.html" . }}
+
+            {{ .Scratch.Delete "link" }}
+            {{ .Scratch.Delete "btn-text" }}
+            {{ .Scratch.Delete "class" }}
+        </div>
+    </div>
+
+</aside>

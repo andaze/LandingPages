@@ -1,0 +1,19 @@
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ .Scratch.Set "download" (.Get "download") }}
+{{ .Scratch.Set "link" (.Get "link") }}
+{{ .Scratch.Set "btn-text" (.Get "btn-text") }}
+
+{{ $is_download := default false (.Scratch.Get "download") }}
+
+<div class="w-fit mx-auto">
+    {{ if $is_download }}
+        {{ partial "atom/a.download-button.html" . }}
+    {{ else }}
+        {{ partial "atom/a.button.html" . }}
+    {{ end }}
+</div>
+
+{{ .Scratch.Delete "btn-text" }}
+{{ .Scratch.Delete "link" }}
+{{ .Scratch.Delete "download" }}
+{{ .Scratch.Delete "class" }}

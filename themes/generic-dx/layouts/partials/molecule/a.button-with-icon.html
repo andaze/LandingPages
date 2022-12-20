@@ -1,0 +1,24 @@
+{{ $opt_class := .Scratch.Get "button-class" }}
+{{ $opt_link := .Scratch.Get "button-link" }}
+
+<a href="{{ $opt_link }}" class="{{ $opt_class }}">
+
+    {{ .Scratch.Set "class" "h-5 w-5 md:h-6 md:w-6 mr-4" }}
+    {{ .Scratch.Set "src" .Site.Params.contactIcon }}
+
+        {{ partial "atom/atom-picture.html" . }} 
+
+    {{ .Scratch.Delete "src" }}
+    {{ .Scratch.Delete "class" }}
+
+    {{ .Scratch.Set "text-span" "お問い合わせ" }}
+    {{ .Scratch.Set "span-class" "text-white text-[14px] md:text-[15px]" }}
+
+        {{ partial "atom/span.html" . }}
+
+    {{ .Scratch.Delete "span-class" }}
+    {{ .Scratch.Delete "text-span" }}
+
+</a>
+
+{{ .Scratch.Delete "class" }}

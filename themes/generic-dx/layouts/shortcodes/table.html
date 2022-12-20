@@ -1,0 +1,8 @@
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ $opt_class := .Scratch.Get "class" }}
+<table class="border-separate max-w-5xl mx-auto {{ $opt_class }}">
+    <tbody>
+        {{ .Inner }} 
+    </tbody>
+</table>
+{{ .Scratch.Delete "class" }}

@@ -1,0 +1,6 @@
+{{ .Scratch.Set "class" (.Get "class") }}
+{{ $opt_class := default "" (.Scratch.Get "class") }}
+
+<div class="{{ $opt_class }}">
+    {{ .Inner }}
+</div>

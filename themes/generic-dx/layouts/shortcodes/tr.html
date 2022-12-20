@@ -1,0 +1,19 @@
+{{ .Scratch.Set "tr-class" (.Get "tr-class") }}
+{{ .Scratch.Set "td-class" (.Get "td-class") }}
+{{ $tr_class := .Scratch.Get "tr-class" }}
+{{ $td_class := .Scratch.Get "td-class" }}
+
+<tr class="{{ $tr_class }}">
+    {{ if .Get "td1" }}
+    <td valign="top" class="{{ $td_class }}">{{ (.Get "td1") | markdownify }}</td>
+    {{ end }}
+    {{ if .Get "td2" }}
+    <td valign="top" class="{{ $td_class }}">{{ (.Get "td2") | markdownify }}</td>
+    {{ end }}
+    {{ if .Get "td3" }}
+    <td valign="top" class="{{ $td_class }}">{{ (.Get "td3") | markdownify }}</td>
+    {{ end }}
+</tr>
+
+{{ .Scratch.Delete "td-class" }}
+{{ .Scratch.Delete "tr-class" }}
