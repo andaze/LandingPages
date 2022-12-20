@@ -1,0 +1,4 @@
+baseURL: 'https://example.org/'
+languageCode: 'ja-JP'
+title: 'アンダーズ株式会社'
+theme: ['AndGo']
