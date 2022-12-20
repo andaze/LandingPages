@@ -14,9 +14,17 @@ This is a collection of basic codes to start each project, and project-specific 
 ## Initialization
 - Fork this project from [andaze/HugoBase](https://github.com/andaze/HugoBase) to create a new repository.
 - Clone the forked repository to your local development environment.
-- In the cloned directory (project root), run `hugo server` to see if it works.
-  - You need to install hugo command beforehand.
+- Install Node and HUGO / also update to newer versions
+    ```
+    choco install -y nodejs hugo hugo-extended
+    # choco upgrade -y nodejs hugo hugo-extended
+    ```
 
 ## Run
+- Execute the following command in the cloned directory (project root)
+
+``` shell
+hugo mod npm pack && npm install && hugo server
+```
 
 ## Destroy
