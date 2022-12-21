@@ -16,7 +16,7 @@ weight: 5
     >}}
         {{< div-texts >}}
             {{< div-text
-                text="100万円からはじめられる<br>自社システム構築（PaaS）<br>「ジェネリックDX」のことを<br>もっと詳しく！"
+                text="100万円からはじめられる<br class='hidden lg:block'>自社システム構築（PaaS）<br class='hidden lg:block'>「ジェネリックDX」のことを<br class='hidden lg:block'>もっと詳しく！"
                 class="text-[24px] md:text-[32px] 2xl:text-[60px] font-bold mb-[60px] text-white"
             >}}
             {{< div-text
