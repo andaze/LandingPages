@@ -7,7 +7,7 @@ weight: 9
 ---
 
 {{< section
-    class="bg-white py-10 md:pt-32 md:pb-24 px-2 lg:pr-[240px] 2xl:pr-2 lg:w-11/12 2xl:w-full mx-auto"
+    class="bg-white py-10 md:pt-32 md:pb-24 px-2 2xl:pr-2 lg:w-3/4 2xl:w-full mx-auto"
 >}}
     {{< header
         class="mb-10 font-bold"
@@ -28,7 +28,7 @@ weight: 9
     >}}
         {{< div-button
             class="bg-white border-[5px] border-[#5FBCE7] text-black font-bold text-[16px] 2xl:text-[26px] mt-10 block w-[340px] lg:w-[440px] text-center rounded-full relative"
-            link="#"
+            link="https://andaze.com/ja/contact/"
             btn-text="お問い合わせ"
         >}}
         {{< div-wrapper

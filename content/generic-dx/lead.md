@@ -7,7 +7,7 @@ weight: 1
 ---
 
 {{< section
-    class="bg-white 2xl:text-center py-10 md:pt-32 md:pb-10 px-2 lg:pr-[240px] 2xl:pr-2"
+    class="bg-white 2xl:text-center py-10 md:pt-32 md:pb-10 px-2 2xl:pr-2"
 >}}
     {{< header
         class="mb-[58px] font-bold text-center"
@@ -29,11 +29,11 @@ weight: 1
     {{< /div-texts >}}
 
     {{< div-container
-        class="flex flex-col md:flex-row lg:flex-col 2xl:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center 2xl:items-start"
+        class="flex flex-col md:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center 2xl:items-start"
     >}}
 
         {{< div-wrapper
-            class="bg-[url('/img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:h-[240px] lg:w-[240px] mt-4 flex flex-col justify-center bg-no-repeat"
+            class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:h-[240px] lg:w-[240px] mt-4 flex flex-col justify-center bg-no-repeat"
         >}}
             {{< div-text
                 text="<strong class='text-[#1A81B6]'>自社システム</strong><br>の<br>メリットって？"
@@ -58,7 +58,7 @@ weight: 1
         {{< /div-wrapper >}}
 
         {{< div-wrapper
-            class="bg-[url('/img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[240px] lg:w-[240px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center"
+            class="bg-[url('../img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[240px] lg:w-[240px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center"
         >}}
             {{< div-text
                 text="<strong class='text-[#1A81B6] text-[20px] 2xl:text-[26px]'>解説動画</strong>と<strong class='text-[#1A81B6] text-[20px] 2xl:text-[26px]'>マンガ</strong>で<br>詳しく知ろう！"

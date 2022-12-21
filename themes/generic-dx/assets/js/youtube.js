@@ -12,7 +12,6 @@ const links = document.querySelectorAll('a');
 movie_thumbnails.forEach(movie_thumbnail => {
 
     movie_thumbnail.addEventListener('click', (e) => {
-        console.log('A')
 
         new Promise((resolve) => {
             setTimeout(() => {

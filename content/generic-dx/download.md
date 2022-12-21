@@ -7,12 +7,12 @@ weight: 5
 ---
 
 {{< section
-    class="py-10 px-2 bg-[url('/img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 lg:pr-[240px] 2xl:pr-2"
+    class="py-10 px-2 bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 2xl:pr-2"
     id="download"
 >}}
 
     {{< div-container
-        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50"
+        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-3/4 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50"
     >}}
         {{< div-texts >}}
             {{< div-text
