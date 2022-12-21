@@ -45,8 +45,11 @@ weight: 5
         {{< /div-texts >}}
 
 
-
-        {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="w-[335px] h-[502px] mx-auto">}}
+        {{< div-wrapper
+            class="w-[335px] h-[502px] shrink-0"
+        >}}
+            {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
+        {{< /div-wrapper >}}
 
         {{< div-wrapper
             class="relative w-fit mx-auto mt-10 md:hidden"
