@@ -14,13 +14,13 @@ weight: 7
     >}}
         {{< div-title
             title="アンダーズが考えるDXのPDCA"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[50px] font-bold text-black text-center"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[50px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 
     {{< div-text
         text="「ハードルが高い」「効果が見えづらい」と思われていた自社システム構築の常識を覆し、<br class='hidden 2xl:block'>データに基づいた計画、実行、評価、改善の4つのプロセスを回していきます。"
-        class="text-[16px] leadig-loose 2xl:text-[28px] text-center lg:mt-[80px] mb-16 lg:mb-[123px] lg:w-3/4 2xl:w-full mx-auto"
+        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] mb-16 lg:mb-[123px] lg:w-3/4 2xl:w-full mx-auto"
     >}}
 
     {{< ul-list
@@ -36,7 +36,7 @@ weight: 7
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] relative"
                 num-class="text-[24px] 2xl:text-[31px] font-bold text-white bg-[#1A81B6] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block w-[120px] h-[120px] 2xl:w-[174px] 2xl:h-[174px] text-center rounded-full"
                 title-class="mb-10 md:mb-5 lg:mb-[74px] 2xl:ml-[140px] text-[20px] 2xl:text-[40px] text-black font-bold text-center 2xl:text-left"
-                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[20px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
+                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[15px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
                 item-class="lg:w-4/5 2xl:h-[253px] 2xl:w-[1154px] bg-none lg:bg-[url('../img/fukidashi_large.png')] bg-contain bg-no-repeat flex flex-col justify-center z-10 border lg:border-none border-gray-400 border-4 rounded-3xl lg:rounded-none p-4 2xl:p-0 md:ml-4 2xl:ml-0"
                 image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 rounded-full flex flex-col justify-center"
                 image-src="images/pdca/A.png"
@@ -55,7 +55,7 @@ weight: 7
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] relative"
                 num-class="text-[24px] 2xl:text-[31px] font-bold text-white bg-[#ECB22D] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block w-[120px] h-[120px] 2xl:w-[174px] 2xl:h-[174px] text-center rounded-full"
                 title-class="mb-10 md:mb-5 lg:mb-[74px] 2xl:ml-[140px] text-[20px] 2xl:text-[40px] text-black font-bold text-center 2xl:text-left"
-                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[20px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
+                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[15px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
                 item-class="lg:w-4/5 2xl:h-[253px] 2xl:w-[1154px] bg-none lg:bg-[url('../img/fukidashi_large.png')] bg-contain bg-no-repeat flex flex-col justify-center z-10 border lg:border-none border-gray-400 border-4 rounded-3xl lg:rounded-none p-4 2xl:p-0 md:ml-4 2xl:ml-0"
                 image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 rounded-full flex flex-col justify-center"
                 image-src="images/pdca/B.png"
@@ -74,7 +74,7 @@ weight: 7
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] relative"
                 num-class="text-[24px] 2xl:text-[31px] font-bold text-white bg-[#009872] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block w-[120px] h-[120px] 2xl:w-[174px] 2xl:h-[174px] text-center rounded-full"
                 title-class="mb-10 md:mb-5 lg:mb-[74px] 2xl:ml-[140px] text-[20px] 2xl:text-[40px] text-black font-bold text-center 2xl:text-left"
-                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[20px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
+                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[15px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
                 item-class="lg:w-4/5 2xl:h-[253px] 2xl:w-[1154px] bg-none lg:bg-[url('../img/fukidashi_large.png')] bg-contain bg-no-repeat flex flex-col justify-center z-10 border lg:border-none border-gray-400 border-4 rounded-3xl lg:rounded-none p-4 2xl:p-0 md:ml-4 2xl:ml-0"
                 image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 rounded-full flex flex-col justify-center"
                 image-src="images/pdca/C.png"
@@ -93,7 +93,7 @@ weight: 7
                 class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] relative"
                 num-class="text-[24px] 2xl:text-[31px] font-bold text-white bg-[#E01E5B] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block w-[120px] h-[120px] 2xl:w-[174px] 2xl:h-[174px] text-center rounded-full"
                 title-class="mb-10 md:mb-5 lg:mb-[74px] 2xl:ml-[140px] text-[20px] 2xl:text-[40px] text-black font-bold text-center 2xl:text-left"
-                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[20px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
+                text-class="mb-4 md:ml-20 lg:ml-0 2xl:ml-[140px] text-[15px] 2xl:text-[28px] text-black text-center 2xl:text-left 2xl:text-center"
                 item-class="lg:w-4/5 2xl:h-[253px] 2xl:w-[1154px] bg-none lg:bg-[url('../img/fukidashi_large.png')] bg-contain bg-no-repeat flex flex-col justify-center z-10 border lg:border-none border-gray-400 border-4 rounded-3xl lg:rounded-none p-4 2xl:p-0 md:ml-4 2xl:ml-0"
                 image-wrapper-class="w-[240px] h-[240px] 2xl:w-[350px] 2xl:h-[350px] shrink-0 rounded-full flex flex-col justify-center"
                 image-src="images/pdca/D.png"

@@ -17,11 +17,11 @@ weight: 5
         {{< div-texts >}}
             {{< div-text
                 text="100万円からはじめられる<br>自社システム構築（PaaS）<br>「ジェネリックDX」のことを<br>もっと詳しく！"
-                class="text-[24px] md:text-[36px] 2xl:text-[60px] font-bold leading-loose 2xl:leading-[60px] mb-[60px] text-white"
+                class="text-[24px] md:text-[32px] 2xl:text-[60px] font-bold mb-[60px] text-white"
             >}}
             {{< div-text
                 text="自社システム構築（PaaS）についての詳細や、<br>導入事例資料をご用意しています。<br>利用・検討の際にご活用ください。"
-                class="text-[16px] 2xl:text-[28px] leading-loose 2xl:leading-[45px] mb-8 text-white"
+                class="text-[16px] 2xl:text-[28px] mb-8 text-white"
             >}}
 
 

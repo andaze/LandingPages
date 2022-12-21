@@ -14,13 +14,13 @@ weight: 11
     >}}
         {{< div-title
             title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[60px] font-bold text-black text-center leading-loose 2xl:leading-[60px]"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[60px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 
     {{< div-text
         text="アンダーズでは大手物流企業様の案件でも高い実績を誇っています。"
-        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] font-medium leading-loose 2xl:leading-[40px]"
+        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] font-medium"
     >}}
 
     {{< div-wrapper

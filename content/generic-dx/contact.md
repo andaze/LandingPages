@@ -14,13 +14,13 @@ weight: 9
     >}}
         {{< div-title
             title="はじめてのDXでもアンダーズが<br class='hidden 2xl:block'>ゼロからサポート<br class='hidden 2xl:block'>プランニング・見積もりは無料！"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[60px] font-bold text-black text-center leading-loose 2xl:leading-[60px]"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[60px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 
     {{< div-text
         text="自社システム構築がはじめてという企業様も安心してご利用いただけるよう、<br class='hidden 2xl:block'>お打ち合わせからシステム機能・効果の仮説設定、開発、運用までを一気通貫でサポートいたします。<br class='hidden 2xl:block'>まずは気軽にお問い合わせください。"
-        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] font-medium leading-loose 2xl:leading-[40px]"
+        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] font-medium"
     >}}
 
     {{< div-wrapper

@@ -14,7 +14,7 @@ weight: 8
     >}}
         {{< div-title
             title="運用までの流れ"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[50px] font-bold text-black text-center"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[50px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 

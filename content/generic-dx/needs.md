@@ -14,7 +14,7 @@ weight: 4
     >}}
         {{< div-title
             title="豊富な機能であらゆるニーズに対応"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[60px] font-bold text-black text-center"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[60px] font-bold text-black text-center"
         >}}
     {{< /header >}}
 
