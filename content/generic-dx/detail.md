@@ -7,22 +7,20 @@ weight: 11
 ---
 
 {{< section
-    class="bg-white py-10 md:py-32 px-2 2xl:pr-2 lg:w-11/12 2xl:w-full mx-auto"
+    class="bg-white py-10 md:py-32 px-2 lg:pr-[240px] 2xl:pr-2 lg:w-11/12 2xl:w-full mx-auto"
 >}}
     {{< header
         class="mb-10 font-bold"
     >}}
         {{< div-title
             title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[60px] font-bold text-black text-center leading-loose 2xl:leading-[60px]"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[60px] font-bold text-black text-center"
         >}}
     {{< /header >}}
-
     {{< div-text
         text="アンダーズでは大手物流企業様の案件でも高い実績を誇っています。"
-        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] font-medium leading-loose 2xl:leading-[40px]"
+        class="text-[16px] 2xl:text-[28px] text-center lg:mt-[80px] font-medium"
     >}}
-
     {{< div-wrapper
         class="relative w-fit mx-auto"
     >}}
@@ -39,6 +37,5 @@ weight: 11
             >}}
         {{< /div-wrapper >}}
     {{< /div-wrapper >}}
-
 
 {{< /section >}}

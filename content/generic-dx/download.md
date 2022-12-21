@@ -7,23 +7,21 @@ weight: 5
 ---
 
 {{< section
-    class="py-10 px-2 bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 2xl:pr-2"
+    class="py-10 px-2 bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 lg:pr-[240px] 2xl:pr-2"
     id="download"
 >}}
-
     {{< div-container
         class="py-10 lg:py-20 px-2 lg:px-0 lg:w-3/4 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50"
     >}}
         {{< div-texts >}}
             {{< div-text
-                text="100万円からはじめられる<br>自社システム構築（PaaS）<br>「ジェネリックDX」のことを<br>もっと詳しく！"
-                class="text-[24px] md:text-[36px] 2xl:text-[60px] font-bold leading-loose 2xl:leading-[60px] mb-[60px] text-white"
+                text="100万円からはじめられる<br class='hidden lg:block'>自社システム構築（PaaS）<br class='hidden lg:block'>「ジェネリックDX」のことを<br class='hidden lg:block'>もっと詳しく！"
+                class="text-[24px] md:text-[32px] 2xl:text-[60px] font-bold mb-[60px] text-white"
             >}}
             {{< div-text
                 text="自社システム構築（PaaS）についての詳細や、<br>導入事例資料をご用意しています。<br>利用・検討の際にご活用ください。"
-                class="text-[16px] 2xl:text-[28px] leading-loose 2xl:leading-[45px] mb-8 text-white"
+                class="text-[16px] 2xl:text-[28px] mb-8 text-white"
             >}}
-
 
             {{< div-wrapper
                 class="relative w-fit mx-auto hidden md:block"
@@ -44,10 +42,11 @@ weight: 5
             {{< /div-wrapper >}}
         {{< /div-texts >}}
 
-
-
-        {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="w-[335px] h-[502px] mx-auto">}}
-
+        {{< div-wrapper
+            class="w-[335px] h-[502px] shrink-0"
+        >}}
+            {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
+        {{< /div-wrapper >}}
         {{< div-wrapper
             class="relative w-fit mx-auto mt-10 md:hidden"
         >}}
@@ -65,5 +64,4 @@ weight: 5
                 >}}
             {{< /div-wrapper >}}
         {{< /div-wrapper >}}
-
 {{< /section >}}

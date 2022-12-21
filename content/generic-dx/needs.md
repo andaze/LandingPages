@@ -7,21 +7,19 @@ weight: 4
 ---
 
 {{< section
-    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 2xl:pr-2"
+    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 lg:mb-[112px] font-bold"
     >}}
         {{< div-title
             title="豊富な機能であらゆるニーズに対応"
-            title-class="text-[26px] md:text-[36px] 2xl:text-[60px] font-bold text-black text-center"
+            title-class="text-[26px] md:text-[32px] 2xl:text-[60px] font-bold text-black text-center"
         >}}
     {{< /header >}}
-
     {{< div-grid-container
         class="grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-3/4 2xl:w-screen 2xl:max-w-[1300px]"
     >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -34,7 +32,6 @@ weight: 4
             >}}
         {{< /div-card-with-image >}}
 
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -46,7 +43,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -58,7 +54,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -70,7 +65,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -82,7 +76,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -94,7 +87,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -106,7 +98,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -118,7 +109,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -130,7 +120,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -142,7 +131,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -154,7 +142,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -166,7 +153,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -178,7 +164,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -190,7 +175,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
@@ -202,7 +186,6 @@ weight: 4
                 class="text-[16px] 2xl:text-[23px] mx-auto text-center font-bold"
             >}}
         {{< /div-card-with-image >}}
-
     {{< /div-grid-container >}}
 
 
