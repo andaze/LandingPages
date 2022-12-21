@@ -7,7 +7,7 @@ weight: 8
 ---
 
 {{< section
-    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain 2xl:pr-2"
+    class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 font-bold"

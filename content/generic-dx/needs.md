@@ -7,7 +7,7 @@ weight: 4
 ---
 
 {{< section
-    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 2xl:pr-2"
+    class="bg-white py-10 lg:pt-32 md:pb-10 px-2 lg:pr-[240px] 2xl:pr-2"
 >}}
     {{< header
         class="mb-10 lg:mb-[112px] font-bold"
