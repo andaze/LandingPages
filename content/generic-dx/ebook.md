@@ -47,6 +47,7 @@ weight: 5
         >}}
             {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
         {{< /div-wrapper >}}
+
         {{< div-wrapper
             class="relative w-fit mx-auto mt-10 md:hidden"
         >}}
@@ -64,4 +65,5 @@ weight: 5
                 >}}
             {{< /div-wrapper >}}
         {{< /div-wrapper >}}
+    {{< /div-container >}}
 {{< /section >}}
