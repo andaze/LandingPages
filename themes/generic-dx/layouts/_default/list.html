@@ -2,6 +2,8 @@
 
 <main>
 
+    {{ partial "key-visual.html" . }}
+
     {{ range (where .Site.RegularPages.ByWeight ".Params.isSection" "eq" true) }}
         {{ .Content }}
     {{ end }}
