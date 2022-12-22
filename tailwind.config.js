@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        '3xl': '1921px',
+        '3xl': '1920px',
+        'over-size': '1921px',
       },
     },
   },
