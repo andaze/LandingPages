@@ -37,7 +37,7 @@ jobs:
         id: run_action
         uses: releasehub-com/github-action-create-pr-parent-submodule@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: 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
           parent_repository: ${{ env.PARENT_REPOSITORY }}
           checkout_branch: ${{ env.CHECKOUT_BRANCH}}
           pr_against_branch: ${{ env.PR_AGAINST_BRANCH }}
