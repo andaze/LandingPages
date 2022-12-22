@@ -1,5 +1,5 @@
 ---
-title: "Download"
+title: "Ebook"
 date: 2022-12-10T17:32:26+09:00
 draft: false
 isSection: true
