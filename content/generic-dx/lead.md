@@ -30,15 +30,15 @@ weight: 1
         class="flex flex-col md:flex-row justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-center 3xl:items-start"
     >}}
         {{< div-wrapper
-            class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:h-[240px] lg:w-[240px] mt-4 flex flex-col justify-center bg-no-repeat"
+            class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:h-[240px] xl:w-[220px] 2xl:w-[240px] mt-4 flex flex-col justify-center bg-no-repeat shrink-0"
         >}}
             {{< div-text
                 text="<strong class='text-[#1A81B6]'>自社システム</strong><br>の<br>メリットって？"
-                class="text-[14px] 3xl:text-[20px] font-bold mt-[-30px] mr-8 text-center"
+                class="text-[14px] 3xl:text-[20px] font-bold mt-[-30px] mr-8 xl:mr-0 2xl:mr-8 text-center"
             >}}
         {{< /div-wrapper >}}
         {{< div-wrapper
-            class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px] cursor-pointer select-none"
+            class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px] cursor-pointer select-none shrink-0"
         >}}
              {{< picture
                 alt="Image Not Available" src="images/paas-no-susume.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[41px] border-[10px] border-[#1A81B6] movie-thumbnail"
@@ -53,7 +53,7 @@ weight: 1
             {{< /div-wrapper >}}
         {{< /div-wrapper >}}
         {{< div-wrapper
-            class="bg-[url('../img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[240px] lg:w-[240px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center"
+            class="bg-[url('../img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[240px] lg:w-[240px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center shrink-0"
         >}}
             {{< div-text
                 text="<strong class='text-[#1A81B6] text-[20px] 3xl:text-[26px]'>解説動画</strong>と<strong class='text-[#1A81B6] text-[20px] 3xl:text-[26px]'>マンガ</strong>で<br>詳しく知ろう！"

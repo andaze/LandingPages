@@ -13,7 +13,7 @@ weight: 10
         class="mb-10 lg:mb-[100px] font-bold"
     >}}
         {{< div-title
-            title="A自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決<br class='hidden lg:block'>について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
+            title="A自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
             title-class="text-[24px] md:text-[32px] 3xl:text-[60px] font-bold text-white text-center"
         >}}
     {{< /header >}}
