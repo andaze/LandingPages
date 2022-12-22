@@ -1,0 +1,19 @@
+---
+# https://towardsdev.com/update-submodule-automatically-with-github-actions-repository-dispatch-event-8e548ab1f517
+name: Send repository_dispatch event to parent repo  
+  
+on:  
+  push:  
+    branches:  
+      - main  
+  
+jobs:  
+  notify-parent-repo:  
+    runs-on: ubuntu-latest  
+    steps:  
+      - name: Repository Dispatch  
+        uses: peter-evans/repository-dispatch@v2  
+        with:  
+          token: ${{ secrets.MY_PAT }}  
+          repository: <Target-Repository>
+          event-type: sync-shared-submodule
