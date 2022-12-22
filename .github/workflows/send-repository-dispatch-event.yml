@@ -14,6 +14,6 @@ jobs:
       - name: Repository Dispatch  
         uses: peter-evans/repository-dispatch@v2  
         with:  
-          token: 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
+          # token: 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
           repository: andaze/WebCorporate
           event-type: sync-shared-submodule
