@@ -6,35 +6,39 @@ draft: false
 
 
 {{< section
-    class="py-10 px-2 flex flex-col md:flex-row gap-x-32 md:gap-x-16"
+    class="py-10 lg:py-20 "
     id="download"
 >}}
-    {{< div-container
-        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-3/4 mx-auto relative z-50"
+    {{< div-wrapper
+        class="py-10 px-2 flex flex-col md:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] mx-auto"
     >}}
-        {{< header
-            class="mb-[58px] font-bold text-center"
+        {{< div-container
+            class="px-2 lg:px-0 lg:w-3/4 mx-auto relative z-50"
         >}}
-            {{< div-title-decorated
-                word1=""
-                strong="100万円からはじめられる自社システム構築（PaaS）「ジェネリックDX」"
-                word2=""
-                text-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold"
-                strong-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold text-[#1A81B6]"
+            {{< header
+                class="mb-[58px] font-bold text-center"
             >}}
-        {{< /header >}}
-        {{< div-wrapper
-            class="w-3/4 mx-auto"
+                {{< div-title-decorated
+                    word1=""
+                    strong="100万円からはじめられる自社システム構築（PaaS）「ジェネリックDX」"
+                    word2=""
+                    text-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold"
+                    strong-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold text-[#1A81B6]"
+                >}}
+            {{< /header >}}
+            {{< div-wrapper
+                class="w-3/4 mx-auto"
+            >}}
+                {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
+            {{< /div-wrapper >}}
+
+        {{< /div-container >}}
+
+        {{< div-container
+            class="px-2 lg:px-0 lg:w-3/4 mx-auto relative z-50"
         >}}
-            {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
-        {{< /div-wrapper >}}
+            {{< request-form >}}
 
-    {{< /div-container >}}
-
-    {{< div-container
-        class="py-10 lg:py-20 px-2 lg:px-0 lg:w-3/4 mx-auto relative z-50"
-    >}}
-        {{< request-form >}}
-
-    {{< /div-container >}}
+        {{< /div-container >}}
+    {{< /div-wrapper >}}
 {{< /section >}}
