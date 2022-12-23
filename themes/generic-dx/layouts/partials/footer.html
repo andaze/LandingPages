@@ -29,11 +29,13 @@
 
     <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-10 3xl:gap-[206px]">
         {{ .Scratch.Set "class" "bg-[#34A7E1] hover:text-[#34A7E1] hover:bg-white border border-[#34A7E1] text-white text-[16px] lg:text-[20px] 3xl:text-[32px] mt-10 py-5 3xl:py-8 rounded-3xl w-72 3xl:w-[354px] inline-block text-center" }}
-        {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
+        {{ .Scratch.Set "link" "download" }}
         {{ .Scratch.Set "btn-text" "資料ダウンロード" }}
+        {{ .Scratch.Set "internal" true }}
 
-            {{ partial "atom/a.download-button.html" . }}
+            {{ partial "atom/a.button.html" . }}
 
+        {{ .Scratch.Delete "internal" }}
         {{ .Scratch.Delete "btn-tex" }}
         {{ .Scratch.Delete "link" }}
         {{ .Scratch.Delete "class" }}
@@ -41,9 +43,11 @@
         {{ .Scratch.Set "class" "bg-[#E01E5B] hover:text-[#E01E5B] hover:bg-white border border-[#E01E5B] text-white text-[16px] lg:text-[20px] 3xl:text-[32px] mt-5 md:mt-10 py-5 3xl:py-8 rounded-3xl w-72 3xl:w-[354px] inline-block text-center" }}
         {{ .Scratch.Set "link" "https://andaze.com/ja/contact/" }}
         {{ .Scratch.Set "btn-text" "お問い合わせ" }}
+        {{ .Scratch.Set "internal" false }}
 
             {{ partial "atom/a.button.html" . }}
 
+        {{ .Scratch.Delete "internal" }}
         {{ .Scratch.Delete "btn-tex" }}
         {{ .Scratch.Delete "link" }}
         {{ .Scratch.Delete "class" }}
