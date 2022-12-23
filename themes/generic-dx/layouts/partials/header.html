@@ -1,8 +1,23 @@
-<header class="bg-[#1A81B6] pb-4 pt-8">
+{{ $bgColor := "" }}
+{{ $textColor := "" }}
+
+{{ if in .Permalink "download" }}   
+    {{ $bgColor = "bg-white shadow-xl" }}
+    {{ $textColor = "text-black" }}
+{{ else }}
+    {{ $bgColor = "bg-[#1A81B6]" }}
+    {{ $textColor = "text-white" }}
+{{ end }}
+
+<header class="{{ $bgColor }} pb-4 pt-8">
     <div class="max-w-[1920px] mx-auto md:w-11/12 lg:w-3/4 2xl:w-3/5 3xl:w-3/4">
         <div class="flex items-center ml-4 md:ml-12 lg:ml-0">
             {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[50px] lg:w-[60px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
-            {{ .Scratch.Set "src" .Site.Params.images.logo }}
+                {{ if in .Permalink "download" }}
+                    {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+                {{ else }}
+                    {{ .Scratch.Set "src" .Site.Params.images.logo }}
+                {{ end }}
 
                 {{ partial "atom/atom-picture.html" . }}
 
@@ -10,12 +25,18 @@
             {{ .Scratch.Delete "class" }}
 
             {{ .Scratch.Set "text-span" "Generic DX" }}
-            {{ .Scratch.Set "span-class" "text-[32px] 3xl:text-[50px] text-white" }}
+
+            {{ if in .Permalink "download" }}
+                {{ .Scratch.Set "span-class" "text-[32px] 3xl:text-[50px]" }}
+            {{ else }}
+                {{ .Scratch.Set "span-class" "text-[32px] 3xl:text-[50px] text-white" }}
+            {{ end }}
 
                 {{ partial "atom/span.html" . }}
 
             {{ .Scratch.Delete "span-class" }}
             {{ .Scratch.Delete "text-span" }}
+            
         </div>
     </div>
 </header>
