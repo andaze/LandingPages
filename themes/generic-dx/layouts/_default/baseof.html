@@ -3,21 +3,6 @@
     {{- partial "head.html" . -}}
 
     <body class="leading-[1.75]">
-
-        <div id="black_background" class="fixed inset-0 h-screen w-screen left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-black z-40 opacity-0 invisible transition-opacity duration-1000 lg:hidden"></div>
-
-        <div id="request-form-pc" class="fixed top-24 lg:translate-y-0 left-1/2 lg:left-auto -translate-x-1/2 lg:translate-x-0 lg:right-0 z-[999] md:w-3/4 lg:w-auto md:h-3/4">
-            {{ partial "molecule/request-form.html" .}}
-        </div>
-
-        <div id="request-form-mobile" class="fixed bottom-0 left-0 z-[999] bg-white w-screen p-4 text-center lg:hidden">
-            <button class="bg-[#1A81B6] border text-white rounded-2xl font-bold select-none text-sm px-6 py-3">
-            ジェネリックDXの資料ダウンロードはこちら
-            </button>
-        </div>
-
-        {{ partial "molecule/movie-modal.html" .}}
-
         {{- partial "header.html" . -}}
         {{- block "main" . }}{{- end }}
         {{- partial "footer.html" . -}}
