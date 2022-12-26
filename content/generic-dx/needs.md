@@ -23,8 +23,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/A.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/loginAuthorization.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="ログイン・権限"
@@ -35,8 +35,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/B.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/organizationAndRoles.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="組織と役割"
@@ -46,8 +46,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/C.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/caseStatus.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="案件ステータス"
@@ -57,8 +57,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/D.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/indexing.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="採番管理"
@@ -68,8 +68,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/E.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/mailDelivery.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="メール配信"
@@ -79,8 +79,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/F.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/richUI.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="リッチUI"
@@ -90,8 +90,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/G.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/CSV.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="CSV入出力"
@@ -101,8 +101,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/H.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/singleSign-on.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="シングルサインオン"
@@ -112,8 +112,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/I.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/customTheme.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="カスタムテーマ<br>（画面デザイン）"
@@ -123,8 +123,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/J.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/customProcess.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="カスタムプロセス"
@@ -134,8 +134,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/K.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/ETL.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="ETL処理"
@@ -145,8 +145,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/L.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/dataLake.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="データレイク"
@@ -156,8 +156,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/M.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/powerAutomate.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="PowerAutomate<br>接続"
@@ -167,8 +167,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/N.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/powerApps.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="PowerApps接続"
@@ -178,8 +178,8 @@ weight: 4
         {{< div-card-with-image
             class="flex flex-col justify-between"
         >}}
-            {{< picture
-                alt="Image Not Available" src="images/needs/O.png" type="thumbnail" quolity="100" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
+            {{< svg
+                src="./img/needs/powerBI.svg" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto"
             >}}
             {{< div-text
                 text="Power BI接続"

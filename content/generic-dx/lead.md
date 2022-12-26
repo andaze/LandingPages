@@ -41,7 +41,7 @@ weight: 1
             class="relative h-[200px] w-[360px] lg:h-[314px] lg:w-[560px] cursor-pointer select-none shrink-0"
         >}}
              {{< picture
-                alt="Image Not Available" src="images/paas-no-susume.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[41px] border-[10px] border-[#1A81B6] movie-thumbnail"
+                alt="Image Not Available" src="images/paas-no-susume.png" type="thumbnail-lg" quolity="100" class="w-full h-full object-contain mx-auto movie-thumbnail"
                 id="j_JhrVnCVFQ"
             >}}
             {{< div-wrapper
