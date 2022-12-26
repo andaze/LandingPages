@@ -1,0 +1,5 @@
+{{ $alt := default "Image Not Availabl" (.Scratch.Get "alt") }}
+{{ $src := default "" (.Scratch.Get "src") }}
+{{ $class := default "" (.Scratch.Get "class") }}
+
+<img src="{{ $src | absURL }}" alt="{{ $alt }}" class="{{ $class }}">
