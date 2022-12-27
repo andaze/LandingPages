@@ -3,15 +3,14 @@ if(document.getElementById('request-form-pc')) {
     const form = document.getElementById('accordion-collapse');
     const form_wapper = document.getElementById('request-form-pc');
     
-    const original_text = button.textContent;
-    
     let clicked = false;
     
     const black_background = document.getElementById('black_background');
     
     if(document.querySelector('#request-form-mobile > button')) {
-    
+        
         const button = document.querySelector('#request-form-mobile > button');
+        const original_text = button.textContent;
     
         button.addEventListener('click', () => {
         
