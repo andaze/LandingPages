@@ -2,5 +2,4 @@
 {{ $link := .Scratch.Get "link" }}
 {{ $text := .Scratch.Get "btn-text" }}
 
-<a href="{{ $link | relURL }}" download="{{ $link }}" class="{{ $opt_class }} p-5 cursor-pointer downloadButton">{{ $text }}</a>
-
+<a href="{{ $link | relURL }}" download="{{ $link }}" class="{{ $opt_class }} p-5 downloadButton">{{ $text }}</a>
