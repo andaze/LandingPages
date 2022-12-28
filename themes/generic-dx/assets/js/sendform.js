@@ -1,3 +1,4 @@
+import multiDownload from 'multi-download';
 import { Email } from './smtp.js';
 
 const downloadButton = document.querySelector(".downloadButton");
@@ -5,11 +6,11 @@ const downloadButton = document.querySelector(".downloadButton");
 document.querySelector('#privacy').addEventListener("click", () => {
     btnEnableDisable();
 });
-document.querySelector('.downloadButton').addEventListener("click", () => {
-    sendEmail();
+document.querySelector('.downloadButton').addEventListener("click", (e) => {
+    sendEmail(e);
 });
 
-function sendEmail() {
+function sendEmail(e) {
 
     let fName = document.getElementById('first_name').value;
     let lName = document.getElementById('last_name').value;
@@ -38,7 +39,9 @@ function sendEmail() {
     }).then(
         message => alert("お問い合わせフォームが送信されました")
     );
-
+    
+    const files = e.target.dataset.files.split(' ');
+    multiDownload(files);
 }
 
 function btnEnableDisable() {
