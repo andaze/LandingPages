@@ -1,0 +1,5 @@
+{{ $opt_class := .Scratch.Get "class" }}
+{{ $link := .Scratch.Get "link" }}
+{{ $text := .Scratch.Get "btn-text" }}
+
+<button class="{{ $opt_class }} p-5 downloadButton" data-files="{{ `PaaSのススメ.zip` | absURL }}">{{ $text }}</button>

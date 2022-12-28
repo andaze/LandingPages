@@ -1,5 +1,0 @@
-{{ $opt_class := .Scratch.Get "class" }}
-{{ $link := .Scratch.Get "link" }}
-{{ $text := .Scratch.Get "btn-text" }}
-
-<a href="{{ $link | relURL }}" download="{{ $link }}" class="{{ $opt_class }} p-5 downloadButton">{{ $text }}</a>
