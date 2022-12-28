@@ -5,7 +5,7 @@ name: Send repository_dispatch event to parent repo
 on:  
   push:  
     branches:  
-      - '**'  
+      - 'main'  
   
 jobs:  
   notify-parent-repo:  
@@ -14,7 +14,6 @@ jobs:
       - name: Repository Dispatch  
         uses: peter-evans/repository-dispatch@v2 
         with:  
-          # token: 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
           token: ${{ secrets.DISPATCH_TOKEN_FOR_WEBCORPORATE }}
           repository: andaze/WebCorporate
           event-type: sync-shared-submodule
