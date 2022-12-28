@@ -18,3 +18,4 @@ jobs:
           # token: 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
           repository: andaze/WebCorporate
           event-type: sync-shared-submodule
+          client-payload: '{"submodule": "${{ github.repository }}"}'
