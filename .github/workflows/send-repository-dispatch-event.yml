@@ -15,7 +15,7 @@ jobs:
         uses: peter-evans/repository-dispatch@v2 
         with:  
           # token: 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
-          # token: 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
+          token: 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
           repository: andaze/WebCorporate
           event-type: sync-shared-submodule
           client-payload: '{"submodule": "${{ github.repository }}"}'
