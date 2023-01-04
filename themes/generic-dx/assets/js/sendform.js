@@ -23,11 +23,12 @@ function sendEmail(e) {
 
 
     let secureToken = "7670de06-d726-44e6-af6c-96dca7e5b64f";
+    let toMail = "contact@andaze.com";
     let bccMail = "contact@andaze.com";
     let fromMail = "contact@andaze.com";
 
 
-    let body = `こんにちは <br> 以下は、お問い合わせフォームからのお問い合わせ内容です。:
+    let body = `ダウンロードフォームからジェネリックDXの資料がダウンロードされました。:
     <hr>
     <br>
     名 := ${fName} ${lName}, <br> 
@@ -36,13 +37,13 @@ function sendEmail(e) {
 
     Email.send({
         SecureToken: secureToken,
-        To: email,
+        To: toMail,
         From: fromMail,
         Bcc: bccMail,
-        Subject: `お問い合わせフォームから ${fName} ${lName}`,
+        Subject: `資料がダウンロードされました。 ${fName} ${lName}`,
         Body: body
     }).then(
-        message => alert("お問い合わせフォームが送信されました")
+        message => alert("資料がダウンロードされました。")
     );
     
     const files = e.target.dataset.files.split(' ');
