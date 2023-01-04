@@ -26,14 +26,14 @@ function sendEmail(e) {
 
     if (fName === '') {
         fNameMsg.innerHTML = '姓を入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        errorMsg.innerHTML = "入力内容に誤りがあります。";
         return;
     } else {
         fNameMsg.innerHTML = '';
     }
     if (lName === '') {
         lNameMsg.innerHTML = '名を入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        errorMsg.innerHTML = "入力内容に誤りがあります。";
         return;
     } else {
         lNameMsg.innerHTML = '';
@@ -41,11 +41,11 @@ function sendEmail(e) {
     }
     if (email === '') {
         emailMsg.innerHTML = 'メールアドレスを入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        errorMsg.innerHTML = "入力内容に誤りがあります。";
         return;
     } else if (!email.match(/.+@.+\..+/)) {
         emailMsg.innerHTML = 'メールアドレスが無効です。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        errorMsg.innerHTML = "入力内容に誤りがあります。";
         return 
     } else {
         emailMsg.innerHTML = '';
@@ -53,7 +53,7 @@ function sendEmail(e) {
     }
     if (cName === '') {
         cNameMsg.innerHTML = '企業名を入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        errorMsg.innerHTML = "入力内容に誤りがあります。";
         return;
     } else {
         cNameMsg.innerHTML = '';
