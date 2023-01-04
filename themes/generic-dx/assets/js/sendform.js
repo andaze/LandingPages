@@ -7,6 +7,7 @@ document.querySelector('#privacy').addEventListener("click", () => {
     btnEnableDisable();
 });
 document.querySelector('.downloadButton').addEventListener("click", (e) => {
+    e.preventDefault();
     sendEmail(e);
 });
 
@@ -16,6 +17,10 @@ function sendEmail(e) {
     let lName = document.getElementById('last_name').value;
     let cName = document.getElementById('company_name').value;
     let email = document.getElementById('email').value;
+    if (fName === '' | lName === '' | cName === '' | email === '' | email.indexOf("@") === -1) {
+        return;
+    }
+
 
     let secureToken = "7670de06-d726-44e6-af6c-96dca7e5b64f";
     let bccMail = "contact@andaze.com";
