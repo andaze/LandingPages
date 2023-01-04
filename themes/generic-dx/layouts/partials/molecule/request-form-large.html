@@ -9,21 +9,33 @@
     </div>
     <form>
         <div class="flex flex-col justify-between gap-10 px-2 lg:px-10">
-            <div class="text-left border border-gray-600 rounded p-2">
-                <label for="first_name" class="block font-bold">姓</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="text"  id="first_name" name="first_name" placeholder="例）山田" required>
+            <div>
+                <div class="text-left border border-gray-600 rounded p-2">
+                    <label for="first_name" class="block font-bold">姓</label>
+                    <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="text"  id="first_name" name="first_name" placeholder="例）山田" required>
+                </div>
+                <div id="fName_msg" class="text-red-600 bg-red-200 pl-2"></div>
             </div>
-            <div class="text-left border border-gray-600 rounded p-2">
-                <label for="last_name" class="block font-bold">名</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 focus:!outline-0 focus:!outline-transparent px-0 py-2" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
+            <div>
+                <div class="text-left border border-gray-600 rounded p-2">
+                    <label for="last_name" class="block font-bold">名</label>
+                    <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 focus:!outline-0 focus:!outline-transparent px-0 py-2" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
+                </div>
+                <div id="lName_msg" class="text-red-600 bg-red-200 pl-2"></div>
             </div>
-            <div class="text-left mb-2 border border-gray-600 rounded p-2">
-                <label for="email" class="block font-bold">メールアドレス</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="email" id="email" name="email" placeholder="例）andaze@example.com" required>
+            <div>
+                <div class="text-left border border-gray-600 rounded p-2">
+                    <label for="email" class="block font-bold">メールアドレス</label>
+                    <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="email" id="email" name="email" placeholder="例）andaze@example.com" required>
+                </div>
+                <div id="email_msg" class="text-red-600 bg-red-200 pl-2"></div>
             </div>
-            <div class="text-left border border-gray-600 rounded p-2">
-                <label for="company_name" class="block font-bold">企業名</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
+            <div>
+                <div class="text-left border border-gray-600 rounded p-2">
+                    <label for="company_name" class="block font-bold">企業名</label>
+                    <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
+                </div>
+                <div id="cName_msg" class="text-red-600 bg-red-200 pl-2"></div>
             </div>
             <div class="p-2 mt-4">
                 <p>
@@ -36,6 +48,7 @@
             </div>
     
             <div class="text-center w-full ">
+                <div id="error_msg" class="text-red-600 bg-red-200 pl-2 mb-2 text-left"></div>
                 {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none inline-block w-full opacity-50 bg-black pointer-events-none" }}
                 {{ .Scratch.Set "btn-text" "ダウンロードする" }}
                 {{ .Scratch.Set "link" "PaaSのススメ.zip" }}

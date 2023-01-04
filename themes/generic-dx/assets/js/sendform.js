@@ -17,13 +17,52 @@ function sendEmail(e) {
     let lName = document.getElementById('last_name').value;
     let cName = document.getElementById('company_name').value;
     let email = document.getElementById('email').value;
-    if (fName === '' | lName === '' | cName === '' | email === '' | email.indexOf("@") === -1) {
+
+    let fNameMsg = document.getElementById("fName_msg");
+    let lNameMsg = document.getElementById("lName_msg");
+    let emailMsg = document.getElementById("email_msg");
+    let cNameMsg = document.getElementById("cName_msg");
+    let errorMsg = document.getElementById("error_msg");
+
+    if (fName === '') {
+        fNameMsg.innerHTML = '姓を入力してください。';
+        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
         return;
+    } else {
+        fNameMsg.innerHTML = '';
+    }
+    if (lName === '') {
+        lNameMsg.innerHTML = '名を入力してください。';
+        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        return;
+    } else {
+        lNameMsg.innerHTML = '';
+        errorMsg.innerHTML = '';
+    }
+    if (email === '') {
+        emailMsg.innerHTML = 'メールアドレスを入力してください。';
+        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        return;
+    } else if (!email.match(/.+@.+\..+/)) {
+        emailMsg.innerHTML = 'メールアドレスが無効です。';
+        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        return 
+    } else {
+        emailMsg.innerHTML = '';
+        errorMsg.innerHTML = '';
+    }
+    if (cName === '') {
+        cNameMsg.innerHTML = '企業名を入力してください。';
+        errorMsg.innerHTML = "入力内容に誤りがあります。ご確認ください。";
+        return;
+    } else {
+        cNameMsg.innerHTML = '';
+        errorMsg.innerHTML = '';
     }
 
 
     let secureToken = "7670de06-d726-44e6-af6c-96dca7e5b64f";
-    let toMail = "contact@andaze.com";
+    let toMail = "h.tomo0602@gmail.com";
     let bccMail = "contact@andaze.com";
     let fromMail = "contact@andaze.com";
 
