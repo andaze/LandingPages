@@ -62,7 +62,7 @@ function sendEmail(e) {
 
 
     let secureToken = "7670de06-d726-44e6-af6c-96dca7e5b64f";
-    let toMail = "h.tomo0602@gmail.com";
+    let toMail = "contact@andaze.com";
     let bccMail = "contact@andaze.com";
     let fromMail = "contact@andaze.com";
 
