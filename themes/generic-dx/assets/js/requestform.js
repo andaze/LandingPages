@@ -1,6 +1,6 @@
 if(document.getElementById('request-form-pc')) {
     
-    const form = document.getElementById('accordion-collapse');
+    const form = document.getElementById('download_form_wrapper');
     const form_wapper = document.getElementById('request-form-pc');
     
     let clicked = false;
