@@ -2,64 +2,22 @@ import multiDownload from 'multi-download';
 import { Email } from './smtp.js';
 
 const downloadButton = document.querySelector(".downloadButton");
+const files = downloadButton.dataset.files.split(' ');
 
 document.querySelector('#privacy').addEventListener("click", () => {
     btnEnableDisable();
 });
-document.querySelector('.downloadButton').addEventListener("click", (e) => {
+document.getElementById('download_form').addEventListener("submit", (e) => {
     e.preventDefault();
-    sendEmail(e);
+    sendEmail();
 });
 
-function sendEmail(e) {
+function sendEmail() {
 
     let fName = document.getElementById('first_name').value;
     let lName = document.getElementById('last_name').value;
     let cName = document.getElementById('company_name').value;
     let email = document.getElementById('email').value;
-
-    let fNameMsg = document.getElementById("fName_msg");
-    let lNameMsg = document.getElementById("lName_msg");
-    let emailMsg = document.getElementById("email_msg");
-    let cNameMsg = document.getElementById("cName_msg");
-    let errorMsg = document.getElementById("error_msg");
-
-    if (fName === '') {
-        fNameMsg.innerHTML = '姓を入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。";
-        return;
-    } else {
-        fNameMsg.innerHTML = '';
-    }
-    if (lName === '') {
-        lNameMsg.innerHTML = '名を入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。";
-        return;
-    } else {
-        lNameMsg.innerHTML = '';
-        errorMsg.innerHTML = '';
-    }
-    if (email === '') {
-        emailMsg.innerHTML = 'メールアドレスを入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。";
-        return;
-    } else if (!email.match(/.+@.+\..+/)) {
-        emailMsg.innerHTML = 'メールアドレスが無効です。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。";
-        return 
-    } else {
-        emailMsg.innerHTML = '';
-        errorMsg.innerHTML = '';
-    }
-    if (cName === '') {
-        cNameMsg.innerHTML = '企業名を入力してください。';
-        errorMsg.innerHTML = "入力内容に誤りがあります。";
-        return;
-    } else {
-        cNameMsg.innerHTML = '';
-        errorMsg.innerHTML = '';
-    }
-
 
     let secureToken = "7670de06-d726-44e6-af6c-96dca7e5b64f";
     let toMail = "contact@andaze.com";
@@ -83,10 +41,10 @@ function sendEmail(e) {
         Body: body
     }).then(
         message => alert("資料がダウンロードされました。")
-    );
+    ).then(
+        multiDownload(files)
+    )
     
-    const files = e.target.dataset.files.split(' ');
-    multiDownload(files);
 }
 
 function btnEnableDisable() {
