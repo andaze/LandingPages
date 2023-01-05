@@ -1,40 +1,30 @@
-<aside id="accordion-collapse" data-accordion="collapse" class="bg-white w-64 md:w-full lg:w-64 py-6 px-2 border border-gray-600 rounded-3xl cursor-pointer opacity-0 invisible transition-opacity duration-1000 lg:opacity-100 lg:visible">
-    <div id="accordion-collapse-heading-request">
+<aside class="bg-white w-64 md:w-full lg:w-64 py-6 px-2 border border-gray-600 rounded-3xl cursor-pointer opacity-0 invisible transition-opacity duration-1000 lg:opacity-100 lg:visible">
+    <div>
         <p class="text-center !text-[#1A81B6] font-bold mb-5 !bg-white hidden lg:block" data-accordion-target="#accordion-collapse-body-request" aria-expanded="false" aria-controls="accordion-collapse-body-request">
             ジェネリックDXの資料<br>ダウンロードはこちら
         </p>
     </div>
-    <div id="accordion-collapse-body-request" aria-labelledby="accordion-collapse-heading-request">
+    <form id="download_form">
         
-        <div class="mb-2 text-sm">
-            <div class="flex justify-between">
-                <div class="text-left border border-gray-600 rounded p-2 w-28 md:w-auto lg:w-28">
-                    <label for="first_name" class="block font-bold">姓</label>
-                    <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="first_name" name="first_name" placeholder="例）山田" required>
-                </div>
-                <div class="text-left border border-gray-600 rounded p-2 w-28 md:w-auto lg:w-28">
-                    <label for="last_name" class="block font-bold">名</label>
-                    <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
-                </div>
+        <div class="mb-2 text-sm flex justify-between">
+            <div class="text-left border border-gray-600 rounded p-2 w-28 md:w-auto lg:w-28">
+                <label for="first_name" class="block font-bold">姓</label>
+                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="first_name" name="first_name" placeholder="例）山田" required>
             </div>
-            <div id="fName_msg" class="text-red-600 bg-red-200 pl-2 text-sm"></div>
-            <div id="lName_msg" class="text-red-600 bg-red-200 pl-2 text-sm"></div>
+            <div class="text-left border border-gray-600 rounded p-2 w-28 md:w-auto lg:w-28">
+                <label for="last_name" class="block font-bold">名</label>
+                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
+            </div>
         </div>
 
-        <div class="mb-2">
-            <div class="text-left border border-gray-600 rounded p-2 text-sm">
-                <label for="email" class="block font-bold">メールアドレス</label>
-                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="email" id="email" name="email" placeholder="例）andaze@example.com" required>
-            </div>
-            <div id="email_msg" class="text-red-600 bg-red-200 pl-2 text-sm"></div>
+        <div class="text-left border border-gray-600 rounded p-2 text-sm mb-2">
+            <label for="email" class="block font-bold">メールアドレス</label>
+            <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="email" id="email" name="email" placeholder="例）andaze@example.com" required>
         </div>
         
-        <div>
-            <div class="text-left border border-gray-600 rounded p-2 text-sm">
-                <label for="company_name" class="block font-bold">企業名</label>
-                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
-            </div>
-            <div id="cName_msg" class="text-red-600 bg-red-200 pl-2 text-sm"></div>
+        <div class="text-left border border-gray-600 rounded p-2 text-sm">
+            <label for="company_name" class="block font-bold">企業名</label>
+            <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
         </div>
 
         <div class="p-2 mt-4 text-xs">
@@ -59,6 +49,6 @@
             {{ .Scratch.Delete "btn-text" }}
             {{ .Scratch.Delete "class" }}
         </div>
-    </div>
+    </form>
 
 </aside>
