@@ -7,13 +7,13 @@ weight: 2
 ---
 
 {{< section
-    class="bg-white md:text-center py-10 md:pt-32 md:pb-10 px-2 3xl:pr-2"
+    class="bg-white text-center py-10 md:pt-32 md:pb-10 px-2 3xl:pr-2"
 >}}
     {{< div-wrapper
         class="w-full lg:w-[calc(100%_-_16rem)]"
     >}}
         {{< header
-            class="mb-0 font-bold"
+            class="mb-[58px] font-bold"
         >}}
             {{< div-title
                 title="サブスク費用の削減をマンガで解説"
@@ -21,10 +21,10 @@ weight: 2
             >}}
         {{< /header >}}
         {{< picture
-            alt="Image Not Available" src="images/manga/A.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-3/4 mx-auto"
+            alt="Image Not Available" src="images/manga/A.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-11/12 mx-auto"
         >}}
         {{< div-texts
-            class="my-0"
+            class="my-[64px]"
         >}}
             {{< div-title
                 title="ここがポイント！"
@@ -36,7 +36,7 @@ weight: 2
             >}}
         {{< /div-texts >}}
         {{< picture
-            alt="Image Not Available" src="images/manga/B.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-3/4 mx-auto"
+            alt="Image Not Available" src="images/manga/B.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-11/12 mx-auto"
         >}}
         {{< div-texts
             class="mt-[64px] mb-[100px]"
