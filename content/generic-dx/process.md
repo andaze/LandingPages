@@ -21,16 +21,16 @@ weight: 8
             >}}
         {{< /header >}}
         {{< ol-list
-            class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[100px]"
+            class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[80px] lg:gap-[100px]"
         >}}
             {{< li-list-wrapper
-                class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[90px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
+                class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
             >}}
                 {{< div-card-with-image
-                    class="bg-white w-[210px] h-[210px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[90px] 3xl:rounded-[117px] border-[30px] lg:border-[20px] 3xl:border-[30px] border-[#34A7E1] flex flex-col justify-center"
+                    class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center"
                 >}}
                     {{< picture
-                        alt="Image Not Available" src="images/process/step1.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
+                        alt="Image Not Available" src="images/process/step1.png" type="thumbnail" quolity="100" class="w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]"
                     >}}
                     {{< picture
                         alt="Image Not Available" src="images/process/1.png" type="thumbnail" quolity="100" class="w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain"
@@ -42,13 +42,13 @@ weight: 8
                 {{< /div-card-with-image >}}
             {{< /li-list-wrapper >}}
             {{< li-list-wrapper
-                class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[90px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
+                class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
             >}}
                 {{< div-card-with-image
-                    class="bg-white w-[210px] h-[210px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[90px] 3xl:rounded-[117px] border-[30px] lg:border-[20px] 3xl:border-[30px] border-[#34A7E1] flex flex-col justify-center"
+                    class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center"
                 >}}
                     {{< picture
-                        alt="Image Not Available" src="images/process/step2.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
+                        alt="Image Not Available" src="images/process/step2.png" type="thumbnail" quolity="100" class="w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]"
                     >}}
                     {{< picture
                         alt="Image Not Available" src="images/process/2.png" type="thumbnail" quolity="100" class="w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain"
@@ -59,13 +59,13 @@ weight: 8
                     >}}
                 {{< /div-card-with-image >}}
             {{< li-list-wrapper
-                class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[90px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-100px] 3xl:after:right-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
+                class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-100px] 3xl:after:right-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
             >}}
                 {{< div-card-with-image
-                    class="bg-white w-[210px] h-[210px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[90px] 3xl:rounded-[117px] border-[30px] lg:border-[20px] 3xl:border-[30px] border-[#34A7E1] flex flex-col justify-center z-10"
+                    class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center z-10"
                 >}}
                     {{< picture
-                        alt="Image Not Available" src="images/process/step3.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
+                        alt="Image Not Available" src="images/process/step3.png" type="thumbnail" quolity="100" class="w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]"
                     >}}
                     {{< picture
                         alt="Image Not Available" src="images/process/3.png" type="thumbnail" quolity="100" class="w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain"
@@ -76,13 +76,13 @@ weight: 8
                     >}}
                 {{< /div-card-with-image >}}
             {{< li-list-wrapper
-                class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[90px] 3xl:rounded-[117px] flex flex-col justify-center relative z-50 after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[130px] after:rotate-90 lg:after:rotate-0 before:content-[''] before:w-[72px] before:h-[84px] before:bg-none lg:before:bg-[url('../img/arrow_triangle.png')] over-size:before:bg-none before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-72px] over-size:after:hidden"
+                class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative z-50 after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[80px] lg:after:w-[150px] after:rotate-90 lg:after:rotate-0 before:content-[''] before:w-[50px] before:h-[57px] before:bg-none lg:before:bg-[url('../img/arrow_triangle.png')] over-size:before:bg-none before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-50px] over-size:after:hidden"
             >}}
                 {{< div-card-with-image
-                    class="bg-white w-[210px] h-[210px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[90px] 3xl:rounded-[117px] border-[30px] lg:border-[20px] 3xl:border-[30px] border-[#34A7E1] flex flex-col justify-center"
+                    class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center"
                 >}}
                     {{< picture
-                        alt="Image Not Available" src="images/process/step4.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
+                        alt="Image Not Available" src="images/process/step4.png" type="thumbnail" quolity="100" class="w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]"
                     >}}
                     {{< picture
                         alt="Image Not Available" src="images/process/4.png" type="thumbnail" quolity="100" class="w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain"
@@ -93,13 +93,13 @@ weight: 8
                     >}}
                 {{< /div-card-with-image >}}
             {{< li-list-wrapper
-                class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[90px] 3xl:rounded-[117px] flex flex-col justify-center relative z-40 after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
+                class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative z-40 after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
             >}}
                 {{< div-card-with-image
-                    class="bg-white w-[210px] h-[210px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[90px] 3xl:rounded-[117px] border-[30px] lg:border-[20px] 3xl:border-[30px] border-[#34A7E1] flex flex-col justify-center"
+                    class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center"
                 >}}
                     {{< picture
-                        alt="Image Not Available" src="images/process/step5.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
+                        alt="Image Not Available" src="images/process/step5.png" type="thumbnail" quolity="100" class="w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]"
                     >}}
                     {{< picture
                         alt="Image Not Available" src="images/process/5.png" type="thumbnail" quolity="100" class="w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain"
@@ -110,13 +110,13 @@ weight: 8
                     >}}
                 {{< /div-card-with-image >}}
             {{< li-list-wrapper
-                class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[90px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[30px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
+                class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:top-[-50px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 lg:after:left-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
             >}}
                 {{< div-card-with-image
-                    class="bg-white w-[210px] h-[210px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[90px] 3xl:rounded-[117px] border-[30px] lg:border-[20px] 3xl:border-[30px] border-[#34A7E1] flex flex-col justify-center"
+                    class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center"
                 >}}
                     {{< picture
-                        alt="Image Not Available" src="images/process/step6.png" type="thumbnail" quolity="100" class="w-[82px] h-[82px] mx-auto object-contain absolute top-[-20px] left-0"
+                        alt="Image Not Available" src="images/process/step6.png" type="thumbnail" quolity="100" class="w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]"
                     >}}
                     {{< picture
                         alt="Image Not Available" src="images/process/6.png" type="thumbnail" quolity="100" class="w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain"
