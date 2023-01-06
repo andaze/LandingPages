@@ -21,7 +21,7 @@ weight: 4
             >}}
         {{< /header >}}
         {{< div-grid-container
-            class="grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-3/4 3xl:w-screen 3xl:max-w-[1300px]"
+            class="grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-11/12 3xl:w-screen 3xl:max-w-[1300px]"
         >}}
             {{< div-card-with-image
                 class="flex flex-col justify-between"
@@ -31,7 +31,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="ログイン・権限"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
 
@@ -43,7 +43,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="組織と役割"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -54,7 +54,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="案件ステータス"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -65,7 +65,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="採番管理"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -76,7 +76,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="メール配信"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -87,7 +87,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="リッチUI"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -98,7 +98,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="CSV入出力"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -109,7 +109,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="シングルサインオン"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -120,7 +120,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="カスタムテーマ<br>（画面デザイン）"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -131,7 +131,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="カスタムプロセス"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -142,7 +142,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="ETL処理"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -153,7 +153,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="データレイク"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -164,7 +164,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="PowerAutomate<br>接続"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -175,7 +175,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="PowerApps接続"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
             {{< div-card-with-image
@@ -186,7 +186,7 @@ weight: 4
                 >}}
                 {{< div-text
                     text="Power BI接続"
-                    class="text-[10px] 3xl:text-[23px] mx-auto text-center font-bold"
+                    class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold"
                 >}}
             {{< /div-card-with-image >}}
         {{< /div-grid-container >}}
