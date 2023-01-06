@@ -7,7 +7,7 @@ weight: 5
 ---
 
 {{< section
-    class="py-10 px-2 bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 lg:pr-[240px] 3xl:pr-2"
+    class="py-10 px-2 bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50  3xl:pr-2"
     id="download"
 >}}
     {{< div-container

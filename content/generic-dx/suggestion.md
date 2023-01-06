@@ -7,7 +7,7 @@ weight: 12
 ---
 
 {{< section
-    class="bg-[#34A7E1] border border-[#707070] py-10 md:py-32 px-2 lg:pr-[240px] 3xl:pr-2"
+    class="bg-[#34A7E1] border border-[#707070] py-10 md:py-32 px-2  3xl:pr-2"
 >}}
     {{< div-container
         class="bg-white lg:w-3/4 px-2 py-10 md:px-10 lg:py-24 3xl:px-[239px] 3xl:py-[134px] rounded-[74px]"
