@@ -21,7 +21,7 @@ weight: 10
             >}}
         {{< /header >}}
         {{< div-container
-            class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 3xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 lg:w-3/4 3xl:w-11/12 md:max-w-[1500px]"
+            class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 3xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 md:max-w-[1500px]"
         >}}
             {{< div-wrapper
                 class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none"
