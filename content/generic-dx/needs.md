@@ -10,7 +10,7 @@ weight: 4
     class="bg-white py-10 lg:pt-32 md:pb-10 px-2 3xl:pr-2"
 >}}
     {{< div-wrapper
-        class="w-[calc(100%_-_16rem)]"
+        class="w-full lg:w-[calc(100%_-_16rem)]"
     >}}
         {{< header
             class="mb-10 lg:mb-[112px] font-bold"

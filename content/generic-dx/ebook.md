@@ -11,7 +11,7 @@ weight: 5
     id="download"
 >}}
     {{< div-wrapper
-        class="w-[calc(100%_-_16rem)]"
+        class="w-full lg:w-[calc(100%_-_16rem)]"
     >}}
         {{< div-container
             class="py-10 lg:py-20 px-2 lg:px-0 lg:w-3/4 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50"
