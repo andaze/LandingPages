@@ -14,7 +14,7 @@ weight: 5
         class="w-full lg:w-[calc(100%_-_16rem)]"
     >}}
         {{< div-container
-            class="py-10 lg:py-20 px-2 lg:px-0 lg:w-3/4 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50"
+            class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50"
         >}}
             {{< div-texts >}}
                 {{< div-text
