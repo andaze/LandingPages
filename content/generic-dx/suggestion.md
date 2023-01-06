@@ -13,13 +13,13 @@ weight: 12
         class="w-full lg:w-[calc(100%_-_16rem)]"
     >}}
         {{< div-container
-            class="bg-white lg:w-3/4 px-2 py-10 md:px-10 lg:py-24 3xl:px-[239px] 3xl:py-[134px] rounded-[74px]"
+            class="bg-white lg:w-11/12 px-2 py-10 md:px-10 lg:py-24 3xl:px-[239px] 3xl:py-[134px] rounded-[74px]"
         >}}
             {{< header
                 class="mb-8 font-bold"
             >}}
                 {{< div-title
-                    title="貴社システムにオーダーDXという<br class='hidden lg:block'>新たなプラスオンを。"
+                    title="貴社システムにオーダーDXという<br class='hidden md:block'>新たなプラスオンを。"
                     title-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold text-black text-center leading-loose 3xl:leading-[100px]"
                 >}}
             {{< /header >}}
