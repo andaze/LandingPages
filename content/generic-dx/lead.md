@@ -10,7 +10,7 @@ weight: 1
     class="bg-white text-center py-10 md:pt-32 md:pb-10 px-2 3xl:pr-2"
 >}}
     {{< div-wrapper
-        class="w-full lg:w-[calc(100%_-_16rem)]"
+        class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto"
     >}}
         {{< header
             class="mb-[58px] font-bold text-center"
@@ -33,11 +33,11 @@ weight: 1
             class="flex flex-col md:flex-row justify-center mx-auto md:max-w-[1500px] items-center 3xl:items-start"
         >}}
             {{< div-wrapper
-                class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:w-[170px] lg:h-[150px] xl:w-[220px] 2xl:w-[180px] mt-4 flex flex-col justify-center bg-no-repeat shrink-0"
+                class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] mt-4 flex flex-col justify-center bg-no-repeat shrink-0"
             >}}
                 {{< div-text
-                    text="<strong class='text-[#1A81B6]'>自社システム</strong><br>の<br>メリットって？"
-                    class="text-[14px] 3xl:text-[20px] font-bold mt-[-30px] mr-8 xl:mr-0 2xl:mr-8 text-center"
+                    text="<strong class='text-[#1A81B6] text-[20px] 3xl:text-[26px]'>自社システム</strong><br>の<br>メリットって？"
+                    class="text-[14px] 3xl:text-[20px] font-bold mt-[-30px] mr-8 xl:mr-0 2xl:mr-8 text-center w-[175px] lg:w-[170px]"
                 >}}
             {{< /div-wrapper >}}
             {{< div-wrapper

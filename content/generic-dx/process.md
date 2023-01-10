@@ -10,7 +10,7 @@ weight: 8
     class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain 3xl:pr-2 overflow-x-hidden"
 >}}
     {{< div-wrapper
-        class="w-full lg:w-[calc(100%_-_16rem)]"
+        class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto"
     >}}
         {{< header
             class="mb-10 font-bold"
@@ -21,7 +21,7 @@ weight: 8
             >}}
         {{< /header >}}
         {{< ol-list
-            class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[80px] lg:gap-[100px]"
+            class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[80px] lg:gap-[100px] 2xl:gap-[80px]"
         >}}
             {{< li-list-wrapper
                 class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute after:bottom-[-70px] lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 lg:after:left-auto after:-translate-x-1/2 lg:after:translate-x-0 lg:after:right-[-200px] after:bg-[#1264A3] after:h-[20px] after:w-[120px] lg:after:w-[200px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden"
