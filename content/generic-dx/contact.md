@@ -15,7 +15,7 @@ weight: 9
     title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
-{{< div-text-new
+{{< div-text
     text="自社システム構築がはじめてという企業様も安心してご利用いただけるよう、<br class='hidden md:block'>お打ち合わせからシステム機能・効果の仮説設定、開発、運用までを一気通貫でサポートいたします。<br class='hidden md:block'>まずは気軽にお問い合わせください。"
     class="text-[16px] 3xl:text-[28px] text-center lg:mt-[80px] font-medium"
 >}}
