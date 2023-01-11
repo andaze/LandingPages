@@ -1,0 +1,4 @@
+{{ $title := default "" (.Scratch.Get "title") }}
+{{ $opt_class := default "" (.Scratch.Get "title-class") }}
+
+<h2 class="{{ $opt_class }}">{{ $title | markdownify }}</h2>

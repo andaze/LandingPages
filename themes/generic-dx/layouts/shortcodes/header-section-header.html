@@ -1,3 +1,9 @@
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "title-class" (.Get "title-class") }}
+
 <header class="mb-10 font-bold">
-    {{ partial "atom/h2.html" . }}
+    {{ partial "atom/h2-new.html" . }}
 </header>
+
+{{ .Scratch.Delete "title" }}
+{{ .Scratch.Delete "title-class" }}
