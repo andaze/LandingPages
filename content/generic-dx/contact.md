@@ -10,7 +10,7 @@ weight: 9
 
 <div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
 
-<header>
+<header class="mb-10 font-bold">
 {{< div-title
     title="はじめてのDXでもアンダーズが<br class='hidden md:block'>ゼロからサポート<br class='hidden md:block'>プランニング・見積もりは無料！"
     title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
