@@ -1,0 +1,7 @@
+{{ $opt_class := .Scratch.Get "class" }}
+{{ $link := .Scratch.Get "link" }}
+{{ $btn_text := .Scratch.Get "btn-text" }}
+
+<a href="{{ $link }}" class="{{ $opt_class }} p-5 cursor-pointer" target="_blank" rel="noopener noreferrer">{{ $btn_text }}</a>
+
+

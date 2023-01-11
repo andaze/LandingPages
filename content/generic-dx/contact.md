@@ -23,10 +23,9 @@ weight: 9
 
 <div class="relative w-fit mx-auto">
 
-{{< div-button
+{{< div-button-new
     class="bg-white border-[5px] border-[#5FBCE7] text-black font-bold text-[16px] 3xl:text-[26px] mt-10 block w-[340px] lg:w-[440px] text-center rounded-full relative"
     link="https://andaze.com/ja/contact/"
-    internal=false
     btn-text="お問い合わせ"
 >}}
 
