@@ -1,0 +1,27 @@
+{{ $is_download := default false (.Scratch.Get "download") }}
+{{ $image_src := .Scratch.Get "image-src" }}
+
+{{ $button := "" }}
+{{ if $is_download }}
+    {{ $button = "atom/a.download-button.html" }}
+{{ else }}
+    {{ $button = "atom/a.button-new.html" }}
+{{ end }}
+
+<div class="relative w-fit mx-auto">
+    <div class="w-fit mx-auto">
+        {{ partial $button . }}
+    </div>
+    
+    <div class="bg-[#5FBCE7] w-[54px] h-[54px] 3xl:w-[66px] 3xl:h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 right-4 pointer-events-none">
+        {{ .Scratch.Set "class" "w-[22px] h-[22px] mx-auto" }}
+        {{ .Scratch.Set "src" $image_src }}
+        {{ .Scratch.Set "type" "content" }}
+    
+            {{ partial "atom/atom-picture.html" . }}
+    
+        {{ .Scratch.Delete "type" }}
+        {{ .Scratch.Delete "src" }}
+        {{ .Scratch.Delete "class" }}
+    </div>
+</div>
