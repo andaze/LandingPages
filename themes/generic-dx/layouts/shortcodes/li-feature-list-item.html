@@ -1,0 +1,17 @@
+{{ .Scratch.Set "num" (.Get "num") }}
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "text" (.Get "text") }}
+
+{{ .Scratch.Set "src" (.Get "image-src") }}
+{{ .Scratch.Set "type" (.Get "image-type") }}
+
+<li class="flex flex-col gap-y-8 md:gap-0 md:flex-row mb-8 items-center lg:mb-[52px]">
+    {{ partial "organism/div.feature-list-item.html" . }}
+</li>
+
+{{ .Scratch.Delete "src" }}
+{{ .Scratch.Delete "type" }}
+
+{{ .Scratch.Delete "num" }}
+{{ .Scratch.Delete "title" }}
+{{ .Scratch.Delete "text" }}
