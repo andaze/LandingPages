@@ -1,0 +1,26 @@
+{{ .Scratch.Set "text" (.Get "text") }}
+{{ .Scratch.Set "icon-src" (.Get "icon-src") }}
+{{ .Scratch.Set "num-src" (.Get "num-src") }}
+{{ .Scratch.Set "num" (.Get "num") }}
+
+{{ $num := .Scratch.Get "num" }}
+{{ $class := "" }}
+{{ if eq $num 4 }}
+    {{ $class = "z-50 after:top-[-50px] lg:after:left-[-200px] after:w-[80px] lg:after:w-[150px] before:content-[''] before:w-[50px] before:h-[57px] before:bg-none lg:before:bg-[url('../img/arrow_triangle.png')] over-size:before:bg-none before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-50px]" }}
+{{ else if eq $num 5 }}
+    {{ $class = "z-10 after:top-[-50px] lg:after:left-[-200px] after:w-[120px] lg:after:w-[200px]" }}
+{{ else if gt $num 5 }}
+    {{ $class = "after:top-[-50px] lg:after:left-[-200px] after:w-[120px] lg:after:w-[200px]" }}
+{{ else }}
+    {{ $class = "after:bottom-[-70px] lg:after:left-auto lg:after:right-[-200px] after:w-[120px] lg:after:w-[200px]" }}
+{{ end }}
+
+
+<li class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] bg-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 after:bg-[#1264A3] after:h-[20px] after:rotate-90 lg:after:rotate-0  over-size:after:hidden {{ $class }}">
+    {{ partial "molecule/div.process-item.html" . }}
+</li>
+
+{{ .Scratch.Delete "num" }}
+{{ .Scratch.Delete "num-src" }}
+{{ .Scratch.Delete "icon-src" }}
+{{ .Scratch.Delete "text" }}
