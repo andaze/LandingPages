@@ -1,6 +1,0 @@
-{{ .Scratch.Set "line-class" (.Get "line-class") }}
-{{ $opt_class := .Scratch.Get "line-class" }}
-
-<span class="h-[5px] w-32 absolute top-0 inset-x-1/2 -translate-x-1/2 {{ $opt_class }}"></span>
-
-{{ .Scratch.Delete "line-class" }}
