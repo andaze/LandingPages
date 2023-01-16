@@ -1,9 +1,0 @@
-{{ .Scratch.Set "alt" (.Get "alt") }}
-{{ .Scratch.Set "class" (.Get "class") }}
-{{ .Scratch.Set "src" (.Get "src") }}
-
-{{ partial "atom/svg.html" . }}
-
-{{ .Scratch.Delete "alt" }}
-{{ .Scratch.Delete "class" }}
-{{ .Scratch.Delete "src" }}

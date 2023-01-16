@@ -1,6 +1,9 @@
-{{ .Scratch.Set "class" (.Get "class") }}
-{{ $opt_class := .Scratch.Get "class" }}
-<div class="{{ $opt_class }}">
-    {{ .Inner }}
+{{ .Scratch.Set "text" (.Get "text") }}
+{{ .Scratch.Set "src" (.Get "src") }}
+
+<div class="flex flex-col justify-between">
+    {{ partial "molecule/div.card-with-image.html" . }}
 </div>
-{{ .Scratch.Delete "class" }}
+
+{{ .Scratch.Delete "src" }}
+{{ .Scratch.Delete "text" }}

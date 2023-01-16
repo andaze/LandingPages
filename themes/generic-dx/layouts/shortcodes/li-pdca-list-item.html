@@ -1,0 +1,17 @@
+{{ .Scratch.Set "num" (.Get "num") }}
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "text" (.Get "text") }}
+
+{{ .Scratch.Set "src" (.Get "image-src") }}
+{{ .Scratch.Set "type" (.Get "image-type") }}
+
+<li class="flex flex-col xl:justify-center 3xl:justify-start gap-y-8 md:gap-0 md:flex-row items-center mb-8 lg:mb-2">
+    {{ partial "organism/div.pdca-list-item.html" . }}
+</li>
+
+{{ .Scratch.Delete "src" }}
+{{ .Scratch.Delete "type" }}
+
+{{ .Scratch.Delete "num" }}
+{{ .Scratch.Delete "title" }}
+{{ .Scratch.Delete "text" }}

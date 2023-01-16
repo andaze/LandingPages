@@ -1,0 +1,37 @@
+{{ $src := .Scratch.Get "src" }}
+{{ $id := .Scratch.Get "id" }}
+
+<div class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none">
+
+    {{ .Scratch.Set "class" "w-full h-full object-cover mx-auto rounded-[74px] movie-thumbnail" }}
+    {{ .Scratch.Set "src" $src }}
+    {{ .Scratch.Set "type" "thumbnail-lg" }}
+    {{ .Scratch.Set "quolity" "100" }}
+    {{ .Scratch.Set "id" $id }}
+
+        {{ partial "atom/atom-picture.html" . }}
+
+    {{ .Scratch.Delete "id" }}
+    {{ .Scratch.Delete "quolity" }}
+    {{ .Scratch.Delete "type" }}
+    {{ .Scratch.Delete "src" }}
+    {{ .Scratch.Delete "class" }}
+
+    <div class="bg-[#5FBCE7] w-[66px] h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none">
+        
+        {{ .Scratch.Set "class" "w-[22px] h-[22px] mx-auto" }}
+        {{ .Scratch.Set "src" "images/arrow.png" }}
+        {{ .Scratch.Set "type" "thumbnail-lg" }}
+        {{ .Scratch.Set "quolity" "100" }}
+        {{ .Scratch.Set "id" $id }}
+    
+            {{ partial "atom/atom-picture.html" . }}
+    
+        {{ .Scratch.Delete "id" }}
+        {{ .Scratch.Delete "quolity" }}
+        {{ .Scratch.Delete "type" }}
+        {{ .Scratch.Delete "src" }}
+        {{ .Scratch.Delete "class" }}
+
+    </div>
+</div>
