@@ -48,7 +48,7 @@ weight: 7
 
 {{< li-pdca-list-item 
     num="ACTION"
-    title="A　分析結果をビジネスに活"
+    title="A　分析結果をビジネスに活用"
     text="データ分析結果を課題解決や新ビジネスの創出に活かす"
     image-src="images/pdca/D.png"
     image-type="thumbnail"
