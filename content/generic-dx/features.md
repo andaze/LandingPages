@@ -12,7 +12,6 @@ weight: 3
 
 {{< header-section-header 
     title="ジェネリックDXで成果が出るヒミツは？"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 <ul class="mx-auto w-11/12 md:max-w-[1520px]">

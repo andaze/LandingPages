@@ -12,7 +12,6 @@ weight: 4
 
 {{< header-section-header 
     title="豊富な機能であらゆるニーズに対応"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-11/12 3xl:w-screen 3xl:max-w-[1300px]">

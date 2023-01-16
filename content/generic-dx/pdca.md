@@ -12,7 +12,6 @@ weight: 7
 
 {{< header-section-header 
     title="アンダーズが考えるDXのPDCA"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 {{< div-text

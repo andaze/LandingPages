@@ -12,7 +12,7 @@ weight: 10
 
 {{< header-section-header 
     title="A自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center text-white"
+    color="white"
 >}}
 
 <div class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 3xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 2xl:w-3/4 md:max-w-[1500px]">

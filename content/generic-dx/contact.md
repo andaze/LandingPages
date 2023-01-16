@@ -12,7 +12,6 @@ weight: 9
 
 {{< header-section-header 
     title="はじめてのDXでもアンダーズが<br class='hidden md:block'>ゼロからサポート<br class='hidden md:block'>プランニング・見積もりは無料！"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 {{< div-text

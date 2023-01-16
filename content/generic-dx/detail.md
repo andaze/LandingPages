@@ -12,7 +12,6 @@ weight: 11
 
 {{< header-section-header 
     title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 {{< div-text

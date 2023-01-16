@@ -14,7 +14,6 @@ weight: 12
 
 {{< header-section-header 
     title="貴社システムにオーダーDXという<br class='hidden md:block'>新たなプラスオンを。"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 {{< div-text

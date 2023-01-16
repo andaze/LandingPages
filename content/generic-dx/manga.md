@@ -12,7 +12,7 @@ weight: 2
 
 {{< header-section-header 
     title="サブスク費用の削減をマンガで解説"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold text-[#1A81B6]"
+    color="blue"
 >}}
 
 {{< div-manga-part 

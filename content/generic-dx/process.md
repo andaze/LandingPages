@@ -12,7 +12,6 @@ weight: 8
 
 {{< header-section-header 
     title="運用までの流れ"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 <ol class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[80px] lg:gap-[100px] 2xl:gap-[80px]">

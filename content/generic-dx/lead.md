@@ -12,7 +12,6 @@ weight: 1
 
 {{< header-section-header 
     title="アンダーズが<strong class='text-[#1A81B6]'>DXに革命</strong>を！"
-    title-class="text-[26px] md:text-[32px] 3xl:text-[60px] font-bold text-black text-center"
 >}}
 
 <div>
