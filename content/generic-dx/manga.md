@@ -15,39 +15,18 @@ weight: 2
     title-class="text-[26px] md:text-[32px] 3xl:text-[50px] font-bold text-[#1A81B6]"
 >}}
 
-{{< picture
-    alt="Image Not Available" src="images/manga/A.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-11/12 mx-auto"
->}}
-
-<div class="my-[64px] md:w-3/4 lg:w-[930px] mx-auto">
-
-{{< div-title
+{{< div-manga-part 
+    src="images/manga/A.png"
     title="ここがポイント！"
-    title-class="text-[20px] 3xl:text-[40px] font-bold text-[#1A81B6] text-center"
->}}
-{{< div-text
     text="IT部門が各部署に言われるままサブスクを契約していくと、<br class='hidden lg:block'>ライセンス料だけでも結構な額になります。<br class='hidden lg:block'>しかも、全員が機能をフル活用しているわけではないので、<br class='hidden lg:block'>使い方によっては投資対効果が低くなる場合があります。"
-    class="text-[16px] 3xl:text-[30px]"
 >}}
 
-</div>
-
-{{< picture
-    alt="Image Not Available" src="images/manga/B.png" type="content" quolity="100" class="max-w-[1428px] w-full lg:w-11/12 mx-auto"
->}}
-
-<div class="mt-[64px] mb-[100px] md:w-3/4 lg:w-[930px] mx-auto">
-
-{{< div-title
+{{< div-manga-part 
+    src="images/manga/B.png"
     title="ここがポイント！"
-    title-class="text-[20px] 3xl:text-[40px] font-bold text-[#1A81B6] text-center"
->}}
-{{< div-text
     text="本当に必要なサービスを取捨選択し、<br class='hidden lg:block'>低コストで高パフォーマンスな自社システムを手に入れるためには、<br class='hidden lg:block'>PaaSの専門業者に相談することが近道です。"
-    class="text-[16px] 3xl:text-[30px]"
 >}}
 
-</div>
 
 </div>
 
