@@ -17,39 +17,15 @@ weight: 10
 
 <div class="flex flex-col md:flex-row gap-y-10 md:gap-y-0 3xl:gap-y-0 justify-between items-center mx-auto md:w-11/12 2xl:w-3/4 md:max-w-[1500px]">
 
-<div class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none">
-
-{{< picture
-alt="Image Not Available" src="images/paas-no-susume.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[74px] movie-thumbnail"
-id="j_JhrVnCVFQ" 
+{{< div-youtube-movie 
+    src="images/paas-no-susume.jpg"
+    id="j_JhrVnCVFQ" 
 >}}
 
-<div class="bg-[#5FBCE7] w-[66px] h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none">
-
-{{< picture
-alt="Image Not Available" src="images/arrow.png" type="thumbnail-lg" quolity="100" class="w-[22px] h-[22px] mx-auto"
+{{< div-youtube-movie 
+    src="images/generic-crm.jpg"
+    id="nHCQjXzRPrg" 
 >}}
-
-</div>
-
-</div>
-
-<div class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none">
-
-{{< picture
-    alt="Image Not Available" src="images/generic-crm.jpg" type="thumbnail-lg" quolity="100" class="w-full h-full object-cover mx-auto rounded-[74px] movie-thumbnail"
-    id="nHCQjXzRPrg"
->}}
-
-<div class="bg-[#5FBCE7] w-[66px] h-[66px] flex flex-col justify-center rounded-full border-[5px] border-[#1264A3] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none">
-
-{{< picture
-alt="Image Not Available" src="images/arrow.png" type="thumbnail-lg" quolity="100" class="w-[22px] h-[22px] mx-auto"
->}}
-
-</div>
-
-</div>
 
 </div>
 
