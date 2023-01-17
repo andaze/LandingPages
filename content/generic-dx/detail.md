@@ -6,10 +6,6 @@ isSection: true
 weight: 11
 ---
 
-<section class="bg-white py-10 md:py-32 px-2 3xl:pr-2 lg:w-11/12 3xl:w-full mx-auto">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
-
 {{< header-section-header 
     title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
 >}}
@@ -25,7 +21,3 @@ weight: 11
     btn-text="詳しく見る"
     image-src="images/arrow.png"
 >}}
-
-</div>
-
-</section>

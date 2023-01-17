@@ -6,15 +6,11 @@ isSection: true
 weight: 3
 ---
 
-<section class="bg-white py-10 md:pt-32 md:pb-10 px-2 bg-[url('../img/patterA.png')] bg-cover 3xl:pr-2">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
-
 {{< header-section-header 
     title="ジェネリックDXで成果が出るヒミツは？"
 >}}
 
-<ul class="mx-auto w-11/12 md:max-w-[1520px]">
+<ul class="mx-auto w-11/12 md:max-w-[1520px] text-left">
 
 {{< li-feature-list-item 
     num="01"
@@ -58,7 +54,3 @@ weight: 3
 
 
 </ul>
-
-</div>
-
-</section>

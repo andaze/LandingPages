@@ -6,10 +6,6 @@ isSection: true
 weight: 5
 ---
 
-<section class="py-10 px-2 bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 3xl:pr-2" id="download">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-fit 2xl:mx-auto">
-
 <div class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50">
 
 <div>
@@ -54,8 +50,3 @@ weight: 5
 </div>
 
 </div>
-
-</div>
-
-
-</section>

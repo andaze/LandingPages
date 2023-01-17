@@ -6,10 +6,6 @@ isSection: true
 weight: 8
 ---
 
-<section class="bg-white py-10 md:pt-32 md:pb-24 px-2 bg-[url('../img/patterC.png')] bg-contain 3xl:pr-2 overflow-x-hidden">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
-
 {{< header-section-header 
     title="運用までの流れ"
 >}}
@@ -59,8 +55,3 @@ weight: 8
 >}}
 
 </ol>
-
-</div>
-
-</section>
-

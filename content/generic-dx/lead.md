@@ -6,10 +6,6 @@ isSection: true
 weight: 1
 ---
 
-<section class="bg-white text-center py-10 md:pt-32 md:pb-10 px-2 3xl:pr-2">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
-
 {{< header-section-header 
     title="アンダーズが<strong class='text-[#1A81B6]'>DXに革命</strong>を！"
 >}}
@@ -20,7 +16,3 @@ weight: 1
 >}}
 
 {{< div-lead-images >}}
-
-</div>
-
-</section>

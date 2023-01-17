@@ -6,10 +6,6 @@ isSection: true
 weight: 9
 ---
 
-<section class="bg-white py-10 md:pt-32 md:pb-24 px-2 3xl:pr-2 mx-auto">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
-
 {{< header-section-header 
     title="はじめてのDXでもアンダーズが<br class='hidden md:block'>ゼロからサポート<br class='hidden md:block'>プランニング・見積もりは無料！"
 >}}
@@ -25,7 +21,3 @@ weight: 9
     btn-text="お問い合わせ"
     image-src="images/arrow.png"
 >}}
-
-</div>
-
-</section>
