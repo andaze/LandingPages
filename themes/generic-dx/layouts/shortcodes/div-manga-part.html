@@ -1,0 +1,9 @@
+{{ .Scratch.Set "src" (.Get "src") }}
+{{ .Scratch.Set "title" (.Get "title") }}
+{{ .Scratch.Set "text" (.Get "text") }}
+
+{{ partial "organism/div.manga-part.html" . }}
+
+{{ .Scratch.Delete "text" }}
+{{ .Scratch.Delete "title" }}
+{{ .Scratch.Delete "src" }}

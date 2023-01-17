@@ -1,0 +1,9 @@
+{{ .Scratch.Set "src" (.Get "src") }}
+{{ .Scratch.Set "id" (.Get "id") }}
+
+<div class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none">
+    {{ partial "molecule/div.youtube-movie.html" . }}
+</div>
+
+{{ .Scratch.Delete "id" }}
+{{ .Scratch.Delete "src" }}

@@ -1,8 +1,0 @@
-{{ .Scratch.Set "class" (.Get "class") }}
-{{ $opt_class := .Scratch.Get "class" }}
-
-<div class="{{ $opt_class }}">
-    {{ partial "atom/p.html" . }}
-</div>
-
-{{ .Scratch.Delete "class" }}

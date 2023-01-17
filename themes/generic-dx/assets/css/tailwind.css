@@ -3,7 +3,7 @@
 
 @layer base {
   html {
-    font-family:'メイリオ', 'Meiryo', sans-serif;
+    font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
   }
 }
 

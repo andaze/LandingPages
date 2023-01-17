@@ -1,10 +1,4 @@
-{{ .Scratch.Set "title" (.Get "title") }}
-{{ .Scratch.Set "title-class" (.Get "title-class") }}
 {{ $title := default "" (.Scratch.Get "title") }}
-
 {{ $opt_class := default "" (.Scratch.Get "title-class") }}
 
 <h2 class="{{ $opt_class }}">{{ $title | markdownify }}</h2>
-
-{{ .Scratch.Delete "title" }}
-{{ .Scratch.Delete "title-class" }}
