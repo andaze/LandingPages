@@ -2,11 +2,4 @@
 {{ $link := .Scratch.Get "link" }}
 {{ $btn_text := .Scratch.Get "btn-text" }}
 
-{{ $color := .Scratch.Get "color" }}
-{{ if eq $color "dark" }}
-    {{ $color = "border-[#1A81B6]" }}
-{{ else }}
-    {{ $color = "border-[#5FBCE7]" }}
-{{ end }}
-
-<a href="{{ $link }}" class="{{ $opt_class }} bg-white border-[5px] {{ $color }} mt-10 block w-[340px] lg:w-[440px] rounded-full relative p-5 cursor-pointer" target="_blank" rel="noopener noreferrer">{{ $btn_text }}</a>
+<a href="{{ $link }}" class="{{ $opt_class }} bg-white block w-[340px] lg:w-[440px] rounded-full relative p-5 cursor-pointer" target="_blank" rel="noopener noreferrer">{{ $btn_text }}</a>
