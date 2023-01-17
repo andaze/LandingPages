@@ -1,7 +1,7 @@
 {{ $src := default "" (.Scratch.Get "src") }}
 
-<div>
-    <img src="{{ $src | absURL }}" alt="Image Not Available" class="w-[127px] h-[138] 3xl:w-[234px] 3xl:h-[177px] mx-auto">
+<div class="h-[180px]">
+    <img src="{{ $src | absURL }}" alt="Image Not Available" class="w-[127px] h-[138px] 3xl:w-[234px] 3xl:h-[177px] object-contain mx-auto">
     
     <div class="md:text-[12px] 3xl:text-[23px] mx-auto text-center font-bold">
         {{ partial "atom/p.html" . }}
