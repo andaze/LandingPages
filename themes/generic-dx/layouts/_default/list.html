@@ -24,14 +24,14 @@
         {{ if eq .Title "Features" }}
             {{ $section_class = "bg-[url('../img/patterA.png')] bg-cover" }}
         {{ else if eq .Title "Ebook" }}
-            {{ $section_class = "bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50" }}
+            {{ $section_class = "bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 !text-left" }}
         {{ else if eq .Title "Process" }}
             {{ $section_class = "bg-[url('../img/patterC.png')] bg-contain overflow-x-hidden" }}
         {{ else if or (eq .Title "Youtube") (eq .Title "Suggestion") }}
             {{ $section_class = "bg-[#34A7E1] border border-[#707070]" }}
         {{ end }}
 
-        <section class="text-center py-10 md:pt-32 md:pb-10 px-2 3xl:pr-2 {{ $section_class }}">
+        <section class="text-center py-10 md:py-32 px-2 3xl:pr-2 {{ $section_class }}">
             <div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
                 {{ .Content }}
             </div>
