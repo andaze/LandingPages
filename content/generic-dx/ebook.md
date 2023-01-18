@@ -24,7 +24,6 @@ weight: 5
 <div class="hidden md:block">
 
 {{< div-section-button 
-    class="text-black font-bold text-[16px] 3xl:text-[26px] text-center"
     link="https://andaze.com/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
     image-src="images/arrow.png"
@@ -43,10 +42,8 @@ weight: 5
 <div class="md:hidden">
 
 {{< div-section-button 
-    class="text-black font-bold text-[16px] 3xl:text-[26px] text-center"
     link="https://andaze.com/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
-    image-src="images/arrow.png"
 >}}
 
 </div>

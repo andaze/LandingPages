@@ -15,8 +15,6 @@ weight: 9
 まずは気軽にお問い合わせください。
 
 {{< div-section-button 
-    class="text-black font-bold text-[16px] 3xl:text-[26px] text-center"
     link="https://andaze.com/ja/contact/"
     btn-text="お問い合わせ"
-    image-src="images/arrow.png"
 >}}
