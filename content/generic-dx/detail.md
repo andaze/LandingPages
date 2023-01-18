@@ -10,10 +10,7 @@ weight: 11
     title="AIや画像認識など最新技術も<br>ジェネリックDXにお任せ！"
 >}}
 
-{{< div-text
-    text="アンダーズでは大手物流企業様の案件でも高い実績を誇っています。"
-    class="text-[16px] 3xl:text-[28px] text-center lg:mt-[80px] font-medium"
->}}
+アンダーズでは大手物流企業様の案件でも高い実績を誇っています。
 
 {{< div-section-button 
     class="text-black font-bold text-[16px] 3xl:text-[26px] text-center"

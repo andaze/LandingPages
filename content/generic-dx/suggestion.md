@@ -12,9 +12,8 @@ weight: 12
     title="貴社システムにオーダーDXという<br class='hidden md:block'>新たなプラスオンを。"
 >}}
 
-{{< div-text
-    text="アンダーズの自社システム構築（PaaS）は、「ハードルが高い」、「効果が見えづらい」といった これまでのCRMの常識を覆し、データに基づいたPDCAを最低150万円から実行します。<br class='hidden lg:block'>マーケティング課題の解決のために、自社システム構築（PaaS）を検討してみませんか。"
-    class="text-[16px] 3xl:text-[20px] text-center 3xl:mt-[80px] font-medium leading-loose 3xl:leading-[60px] w-full max-w-[887px] mx-auto"
->}}
+アンダーズの自社システム構築（PaaS）は、「ハードルが高い」、「効果が見えづらい」といった  
+これまでのCRMの常識を覆し、データに基づいたPDCAを最低150万円から実行します。  
+マーケティング課題の解決のために、自社システム構築（PaaS）を検討してみませんか。
 
 </div>

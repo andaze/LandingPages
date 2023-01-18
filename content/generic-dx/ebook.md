@@ -6,18 +6,20 @@ isSection: true
 weight: 5
 ---
 
-<div class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50">
+<div class="py-10 lg:py-20 px-2 lg:px-0 lg:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-16 relative z-50 text-white">
 
 <div>
 
-{{< div-text
-    text="100万円からはじめられる<br class='hidden lg:block'>自社システム構築（PaaS）<br class='hidden lg:block'>「ジェネリックDX」のことを<br class='hidden lg:block'>もっと詳しく！"
-    class="text-[24px] md:text-[32px] 3xl:text-[60px] font-bold mb-[60px] text-white"
->}}
-{{< div-text
-    text="自社システム構築（PaaS）についての詳細や、<br>導入事例資料をご用意しています。<br>利用・検討の際にご活用ください。"
-    class="text-[16px] 3xl:text-[28px] mb-8 text-white"
->}}
+<p class="text-[24px] md:text-[32px] 3xl:text-[60px] font-bold mb-[60px]">
+100万円からはじめられる<br class='hidden lg:block'>
+自社システム構築（PaaS）<br class='hidden lg:block'>
+「ジェネリックDX」のことを<br class='hidden lg:block'>
+もっと詳しく！
+</p>
+
+自社システム構築（PaaS）についての詳細や、  
+導入事例資料をご用意しています。  
+利用・検討の際にご活用ください。
 
 <div class="hidden md:block">
 
