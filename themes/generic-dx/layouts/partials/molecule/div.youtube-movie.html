@@ -1,9 +1,9 @@
 {{ $src := .Scratch.Get "src" }}
 {{ $id := .Scratch.Get "id" }}
 
-<div class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none">
+<div class="relative h-[200px] w-[360px] 3xl:h-[314px] 3xl:w-[560px] cursor-pointer select-none transform transition duration-500 hover:scale-110">
 
-    {{ .Scratch.Set "class" "w-full h-full object-cover mx-auto rounded-[74px] movie-thumbnail" }}
+    {{ .Scratch.Set "class" "w-full h-full object-cover mx-auto rounded-3xl movie-thumbnail" }}
     {{ .Scratch.Set "src" $src }}
     {{ .Scratch.Set "type" "thumbnail-lg" }}
     {{ .Scratch.Set "quolity" "100" }}
