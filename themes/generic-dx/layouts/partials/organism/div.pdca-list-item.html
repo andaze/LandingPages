@@ -1,30 +1,29 @@
 {{ $image_src := default "" (.Scratch.Get "src") }}
-{{ $image_type := default "" (.Scratch.Get "type") }}
 
-{{ $num := default "" (.Scratch.Get "num") }}
+{{ $annotation := default "" (.Scratch.Get "annotation") }}
 {{ $title := default "" (.Scratch.Get "title") }}
 {{ $text := default "" (.Scratch.Get "text") }}
 
 {{ $color := "" }}
-{{ if eq $num "PLAN" }}
+{{ if eq $annotation "PLAN" }}
     {{ $color = "bg-[#1A81B6]" }}
-{{ else if eq $num "DO" }}
+{{ else if eq $annotation "DO" }}
     {{ $color = "bg-[#ECB22D]" }}
-{{ else if eq $num "CHECK" }}
+{{ else if eq $annotation "CHECK" }}
     {{ $color = "bg-[#009872]" }}
-{{ else if eq $num "ACTION" }}
+{{ else if eq $annotation "ACTION" }}
     {{ $color = "bg-[#E01E5B]" }}
 {{ end }}
 
 <div class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] relative">
     <div class="text-[24px] md:text-[20px] 3xl:text-[31px] font-bold text-white absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[100px] h-[100px] 3xl:w-[174px] 3xl:h-[174px] text-center rounded-full {{ $color }}">
-        <p class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block">{{ $num }}</p>
+        <p class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block">{{ $annotation }}</p>
     </div>
 
     <div class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] shrink-0 rounded-full flex flex-col justify-center">
         {{ .Scratch.Set "class" "w-full h-full mx-auto" }}
         {{ .Scratch.Set "src" $image_src }}
-        {{ .Scratch.Set "type" $image_type }}
+        {{ .Scratch.Set "type" "thumbnail" }}
 
             {{ partial "atom/atom-picture.html" . }}
 
