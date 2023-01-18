@@ -20,7 +20,7 @@ weight: 11
 >}}
 
 {{< div-section-button 
-    class="text-black font-bold text-[16px] 3xl:text-[26px] text-center"
+    class="text-black font-bold text-[20px] 3xl:text-[26px] text-center"
     link="https://andaze.com/ja/services/"
     btn-text="詳しく見る"
     image-src="images/arrow.png"
