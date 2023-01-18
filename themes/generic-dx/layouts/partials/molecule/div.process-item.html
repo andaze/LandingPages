@@ -1,9 +1,9 @@
-{{ $num_src := .Scratch.Get "num-src" }}
+{{ $annotation_src := .Scratch.Get "annotation-src" }}
 {{ $icon_src := .Scratch.Get "icon-src" }}
 
 <div class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center">
     {{ .Scratch.Set "class" "w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]" }}
-    {{ .Scratch.Set "src" $num_src }}
+    {{ .Scratch.Set "src" $annotation_src }}
 
         {{ partial "atom/atom-picture.html" . }} 
 
