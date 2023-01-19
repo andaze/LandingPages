@@ -35,7 +35,7 @@ weight: 5
 
 <div class="w-[335px] h-[502px] shrink-0">
 
-{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain mt-12 md:mt-0">}}
+{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain mt-12 md:mt-0 shadow-lg shadow-gray-300">}}
 
 </div>
 
