@@ -25,9 +25,11 @@
 
                     {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[450px] lg:w-[420px] 3xl:h-[659px] 3xl:w-[620px] object-cover lg:mt-[-90px] ml-auto lg:mr-auto" }}
                     {{ .Scratch.Set "src" .Site.Params.images.president }}
+                    {{ .Scratch.Set "type" "content" }}
 
                         {{ partial "atom/atom-picture.html" . }}
 
+                    {{ .Scratch.Delete "type" }}
                     {{ .Scratch.Delete "src" }}
                     {{ .Scratch.Delete "class" }}
 
