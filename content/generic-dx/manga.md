@@ -6,10 +6,6 @@ isSection: true
 weight: 2
 ---
 
-<section class="bg-white text-center py-10 md:pt-32 md:pb-10 px-2 3xl:pr-2">
-
-<div class="w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/4 2xl:mx-auto">
-
 {{< header-section-header 
     title="サブスク費用の削減をマンガで解説"
     color="blue"
@@ -26,8 +22,3 @@ weight: 2
     title="ここがポイント！"
     text="本当に必要なサービスを取捨選択し、<br class='hidden lg:block'>低コストで高パフォーマンスな自社システムを手に入れるためには、<br class='hidden lg:block'>PaaSの専門業者に相談することが近道です。"
 >}}
-
-
-</div>
-
-</section>
