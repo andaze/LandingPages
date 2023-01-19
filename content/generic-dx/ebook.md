@@ -26,7 +26,7 @@ weight: 5
 {{< div-section-button 
     link="https://andaze.com/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
-    image-src="images/arrow.png"
+    color="dark"
 >}}
 
 </div>
@@ -35,7 +35,7 @@ weight: 5
 
 <div class="w-[335px] h-[502px] shrink-0">
 
-{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
+{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain mt-12 md:mt-0 shadow-lg shadow-gray-300">}}
 
 </div>
 
@@ -44,6 +44,7 @@ weight: 5
 {{< div-section-button 
     link="https://andaze.com/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
+    color="dark"
 >}}
 
 </div>

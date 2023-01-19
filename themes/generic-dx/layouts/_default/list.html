@@ -28,7 +28,7 @@
         {{ else if eq .Title "Process" }}
             {{ $section_class = "bg-[url('../img/patterC.png')] bg-contain overflow-x-hidden" }}
         {{ else if or (eq .Title "Youtube") (eq .Title "Suggestion") }}
-            {{ $section_class = "bg-[#34A7E1] border border-[#707070]" }}
+            {{ $section_class = "bg-gradient-to-r from-[#34A7E1] to-blue-500 border border-[#707070]" }}
         {{ end }}
 
         <section class="text-center py-10 md:py-32 px-2 3xl:pr-2 {{ $section_class }}">
