@@ -33,9 +33,9 @@
             {{ .Scratch.Set "link" "https://andaze.com/landing-pages/generic-dx/download/" }}
             {{ .Scratch.Set "btn-text" "資料ダウンロード" }}
     
-                {{ partial "atom/a.button.html" . }}
+                {{ partial "atom/a.footer-button.html" . }}
     
-            {{ .Scratch.Delete "btn-tex" }}
+            {{ .Scratch.Delete "btn-text" }}
             {{ .Scratch.Delete "link" }}
             {{ .Scratch.Delete "class" }}
     
@@ -43,9 +43,9 @@
             {{ .Scratch.Set "link" "https://andaze.com/ja/contact/" }}
             {{ .Scratch.Set "btn-text" "お問い合わせ" }}
     
-                {{ partial "atom/a.button.html" . }}
+                {{ partial "atom/a.footer-button.html" . }}
     
-            {{ .Scratch.Delete "btn-tex" }}
+            {{ .Scratch.Delete "btn-text" }}
             {{ .Scratch.Delete "link" }}
             {{ .Scratch.Delete "class" }}
         </div>
