@@ -26,7 +26,6 @@ weight: 5
 {{< div-section-button 
     link="https://andaze.com/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
-    image-src="images/arrow.png"
     color="dark"
 >}}
 
@@ -45,6 +44,7 @@ weight: 5
 {{< div-section-button 
     link="https://andaze.com/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
+    color="dark"
 >}}
 
 </div>
