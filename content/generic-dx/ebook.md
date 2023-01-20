@@ -10,12 +10,12 @@ weight: 5
 
 <div>
 
-<p class="text-[24px] md:text-[32px] 3xl:text-[60px] font-bold mb-[60px]">
+<h2 class="text-[24px] md:text-[32px] 3xl:text-[60px] font-bold mb-[60px]">
 100万円からはじめられる<br class='hidden lg:block'>
 自社システム構築（PaaS）<br class='hidden lg:block'>
 「ジェネリックDX」のことを<br class='hidden lg:block'>
 もっと詳しく！
-</p>
+</h2>
 
 自社システム構築（PaaS）についての詳細や、  
 導入事例資料をご用意しています。  
