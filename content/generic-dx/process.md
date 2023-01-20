@@ -10,7 +10,7 @@ weight: 8
     title="運用までの流れ"
 >}}
 
-<ol class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[80px] lg:gap-[100px] 2xl:gap-[80px]">
+<ol class="mx-auto w-fit lg:w-3/4 md:max-w-[1800px] grid lg:grid-cols-3 gap-[80px] lg:gap-[100px] 2xl:gap-[80px] mt-20">
 
 {{< li-process-item 
     text="お問い合わせ"

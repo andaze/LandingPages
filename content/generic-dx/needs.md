@@ -7,7 +7,7 @@ weight: 4
 ---
 
 {{< header-section-header 
-    title="豊富な機能であらゆるニーズに対応"
+    title="豊富な機能で<span class='text-[#1A81B6]'>あらゆるニーズ</span>に対応"
 >}}
 
 <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-11/12 3xl:w-screen 3xl:max-w-[1300px]">

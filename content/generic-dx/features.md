@@ -7,7 +7,7 @@ weight: 3
 ---
 
 {{< header-section-header 
-    title="ジェネリックDXで成果が出るヒミツは？"
+    title="ジェネリックDXで<span class='text-[#1A81B6]'>成果が出るヒミツ</span>は？"
 >}}
 
 <ul class="mx-auto w-11/12 md:max-w-[1520px] text-left">
