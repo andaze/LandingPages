@@ -50,9 +50,9 @@ function sendEmail() {
 function btnEnableDisable() {
     if (document.getElementById("privacy").checked) {
         downloadButton.classList.remove("opacity-50", "bg-black", "!cursor-not-allowed", "pointer-events-none");
-        downloadButton.classList.add("bg-[#E01E58]", "hover:bg-white", "border-[#E01E58]", "hover:text-[#E01E58]", "cursor-pointer");
+        downloadButton.classList.add("bg-[#E01E58]", "hover:from-white", "hover:to-white", "bg-gradient-to-r", "from-red-500", "to-[#E01E5B]", "hover:text-[#E01E58]", "cursor-pointer");
     } else {
         downloadButton.classList.add("opacity-50", "bg-black", "!cursor-not-allowed", "pointer-events-none");
-        downloadButton.classList.remove("bg-[#E01E58]", "hover:bg-white", "border-[#E01E58]", "hover:text-[#E01E58]", "cursor-pointer");
+        downloadButton.classList.remove("bg-[#E01E58]", "hover:from-white", "hover:to-white", "bg-gradient-to-r", "from-red-500", "to-[#E01E5B]", "hover:text-[#E01E58]", "cursor-pointer");
     }
 }

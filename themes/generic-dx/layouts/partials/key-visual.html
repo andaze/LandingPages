@@ -1,4 +1,4 @@
-<div class="bg-[#1A81B6] relative pb-4 lg:pb-0 after:content-[''] after:bg-[url('../img/bottom-path.png')] after:bg-contain 3xl:after:bg-cover after:bg-no-repeat after:w-full after:h-[137px] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-137px] after:left-0 over-size:after:hidden">
+<div class="bg-gradient-to-b from-sky-600 to-[#1A81B6] relative pb-4 lg:pb-0 after:content-[''] after:bg-[url('../img/bottom-path.png')] after:bg-contain 3xl:after:bg-cover after:bg-no-repeat after:w-full after:h-[137px] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-137px] after:left-0 over-size:after:hidden">
     <div class="max-w-[1920px] mx-auto">
         <div class="pt-1 w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/5 2xl:mx-auto">
            
@@ -23,11 +23,13 @@
                         <span class="text-[#E01E5B] font-bold text-[20px] lg:text-[28px] 3xl:text-[37px] w-full text-center">脱 クラウド宣言！</span>
                     </div>
 
-                    {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[450px] lg:w-[420px] 3xl:h-[659px] 3xl:w-[620px] object-cover lg:mt-[-90px] ml-auto lg:mr-auto" }}
+                    {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[470px] lg:w-[420px] 3xl:h-[659px] 3xl:w-[620px] object-cover lg:mt-[-90px] ml-auto lg:mr-auto" }}
                     {{ .Scratch.Set "src" .Site.Params.images.president }}
+                    {{ .Scratch.Set "type" "content" }}
 
                         {{ partial "atom/atom-picture.html" . }}
 
+                    {{ .Scratch.Delete "type" }}
                     {{ .Scratch.Delete "src" }}
                     {{ .Scratch.Delete "class" }}
 

@@ -1,13 +1,15 @@
 {{ .Scratch.Set "class" (.Get "class") }}
-{{ .Scratch.Set "download" (.Get "download") }}
 {{ .Scratch.Set "link" (.Get "link") }}
 {{ .Scratch.Set "btn-text" (.Get "btn-text") }}
 
 {{ .Scratch.Set "image-src" (.Get "image-src") }}
+{{ .Scratch.Set "color" (.Get "color") }}
 
 {{ partial "organism/div.section-button.html" . }}
 
+{{ .Scratch.Delete "color" }}
+{{ .Scratch.Delete "image-src" }}
+
 {{ .Scratch.Delete "btn-text" }}
 {{ .Scratch.Delete "link" }}
-{{ .Scratch.Delete "download" }}
 {{ .Scratch.Delete "class" }}

@@ -1,0 +1,51 @@
+<div class="flex flex-col md:flex-row justify-center mx-auto md:max-w-[1500px] items-center 3xl:items-start mt-[58px]">
+
+    <div class="bg-[url('../img/fukidashi_cloud_1.png')] bg-contain h-[200px] w-[200px] lg:w-[180px] lg:h-[180px] mt-4 flex flex-col justify-center bg-no-repeat shrink-0">
+        <p class="text-[14px] 3xl:text-[20px] mt-[-30px] mr-8 xl:mr-0 2xl:mr-8 text-center w-[175px] lg:w-[170px]">
+            <strong class='text-[#1A81B6] text-[20px] 3xl:text-[26px]'>自社システム</strong><br>の<br>メリットって？
+        </p>
+    </div>
+    
+    <div class="bg-gradient-to-r from-blue-600 to-[#1A81B6] p-2 rounded-3xl shrink-0 shadow-lg shadow-gray-500">
+        <div class="relative h-[200px] w-[360px] lg:h-[275px] lg:w-[500px] rounded-3xl cursor-pointer select-none overflow-hidden">
+        
+            {{ .Scratch.Set "class" "w-full h-full object-contain mx-auto transform transition duration-500 hover:scale-110 movie-thumbnail" }}
+            {{ .Scratch.Set "src" "images/paas-no-susume.png" }}
+            {{ .Scratch.Set "type" "thumbnail-lg" }}
+            {{ .Scratch.Set "quolity" "100" }}
+            {{ .Scratch.Set "id" "j_JhrVnCVFQ" }}
+        
+                {{ partial "atom/atom-picture.html" . }}
+        
+            {{ .Scratch.Delete "id" }}
+            {{ .Scratch.Delete "quolity" }}
+            {{ .Scratch.Delete "type" }}
+            {{ .Scratch.Delete "src" }}
+            {{ .Scratch.Delete "class" }}
+        
+            <div class="bg-gradient-to-r from-blue-600 to-[#1A81B6] w-[66px] h-[66px] flex flex-col justify-center rounded-full border-4 border-[#1264A3] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none">
+            
+                {{ .Scratch.Set "class" "w-[22px] h-[22px] mx-auto" }}
+                {{ .Scratch.Set "src" "images/arrow.png" }}
+                {{ .Scratch.Set "type" "thumbnail-lg" }}
+                {{ .Scratch.Set "quolity" "100" }}
+            
+                    {{ partial "atom/atom-picture.html" . }}
+            
+                {{ .Scratch.Delete "quolity" }}
+                {{ .Scratch.Delete "type" }}
+                {{ .Scratch.Delete "src" }}
+                {{ .Scratch.Delete "class" }}
+            
+            </div>
+        
+        </div>
+    </div>
+    
+    <div class="bg-[url('../img/fukidashi_cloud_2.png')] bg-contain h-[180px] w-[180px] lg:h-[180px] lg:w-[180px] mt-4 ml-4 flex flex-col justify-center bg-no-repeat text-center shrink-0">
+        <p class="text-[14px] 3xl:text-[20px]">
+            <strong class='text-[#1A81B6] text-[20px] 3xl:text-[26px]'>解説動画</strong>と<strong class='text-[#1A81B6] text-[20px] 3xl:text-[26px]'>マンガ</strong>で<br>詳しく知ろう！
+        </p>
+    </div>
+    
+</div>

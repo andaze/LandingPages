@@ -1,17 +1,16 @@
 {{ $image_src := default "" (.Scratch.Get "src") }}
-{{ $image_type := default "" (.Scratch.Get "type") }}
 
 {{ $title := default "" (.Scratch.Get "title") }}
 
 <div class="flex flex-col gap-y-8 md:gap-0 md:flex-row relative">
-    <div class="bg-white flex flex-col justify-center text-[30px] font-bold text-white bg-[#ECB22D] mr-10 absolute top-0 left-0 block w-[60px] h-[60px] 3xl:w-[80px] 3xl:h-[80px] text-center rounded-full">
-        {{ partial "atom/p.num.html" . }}
+    <div class="bg-white flex flex-col justify-center text-[30px] font-bold text-white bg-gradient-to-r from-[#ECB22D] to-orange-400 mr-10 absolute top-0 left-0 block w-[60px] h-[60px] 3xl:w-[80px] 3xl:h-[80px] text-center rounded-full">
+        {{ partial "atom/p.annotation.html" . }}
     </div>
 
-    <div class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] shrink-0 bg-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]">
+    <div class="w-[200px] h-[200px] 3xl:w-[350px] 3xl:h-[350px] shrink-0 bg-gradient-to-r from-sky-500 to-[#1A81B6] rounded-full flex flex-col justify-center mr-[30px]">
         {{ .Scratch.Set "class" "w-[85px] h-[80px] 3xl:w-[167px] 3xl:h-[156px] mx-auto" }}
         {{ .Scratch.Set "src" $image_src }}
-        {{ .Scratch.Set "type" $image_type }}
+        {{ .Scratch.Set "type" "thumbnail" }}
 
             {{ partial "atom/atom-picture.html" . }}
 
