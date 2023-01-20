@@ -7,7 +7,7 @@ weight: 1
 ---
 
 {{< header-section-header 
-    title="アンダーズが<strong class='text-[#1A81B6]'>DXに革命</strong>を！"
+    title="アンダーズが<span class='text-[#1A81B6]'>DXに革命</span>を！"
 >}}
 
 ジェネリックDXは、<strong class='text-[#1A81B6] text-xl'>150万円から始められる全社横断型プラットフォーム</strong>です。   
