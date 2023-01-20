@@ -5,8 +5,6 @@
 {{ $text := default "" (.Scratch.Get "text") }}
 
 {{ $color := "" }}
-
-{{ $color := "" }}
 {{ if eq $annotation "PLAN" }}
     {{ $color = "bg-gradient-to-r from-blue-700 to-[#1A81B6]" }}
 {{ else if eq $annotation "DO" }}
@@ -15,6 +13,17 @@
     {{ $color = "bg-gradient-to-r from-green-700 to-[#009872]" }}
 {{ else if eq $annotation "ACTION" }}
     {{ $color = "bg-gradient-to-r from-red-700 to-[#E01E5B]" }}
+{{ end }}
+
+{{ $textColor := "" }}
+{{ if eq $annotation "PLAN" }}
+    {{ $textColor = "text-[#1A81B7]" }}
+{{ else if eq $annotation "DO" }}
+    {{ $textColor = "text-[#ECB22D]" }}
+{{ else if eq $annotation "CHECK" }}
+    {{ $textColor = "text-[#009872]" }}
+{{ else if eq $annotation "ACTION" }}
+    {{ $textColor = "text-[#E01E5B]" }}
 {{ end }}
 
 <div class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] relative">
@@ -36,6 +45,6 @@
 </div>
 
 <div class="md:w-4/5 3xl:h-[253px] 3xl:w-[1154px] flex flex-col justify-center z-10 border-[#9D9D9D] border-[3.5px] rounded-3xl p-4 3xl:p-0 md:ml-4 lg:ml-28 3xl:ml-0 relative before:absolute before:content-[''] md:before:bg-[url('../img/fukidashi_edge.png')] md:before:bg-cover before:w-[70px] before:h-[30px] before:top-1/2 before:left-[-68px] before:-translate-y-1/2 shadow-xl">
-    <h2 class="mb-10 md:mb-5 3xl:ml-[140px] text-[20px] 3xl:text-[40px] text-black font-bold text-center md:text-left">{{ $title }}</h2>
+    <h2 class="mb-10 md:mb-5 3xl:ml-[140px] text-[24px] 3xl:text-[40px] text-black font-bold text-center md:text-left {{ $textColor }}">{{ $title }}</h2>
     <p class="mb-4 3xl:ml-[140px] text-[15px] 3xl:text-[28px] text-black text-center md:text-left 3xl:text-center">{{ $text }}</p>
 </div>
