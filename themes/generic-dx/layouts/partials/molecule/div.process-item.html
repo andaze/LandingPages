@@ -1,7 +1,7 @@
 {{ $annotation_src := .Scratch.Get "annotation-src" }}
 {{ $icon_src := .Scratch.Get "icon-src" }}
 
-<div class="bg-white w-[175px] h-[175px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center">
+<div class="bg-white w-[215px] h-[215px] 3xl:w-[300px] 3xl:h-[300px] mx-auto rounded-[117px] rounded-[70px] 3xl:rounded-[117px] border-[14px] lg:border-[14px] 3xl:border-[14px] border-[#34A7E1] flex flex-col justify-center">
     {{ .Scratch.Set "class" "w-[70px] h-[70px] mx-auto object-contain absolute top-[-20px] left-[-20px]" }}
     {{ .Scratch.Set "src" $annotation_src }}
 
@@ -10,7 +10,7 @@
     {{ .Scratch.Delete "src" }}
     {{ .Scratch.Delete "class" }}
 
-    {{ .Scratch.Set "class" "w-[72px] h-[72px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain" }}
+    {{ .Scratch.Set "class" "w-[100px] h-[100px] 3xl:w-[92px] 3xl:h-[92px] mx-auto object-contain" }}
     {{ .Scratch.Set "src" $icon_src }}
 
         {{ partial "atom/atom-picture.html" . }} 
@@ -19,7 +19,7 @@
     {{ .Scratch.Delete "class" }}
     
         
-    <div class="text-[16px] 3xl:text-[15px] leading-[45px] mx-auto text-center font-bold">
+    <div class="text-[20px] 3xl:text-[15px] leading-[45px] mx-auto text-center font-bold">
         {{ partial "atom/p.html" . }}
     </div>
 </div>
