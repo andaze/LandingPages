@@ -7,7 +7,7 @@ weight: 10
 ---
 
 {{< header-section-header 
-    title="A自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
+    title="自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
     color="white"
 >}}
 
