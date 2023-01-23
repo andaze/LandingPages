@@ -11,6 +11,12 @@ p {
   line-height: 2;
 }
 
+@media screen and (min-width:1920px) {
+  p {
+    font-size: 24px
+  }
+}
+
 .transition-fade {
   transition: 0.4s;
   opacity: 1;
