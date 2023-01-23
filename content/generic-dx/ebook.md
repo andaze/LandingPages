@@ -10,7 +10,7 @@ weight: 5
 
 <div>
 
-<h2 class="text-[24px] md:text-[32px] 3xl:text-[60px] font-bold mb-[60px]">
+<h2 class="text-[24px] md:text-[32px] 3xl:text-[52px] font-bold mb-[60px]">
 100万円からはじめられる<br class='hidden lg:block'>
 自社システム構築（PaaS）<br class='hidden lg:block'>
 「ジェネリックDX」のことを<br class='hidden lg:block'>
@@ -33,7 +33,7 @@ weight: 5
 
 </div>
 
-<div class="w-[335px] h-[502px] shrink-0">
+<div class="w-[335px] h-[502px] 3xl:w-[440px] 3xl:h-[624px] shrink-0">
 
 {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain mt-12 md:mt-0 shadow-lg shadow-gray-300">}}
 

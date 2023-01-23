@@ -6,7 +6,7 @@ isSection: true
 weight: 12
 ---
 
-<div class="bg-white lg:w-11/12 px-2 py-10 md:px-10 lg:py-24 3xl:px-[239px] 3xl:py-[134px] rounded-[74px] mx-auto border-[#1A81B6] border-4">
+<div class="bg-white lg:w-11/12 px-2 py-10 md:px-10 lg:py-24 rounded-[74px] mx-auto border-[#1A81B6] border-4">
 
 {{< header-section-header 
     title="貴社システムにオーダーDXという<br class='hidden md:block'><span class='text-[#1A81B6]'>新たなプラスオン</span>を。"
