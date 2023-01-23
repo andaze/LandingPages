@@ -12,7 +12,7 @@ weight: 7
 
 「ハードルが高い」「効果が見えづらい」と思われていた自社システム構築の常識を覆し、<br>データに基づいた計画、実行、評価、改善の4つのプロセスを回していきます。
 
-<ul class="mx-auto mt-16 w-fit md:w-11/12 2xl:w-3/4">
+<ul class="mx-auto mt-16 w-fit md:w-11/12">
 
 {{< li-pdca-list-item 
     annotation="PLAN"

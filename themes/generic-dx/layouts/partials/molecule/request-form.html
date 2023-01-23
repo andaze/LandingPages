@@ -4,42 +4,42 @@
             ジェネリックDXの資料<br>ダウンロードはこちら
         </p>
     </div>
-    <form id="download_form">
+    <form id="download_form" class="3xl:text-lg">
         
         <div class="mb-2 flex justify-between gap-2">
             <div class="text-left border border-gray-600 rounded p-2 w-full">
                 <label for="first_name" class="block font-bold">姓</label>
-                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="first_name" name="first_name" placeholder="例）山田" required>
+                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg" type="text" id="first_name" name="first_name" placeholder="例）山田" required>
             </div>
             <div class="text-left border border-gray-600 rounded p-2 w-full">
                 <label for="last_name" class="block font-bold">名</label>
-                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
+                <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
             </div>
         </div>
 
         <div class="text-left border border-gray-600 rounded p-2 mb-2">
             <label for="email" class="block font-bold">メールアドレス</label>
-            <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" name="email" placeholder="例）andaze@example.com" required>
+            <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" name="email" placeholder="例）andaze@example.com" required>
         </div>
         
         <div class="text-left border border-gray-600 rounded p-2">
             <label for="company_name" class="block font-bold">企業名</label>
-            <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
+            <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
         </div>
 
-        <div class="p-2 mt-4 text-sm">
-            <p>
+        <div class="p-2 mt-4">
+            <p class="text-sm 3xl:text-lg">
                 <a href="https://andaze.com/ja/privacy-policy/" target="_blank" rel="noopener noreferrer" class="underline text-[#1A81B6]">プライバシーポリシー</a>に同意いただいた上でお問い合わせください。
             </p>
         </div>
         <div class="text-left p-2 flex items-start mt-2 mb-8">
-            <input class="mt-[0.1px] scale-75" type="checkbox" id="privacy">
-            <label for="privacy" class="block ml-2 text-sm font-bold">ご提供いただく個人情報のお取り扱いに同意する</label>
+            <input class="mt-[0.1px] 3xl:mt-[7px] scale-75 3xl:scale-100" type="checkbox" id="privacy">
+            <label for="privacy" class="block ml-2 text-sm  3xl:text-lg font-bold">ご提供いただく個人情報のお取り扱いに同意する</label>
         </div>
 
         <div class="text-center">
             <div id="error_msg" class="text-red-600 bg-red-200 pl-2 mb-2 text-left text-sm"></div>
-            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none text-sm opacity-50 bg-black pointer-events-none w-full" }}
+            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none text-sm 3xl:text-lg opacity-50 bg-black pointer-events-none w-full" }}
             {{ .Scratch.Set "btn-text" "ダウンロードする" }}
             {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
 
