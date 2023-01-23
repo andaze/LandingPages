@@ -1,6 +1,6 @@
 <div class="bg-gradient-to-b from-sky-600 to-[#1A81B6] relative pb-4 lg:pb-0 after:content-[''] after:bg-[url('../img/bottom-path.png')] after:bg-contain 3xl:after:bg-cover after:bg-no-repeat after:w-full after:h-[137px] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-137px] after:left-0 over-size:after:hidden">
     <div class="max-w-[1920px] mx-auto">
-        <div class="pt-1 w-full lg:w-[calc(100%_-_16rem)] 2xl:w-3/5 2xl:mx-auto">
+        <div class="pt-1 w-full lg:w-[calc(100%_-_16rem)] 2xl:w-2/3 2xl:mx-auto">
            
             <div class="w-full md:w-5/6 2xl:w-full mx-auto mt-16 lg:mt-32 flex flex-col md:flex-row md:gap-20 lg:gap-0 justify-between">
                 <div class="ml-4 lg:ml-0">
@@ -23,7 +23,7 @@
                         <span class="text-[#E01E5B] font-bold text-[20px] lg:text-[32px] lg:mt-[-15px] 3xl:text-[37px] w-full text-center">脱 クラウド宣言！</span>
                     </div>
 
-                    {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[470px] lg:w-[420px] 3xl:h-[659px] 3xl:w-[620px] object-cover lg:mt-[-90px] ml-auto lg:mr-auto" }}
+                    {{ .Scratch.Set "class" "h-[300px] w-[270px] lg:h-[470px] lg:w-[420px] 3xl:h-[659px] 3xl:w-[620px] object-contain lg:mt-[-90px] ml-auto lg:mr-auto" }}
                     {{ .Scratch.Set "src" .Site.Params.images.president }}
                     {{ .Scratch.Set "type" "content" }}
 
@@ -33,7 +33,7 @@
                     {{ .Scratch.Delete "src" }}
                     {{ .Scratch.Delete "class" }}
 
-                    <div class="absolute bottom-0 right-8 lg:right-0 3xl:right-16 bg-black bg-opacity-50 3xl:bg-inherit">
+                    <div class="absolute bottom-0 3xl:bottom-8 right-8 lg:right-0 3xl:right-16 bg-black bg-opacity-50 3xl:bg-inherit">
                         <span class="text-white font-bold text-[14px] lg:text-[20px]">アンダーズ株式会社<br>代表取締役　新井美奈</span>
                     </div>
                 </div>
