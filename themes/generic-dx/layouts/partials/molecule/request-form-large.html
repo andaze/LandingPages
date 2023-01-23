@@ -1,42 +1,42 @@
-<aside class="bg-white lg:w-4/5 mx-auto py-6 px-2 mt-10 lg:mt-0 rounded-xl shadow-2xl">
+<aside class="bg-white lg:w-4/5 3xl:w-full mx-auto py-6 px-2 mt-10 lg:mt-0 rounded-xl shadow-2xl">
     <div class="mb-10">
-        <p class="text-[24px] text-center !text-[#1A81B6] font-bold mb-5 !bg-white">
+        <p class="text-[24px] 3xl:text-[40px] text-center !text-[#1A81B6] font-bold mb-5 !bg-white">
             ジェネリックDXの資料<br>ダウンロードはこちら
         </p>
-        <p class="text-[15px] text-center">
+        <p class="text-[15px] 3xl:text-[24px] text-center">
             下記フォームへ必須事項をご記入の上、<br>送信をお願いいたします。
         </p>
     </div>
     <form id="download_form">
-        <div class="flex flex-col justify-between gap-10 px-2 lg:px-10">
+        <div class="flex flex-col justify-between gap-10 px-2 lg:px-10 3xl:text-xl">
             <div class="text-left border border-gray-600 rounded p-2">
                 <label for="first_name" class="block font-bold">姓</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="text"  id="first_name" name="first_name" placeholder="例）山田" required>
+                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2 3xl:py-6 3xl:text-xl" type="text"  id="first_name" name="first_name" placeholder="例）山田" required>
             </div>
             <div class="text-left border border-gray-600 rounded p-2">
                 <label for="last_name" class="block font-bold">名</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 focus:!outline-0 focus:!outline-transparent px-0 py-2" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
+                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 focus:!outline-0 focus:!outline-transparent px-0 py-2 3xl:py-6 3xl:text-xl" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
             </div>
             <div class="text-left border border-gray-600 rounded p-2">
                 <label for="email" class="block font-bold">メールアドレス</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" name="email" placeholder="例）andaze@example.com" required>
+                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2 3xl:py-6 3xl:text-xl" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" name="email" placeholder="例）andaze@example.com" required>
             </div>
             <div class="text-left border border-gray-600 rounded p-2">
                 <label for="company_name" class="block font-bold">企業名</label>
-                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
+                <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2 3xl:py-6 3xl:text-xl" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
             </div>
             <div class="p-2 mt-4">
-                <p>
+                <p class="3xl:text-xl">
                     <a href="https://andaze.com/ja/privacy-policy/" target="_blank" rel="noopener noreferrer" class="underline text-[#1A81B6]">プライバシーポリシー</a>に同意いただいた上で<br class="hidden lg:block">お問い合わせください。
                 </p>
             </div>
             <div class="p-2 flex items-start mt-2 mb-2 relative">
-                <input class="scale-75 absolute left-3 top-[12px]" type="checkbox" id="privacy">
-                <label for="privacy" class="block ml-8 font-bold">ご提供いただく個人情報のお取り扱いに同意する</label>
+                <input class="scale-75 3xl:scale-100 absolute left-3 top-[12px]" type="checkbox" id="privacy">
+                <label for="privacy" class="block ml-8 font-bold 3xl:text-xl">ご提供いただく個人情報のお取り扱いに同意する</label>
             </div>
     
             <div class="text-center w-full ">
-                {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none inline-block w-full opacity-50 bg-black pointer-events-none" }}
+                {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none inline-block w-full opacity-50 bg-black pointer-events-none 3xl:text-xl 3xl:py-8" }}
                 {{ .Scratch.Set "btn-text" "ダウンロードする" }}
                 {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
     
