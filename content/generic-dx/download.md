@@ -17,7 +17,7 @@ draft: false
 </div>
 
 
-<div class="px-2 lg:px-0 lg:w-3/4 3xl:w-full mx-auto relative z-50">
+<div class="px-0 lg:w-3/4 3xl:w-full mx-auto relative z-50">
 {{< request-form >}}
 </div>
 
