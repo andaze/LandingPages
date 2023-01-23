@@ -13,7 +13,7 @@ draft: false
     title="100万円からはじめられる自社システム構築「ジェネリックDX」"
     color="blue"
 >}}
-{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain">}}
+{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain shadow-lg shadow-gray-500">}}
 </div>
 
 
