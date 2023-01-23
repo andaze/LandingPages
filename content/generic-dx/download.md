@@ -6,7 +6,7 @@ draft: false
 
 <section class="py-10 lg:py-20 bg-[url('../img/patterA.png')] bg-cover" id="download">
 
-<div class="px-2 flex flex-col md:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] 3xl:max-w-[1500px] mx-auto">
+<div class="px-4 flex flex-col md:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] 3xl:max-w-[1500px] mx-auto">
 
 <div>
 {{< header-section-header 
