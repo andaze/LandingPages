@@ -39,7 +39,7 @@ weight: 5
 
 </div>
 
-<div class="md:hidden">
+<div class="md:hidden mt-10">
 
 {{< div-section-button 
     link="https://andaze.com/landing-pages/generic-dx/download/"
