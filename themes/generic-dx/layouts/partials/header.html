@@ -24,18 +24,18 @@
             {{ .Scratch.Delete "src" }}
             {{ .Scratch.Delete "class" }}
 
-            {{ .Scratch.Set "text-span" "Generic DX" }}
+            {{ .Scratch.Set "text" "Generic DX" }}
 
             {{ if in .Permalink "download" }}
-                {{ .Scratch.Set "span-class" "text-[32px] 3xl:text-[50px]" }}
+                {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px]" }}
             {{ else }}
-                {{ .Scratch.Set "span-class" "text-[32px] 3xl:text-[50px] text-white" }}
+                {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px] text-white" }}
             {{ end }}
 
                 {{ partial "atom/span.html" . }}
 
-            {{ .Scratch.Delete "span-class" }}
-            {{ .Scratch.Delete "text-span" }}
+            {{ .Scratch.Delete "class" }}
+            {{ .Scratch.Delete "text" }}
             
         </div>
     </div>

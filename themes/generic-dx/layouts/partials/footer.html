@@ -19,13 +19,13 @@
             {{ .Scratch.Delete "class" }}
     
     
-            {{ .Scratch.Set "text-span" "Generic DX" }}
-            {{ .Scratch.Set "span-class" "text-[32px] 3xl:text-[50px]" }}
+            {{ .Scratch.Set "text" "Generic DX" }}
+            {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px]" }}
     
                 {{ partial "atom/span.html" . }}
     
-            {{ .Scratch.Delete "span-class" }}
-            {{ .Scratch.Delete "text-span" }}
+            {{ .Scratch.Delete "class" }}
+            {{ .Scratch.Delete "text" }}
         </div>
     
         <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-10">
