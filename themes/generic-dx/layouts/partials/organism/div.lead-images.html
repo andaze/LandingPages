@@ -12,13 +12,11 @@
             {{ .Scratch.Set "class" "w-full h-full object-contain mx-auto transform transition duration-500 hover:scale-110 movie-thumbnail" }}
             {{ .Scratch.Set "src" "images/paas-no-susume.png" }}
             {{ .Scratch.Set "type" "thumbnail-lg" }}
-            {{ .Scratch.Set "quolity" "100" }}
             {{ .Scratch.Set "id" "j_JhrVnCVFQ" }}
         
                 {{ partial "atom/atom-picture.html" . }}
         
             {{ .Scratch.Delete "id" }}
-            {{ .Scratch.Delete "quolity" }}
             {{ .Scratch.Delete "type" }}
             {{ .Scratch.Delete "src" }}
             {{ .Scratch.Delete "class" }}
