@@ -22,11 +22,11 @@
 
         {{ $section_class := "" }}
         {{ if eq .Title "Features" }}
-            {{ $section_class = "bg-[url('../img/patterA.png')] bg-cover" }}
+            {{ $section_class = "bg-[url('../img/patterA.webp')] bg-cover" }}
         {{ else if eq .Title "Ebook" }}
-            {{ $section_class = "bg-[url('../img/patterB.png')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 !text-left" }}
+            {{ $section_class = "bg-[url('../img/patterB.webp')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 !text-left" }}
         {{ else if eq .Title "Process" }}
-            {{ $section_class = "bg-[url('../img/patterC.png')] bg-contain overflow-x-hidden" }}
+            {{ $section_class = "bg-[url('../img/patterC.webp')] bg-contain overflow-x-hidden" }}
         {{ else if or (eq .Title "Youtube") (eq .Title "Suggestion") }}
             {{ $section_class = "bg-gradient-to-r from-[#34A7E1] to-blue-500 border border-[#707070]" }}
         {{ end }}

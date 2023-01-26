@@ -5,12 +5,10 @@
 <div>
     {{ .Scratch.Set "class" "max-w-[1428px] w-full lg:w-11/12 mx-auto shadow-lg shadow-gray-500" }}
     {{ .Scratch.Set "src" $src }}
-    {{ .Scratch.Set "type" "content" }}
-    {{ .Scratch.Set "quolity" "100" }}
+    {{ .Scratch.Set "type" "full" }}
 
         {{ partial "atom/atom-picture.html" . }}
 
-    {{ .Scratch.Delete "quolity" }}
     {{ .Scratch.Delete "type" }}
     {{ .Scratch.Delete "src" }}
     {{ .Scratch.Delete "class" }}
