@@ -1,6 +1,7 @@
 {{ .Scratch.Set "class" (.Get "class") }}
 {{ .Scratch.Set "link" (.Get "link") }}
 {{ .Scratch.Set "btn-text" (.Get "btn-text") }}
+{{ .Scratch.Set "outer" (.Get "outer") }}
 
 {{ .Scratch.Set "image-src" (.Get "image-src") }}
 {{ .Scratch.Set "color" (.Get "color") }}
@@ -10,6 +11,7 @@
 {{ .Scratch.Delete "color" }}
 {{ .Scratch.Delete "image-src" }}
 
+{{ .Scratch.Delete "outer" }}
 {{ .Scratch.Delete "btn-text" }}
 {{ .Scratch.Delete "link" }}
 {{ .Scratch.Delete "class" }}

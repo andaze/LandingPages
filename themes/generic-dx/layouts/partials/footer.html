@@ -9,32 +9,36 @@
 <footer class="w-full max-w-[1414px] mx-auto pt-[100px] pb-[100px] lg:pb-[24px] {{ $class }} lg:w-11/12 3xl:w-full">
 
     <div class="w-full lg:w-[calc(100%_-_16rem)]">
-        <div class="flex items-center ml-4 lg:ml-0">
-            {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[50px] lg:w-[60px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
-            {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
-    
-                {{ partial "atom/atom-picture.html" . }}
-    
-            {{ .Scratch.Delete "src" }}
-            {{ .Scratch.Delete "class" }}
-    
-    
-            {{ .Scratch.Set "text" "Generic DX" }}
-            {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px]" }}
-    
-                {{ partial "atom/span.html" . }}
-    
-            {{ .Scratch.Delete "class" }}
-            {{ .Scratch.Delete "text" }}
-        </div>
+        <a href="/landing-pages/generic-dx/">
+            <div class="flex items-center ml-4 lg:ml-0">
+                {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[50px] lg:w-[60px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
+                {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+        
+                    {{ partial "atom/atom-picture.html" . }}
+        
+                {{ .Scratch.Delete "src" }}
+                {{ .Scratch.Delete "class" }}
+        
+        
+                {{ .Scratch.Set "text" "Generic DX" }}
+                {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px]" }}
+        
+                    {{ partial "atom/span.html" . }}
+        
+                {{ .Scratch.Delete "class" }}
+                {{ .Scratch.Delete "text" }}
+            </div>
+        </a>
     
         <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-10">
             {{ .Scratch.Set "class" "bg-gradient-to-r from-blue-500 to-[#34A7E1] hover:text-[#34A7E1] hover:from-white hover:to-white border hover:border-[#34A7E1] text-white text-[16px] lg:text-[20px] 3xl:text-[32px] mt-10 py-5 3xl:py-8 rounded-3xl w-72 3xl:w-1/2 inline-block text-center shadow-xl" }}
-            {{ .Scratch.Set "link" "https://andaze.com/landing-pages/generic-dx/download/" }}
+            {{ .Scratch.Set "link" "/landing-pages/generic-dx/download/" }}
             {{ .Scratch.Set "btn-text" "資料ダウンロード" }}
+            {{ .Scratch.Set "outer" false }}
     
                 {{ partial "atom/a.footer-button.html" . }}
     
+            {{ .Scratch.Delete "outer" }}
             {{ .Scratch.Delete "btn-text" }}
             {{ .Scratch.Delete "link" }}
             {{ .Scratch.Delete "class" }}

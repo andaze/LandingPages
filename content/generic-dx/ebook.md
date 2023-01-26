@@ -24,9 +24,10 @@ weight: 5
 <div class="hidden md:block">
 
 {{< div-section-button 
-    link="https://andaze.com/landing-pages/generic-dx/download/"
+    link="/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
     color="dark"
+    outer=false
 >}}
 
 </div>
@@ -42,9 +43,10 @@ weight: 5
 <div class="md:hidden mt-10">
 
 {{< div-section-button 
-    link="https://andaze.com/landing-pages/generic-dx/download/"
+    link="/landing-pages/generic-dx/download/"
     btn-text="資料ダウンロード"
     color="dark"
+    outer=false
 >}}
 
 </div>

@@ -11,32 +11,34 @@
 
 <header class="{{ $bgColor }} pb-4 pt-8">
     <div class="max-w-[1920px] mx-auto w-11/12 2xl:w-3/4">
-        <div class="flex items-center ml-4 md:ml-12 lg:ml-0">
-            {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[50px] lg:w-[60px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
+        <a href="/landing-pages/generic-dx/">
+            <div class="flex items-center ml-4 md:ml-12 lg:ml-0">
+                {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[50px] lg:w-[60px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
+                    {{ if in .Permalink "download" }}
+                        {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+                    {{ else }}
+                        {{ .Scratch.Set "src" .Site.Params.images.logo }}
+                    {{ end }}
+    
+                    {{ partial "atom/atom-picture.html" . }}
+    
+                {{ .Scratch.Delete "src" }}
+                {{ .Scratch.Delete "class" }}
+    
+                {{ .Scratch.Set "text" "Generic DX" }}
+    
                 {{ if in .Permalink "download" }}
-                    {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+                    {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px]" }}
                 {{ else }}
-                    {{ .Scratch.Set "src" .Site.Params.images.logo }}
+                    {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px] text-white" }}
                 {{ end }}
-
-                {{ partial "atom/atom-picture.html" . }}
-
-            {{ .Scratch.Delete "src" }}
-            {{ .Scratch.Delete "class" }}
-
-            {{ .Scratch.Set "text" "Generic DX" }}
-
-            {{ if in .Permalink "download" }}
-                {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px]" }}
-            {{ else }}
-                {{ .Scratch.Set "class" "text-[32px] 3xl:text-[50px] text-white" }}
-            {{ end }}
-
-                {{ partial "atom/span.html" . }}
-
-            {{ .Scratch.Delete "class" }}
-            {{ .Scratch.Delete "text" }}
-            
-        </div>
+    
+                    {{ partial "atom/span.html" . }}
+    
+                {{ .Scratch.Delete "class" }}
+                {{ .Scratch.Delete "text" }}
+                
+            </div>
+        </a>
     </div>
 </header>
