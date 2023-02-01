@@ -6,24 +6,24 @@
 
 {{ $color := "" }}
 {{ if eq $annotation "PLAN" }}
-    {{ $color = "bg-gradient-to-r from-blue-700 to-[#1A81B6]" }}
+    {{ $color = "bg-gradient-to-r from-blue-700 to-[#01A2EB]" }}
 {{ else if eq $annotation "DO" }}
     {{ $color = "bg-gradient-to-r from-orange-400 to-[#ECB22D]" }}
 {{ else if eq $annotation "CHECK" }}
     {{ $color = "bg-gradient-to-r from-green-700 to-[#009872]" }}
 {{ else if eq $annotation "ACTION" }}
-    {{ $color = "bg-gradient-to-r from-red-700 to-[#E01E5B]" }}
+    {{ $color = "bg-gradient-to-r from-red-700 to-[#E2017F]" }}
 {{ end }}
 
 {{ $textColor := "" }}
 {{ if eq $annotation "PLAN" }}
-    {{ $textColor = "text-[#1A81B7]" }}
+    {{ $textColor = "text-[#01A2EA]" }}
 {{ else if eq $annotation "DO" }}
     {{ $textColor = "text-[#ECB22D]" }}
 {{ else if eq $annotation "CHECK" }}
     {{ $textColor = "text-[#009872]" }}
 {{ else if eq $annotation "ACTION" }}
-    {{ $textColor = "text-[#E01E5B]" }}
+    {{ $textColor = "text-[#E2017F]" }}
 {{ end }}
 
 <div class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] 3xl:mr-0 relative">
