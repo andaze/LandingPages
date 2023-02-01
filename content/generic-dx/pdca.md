@@ -7,7 +7,7 @@ weight: 7
 ---
 
 {{< header-section-header 
-    title="アンダーズが考える<span class='text-[#1A81B6]'>DXのPDCA</span>"
+    title="アンダーズが考える<span class='text-[#01A2EB]'>DXのPDCA</span>"
 >}}
 
 「ハードルが高い」「効果が見えづらい」と思われていた自社システム構築の常識を覆し、<br>データに基づいた計画、実行、評価、改善の4つのプロセスを回していきます。
