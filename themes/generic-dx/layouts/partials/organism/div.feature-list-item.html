@@ -21,6 +21,6 @@
 </div>
 
 <div>
-    <h2 class="text-center md:text-left mb-[24px] text-[28px] 3xl:text-[40px] font-bold">{{ $title }}</h2>
+    <h2 class="text-center md:text-left mb-[24px] text-[28px] 3xl:text-[40px] font-bold">{{ $title | markdownify }}</h2>
     {{ partial "atom/p.html" . }}
 </div>
