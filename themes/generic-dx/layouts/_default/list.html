@@ -22,8 +22,6 @@
 
         {{ $section_class := "" }}
         {{ if eq .Title "Features" }}
-            {{/*  {{ $section_class = "bg-[url('../img/dot.png')]" }}  */}}
-
             {{ $section_class = "bg-[url('../img/patternA.webp')] bg-cover" }}
         {{ else if eq .Title "Ebook" }}
             {{ $section_class = "bg-[url('../img/patternB.webp')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 !text-left" }}
