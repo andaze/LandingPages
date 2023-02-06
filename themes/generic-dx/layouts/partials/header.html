@@ -9,7 +9,7 @@
     {{ $textColor = "text-white" }}
 {{ end }}
 
-<header class="{{ $bgColor }} pb-4 pt-8 fixed top-0 left-0 w-screen" id="header">
+<header class="{{ $bgColor }} pb-4 pt-8 w-screen" id="header">
     <div class="max-w-[1920px] w-11/12 md:w-[95%] lg:w-full flex justify-between items-center">
         <a href="/landing-pages/generic-dx/" class="inline-block">
             <div class="flex items-center ml-4 lg:ml-12">
@@ -52,3 +52,38 @@
         </nav>
     </div>
 </header>
+
+<div class="bg-white pb-4 pt-8 fixed top-[-200px] left-0 w-screen z-[9999] transition-all duration-1000" id="fixed-header">
+    <div class="max-w-[1920px] w-11/12 md:w-[95%] lg:w-full flex justify-between items-center">
+        <a href="/landing-pages/generic-dx/" class="inline-block">
+            <div class="flex items-center ml-4 lg:ml-12">
+                {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[60px] lg:w-[70px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
+                {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+    
+                    {{ partial "atom/atom-picture.html" . }}
+    
+                {{ .Scratch.Delete "src" }}
+                {{ .Scratch.Delete "class" }}
+    
+                {{ .Scratch.Set "text" "Generic DX" }}
+                {{ .Scratch.Set "class" "text-[40px] 3xl:text-[50px]" }}
+    
+                    {{ partial "atom/span.html" . }}
+    
+                {{ .Scratch.Delete "class" }}
+                {{ .Scratch.Delete "text" }}
+                
+            </div>
+        </a>
+        <nav class="lg:mr-12">
+            <ul class="flex justify-between gap-6">
+                <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
+                <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
+                <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
+                <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
+                <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
+                <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
