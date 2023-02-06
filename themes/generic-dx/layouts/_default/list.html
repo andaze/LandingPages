@@ -31,7 +31,7 @@
             {{ $section_class = "bg-gradient-to-r from-[#34A7E1] to-blue-500 border border-[#707070]" }}
         {{ end }}
 
-        <section class="text-center py-32 px-2 3xl:pr-2 {{ $section_class }}">
+        <section class="text-center py-32 px-2 3xl:pr-2 {{ $section_class }}" id="{{ .Title }}">
             <div class="w-full xl:w-[calc(100%_-_20rem)]">
                 {{ .Content }}
             </div>
