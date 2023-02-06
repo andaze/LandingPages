@@ -41,7 +41,7 @@
             </div>
         </a>
         <nav class="lg:mr-12">
-            <ul class="flex justify-between text-white gap-6">
+            <ul class="flex justify-between text-white gap-6 3xl:gap-10 3xl:text-xl">
                 <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
                 <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
                 <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
@@ -53,12 +53,12 @@
     </div>
 </header>
 
-<div class="bg-white pb-4 pt-8 fixed top-[-200px] left-0 w-screen z-[9999] transition-all duration-1000" id="fixed-header">
+<div class="bg-white shadow-lg shadow-gray-200 pb-2 pt-4 fixed top-[-200px] left-0 w-screen z-[9999] transition-all duration-1000" id="fixed-header">
     <div class="max-w-[1920px] w-11/12 md:w-[95%] lg:w-full flex justify-between items-center">
         <a href="/landing-pages/generic-dx/" class="inline-block">
             <div class="flex items-center ml-4 lg:ml-12">
-                {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[60px] lg:w-[70px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
-                {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+                {{ .Scratch.Set "class" "h-[41px] w-[50px] lg:h-[54px] lg:w-[63px] 3xl:w-[91px] 3xl:h-[81px] mr-4 object-contain" }}
+                {{ .Scratch.Set "src" .Site.Params.images.logoBlue }}
     
                     {{ partial "atom/atom-picture.html" . }}
     
@@ -66,7 +66,7 @@
                 {{ .Scratch.Delete "class" }}
     
                 {{ .Scratch.Set "text" "Generic DX" }}
-                {{ .Scratch.Set "class" "text-[40px] 3xl:text-[50px]" }}
+                {{ .Scratch.Set "class" "text-[36px] 3xl:text-[45px] text-[#01A2EB]" }}
     
                     {{ partial "atom/span.html" . }}
     
@@ -76,7 +76,7 @@
             </div>
         </a>
         <nav class="lg:mr-12">
-            <ul class="flex justify-between gap-6">
+            <ul class="flex justify-between gap-6 3xl:gap-10 text-[#01A2EB] 3xl:text-xl">
                 <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
                 <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
                 <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>

@@ -26,6 +26,7 @@ params:
     logo: "images/mark_2w.png"
     president: "images/president.png"
     logoLine: "images/mark_3k.png"
+    logoBlue: "images/mark_blue.png"
   smtpjs:
     secureToken: 22152f6c-a021-4af1-90d4-cd093adb07c0 # dev,localhost
     fromMail: "contact@andaze.com"
