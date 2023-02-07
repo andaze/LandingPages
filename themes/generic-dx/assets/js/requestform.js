@@ -6,6 +6,7 @@ if(document.getElementById('request-form-pc')) {
     let clicked = false;
     
     const black_background = document.getElementById('black_background');
+    const html = document.querySelector('html');
     
     if(document.querySelector('#request-form-mobile > button')) {
         
@@ -21,6 +22,8 @@ if(document.getElementById('request-form-pc')) {
         
                 black_background.style.opacity = 0.6;
                 black_background.style.visibility = "visible";
+
+                html.classList.add('overflow-y-hidden');
         
                 clicked = true;
                 button.textContent = "閉じる";
@@ -36,6 +39,7 @@ if(document.getElementById('request-form-pc')) {
                     setTimeout(() => {
                         form.style.visibility = "hidden";
                         black_background.style.visibility = "hidden";
+                        html.classList.remove('overflow-y-hidden');
                     }, 500);
                 })
         
