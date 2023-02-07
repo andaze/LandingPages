@@ -6,14 +6,15 @@ draft: false
 
 <section class="py-10 lg:py-20 bg-[url('../img/patternA.webp')] bg-cover" id="download">
 
-<div class="px-4 flex flex-col md:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] 3xl:max-w-[1500px] mx-auto">
+<div class="px-4 flex flex-col lg:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] 3xl:max-w-[1500px] mx-auto">
 
-<div class="w-1/2">
-{{< header-section-header 
-    title="100万円からはじめられる自社システム構築「ジェネリックDX」"
-    color="blue"
->}}
-{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain shadow-lg shadow-gray-500">}}
+<div class="w-4/5 mx-auto lg:w-1/2">
+<p class="mb-10 lg:mb-16 text-[#01A2EB] font-bold text-[26px] md:text-[36px] 3xl:text-[40px] text-center">
+100万円からはじめられる自社システム構築「ジェネリックDX」
+</p>
+<div>
+{{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain shadow-lg shadow-gray-500 w-full">}}
+</div>
 </div>
 
 
