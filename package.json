@@ -26,6 +26,8 @@
         "tw-elements": "^1.0.0-alpha12"
     },
     "dependencies": {
-        "multi-download": "^4.0.0"
+        "flowbite": "^1.6.3",
+        "multi-download": "^4.0.0",
+        "smooth-scroll": "^16.1.3"
     }
 }

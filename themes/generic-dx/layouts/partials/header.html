@@ -9,11 +9,11 @@
     {{ $textColor = "text-white" }}
 {{ end }}
 
-<header class="{{ $bgColor }} pb-4 pt-8">
-    <div class="max-w-[1920px] mx-auto w-11/12 md:w-[95%] lg:w-11/12 2xl:w-3/4">
-        <a href="/landing-pages/generic-dx/">
-            <div class="flex items-center ml-4 lg:ml-12 xl:ml-0">
-                {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[60px] lg:w-[70px] 3xl:w-[101px] 3xl:h-[91px] mr-4 object-contain" }}
+<header class="{{ $bgColor }} pb-4 pt-8 w-screen" id="header">
+    <div class="max-w-[1920px] w-11/12 md:w-[95%] lg:w-full flex justify-between items-center">
+        <a href="/landing-pages/generic-dx/" class="inline-block">
+            <div class="flex items-center ml-4 lg:ml-12">
+                {{ .Scratch.Set "class" "h-[46px] w-[56px] lg:h-[60px] lg:w-[70px] 3xl:w-[101px] 3xl:h-[91px] mr-1 md:mr-4 object-contain" }}
                     {{ if in .Permalink "download" }}
                         {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
                     {{ else }}
@@ -28,9 +28,9 @@
                 {{ .Scratch.Set "text" "Generic DX" }}
     
                 {{ if in .Permalink "download" }}
-                    {{ .Scratch.Set "class" "text-[40px] 3xl:text-[50px]" }}
+                    {{ .Scratch.Set "class" "text-[28px] md:text-[40px] 3xl:text-[50px]" }}
                 {{ else }}
-                    {{ .Scratch.Set "class" "text-[40px] 3xl:text-[50px] text-white" }}
+                    {{ .Scratch.Set "class" "text-[28px] md:text-[40px] 3xl:text-[50px] text-white" }}
                 {{ end }}
     
                     {{ partial "atom/span.html" . }}
@@ -40,5 +40,106 @@
                 
             </div>
         </a>
+        <nav class="lg:mr-12 hidden xl:block">
+            <ul class="flex justify-between text-white gap-6 3xl:gap-10 3xl:text-xl">
+                <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
+                <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
+                <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
+                <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
+                <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
+                <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!-- drawer init and toggle -->
+        <div class="text-center xl:hidden">
+            <div class="w-10 h-7 flex justify-between flex-col" data-drawer-target="drawer" data-drawer-show="drawer" aria-controls="drawer">
+                <span class="h-[3px] w-10 bg-white rounded"></span>
+                <span class="h-[3px] w-10 bg-white rounded"></span>
+                <span class="h-[3px] w-10 bg-white rounded"></span>
+            </div>
+        </div>
     </div>
 </header>
+
+<div class="bg-white shadow-lg shadow-gray-200 pb-2 pt-4 fixed top-[-200px] left-0 w-screen z-20 transition-all duration-1000" id="fixed-header">
+    <div class="max-w-[1920px] w-11/12 md:w-[95%] lg:w-full flex justify-between items-center">
+        <a href="/landing-pages/generic-dx/" class="inline-block">
+            <div class="flex items-center ml-4 lg:ml-12">
+                {{ .Scratch.Set "class" "h-[41px] w-[50px] lg:h-[54px] lg:w-[63px] 3xl:w-[91px] 3xl:h-[81px] mr-1 md:mr-4 object-contain" }}
+                {{ .Scratch.Set "src" .Site.Params.images.logoBlue }}
+    
+                    {{ partial "atom/atom-picture.html" . }}
+    
+                {{ .Scratch.Delete "src" }}
+                {{ .Scratch.Delete "class" }}
+    
+                {{ .Scratch.Set "text" "Generic DX" }}
+                {{ .Scratch.Set "class" "text-[28px] md:text-[36px] 3xl:text-[45px] text-[#01A2EB]" }}
+    
+                    {{ partial "atom/span.html" . }}
+    
+                {{ .Scratch.Delete "class" }}
+                {{ .Scratch.Delete "text" }}
+                
+            </div>
+        </a>
+        <nav class="lg:mr-12 hidden xl:block">
+            <ul class="flex justify-between gap-6 3xl:gap-10 text-[#01A2EB] 3xl:text-xl">
+                <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
+                <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
+                <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
+                <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
+                <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
+                <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <!-- drawer init and toggle -->
+        <div class="text-center xl:hidden">
+            <div class="w-10 h-7 flex justify-between flex-col" data-drawer-target="drawer" data-drawer-show="drawer" aria-controls="drawer">
+                <span class="h-[3px] w-10 bg-[#01A2EB] rounded"></span>
+                <span class="h-[3px] w-10 bg-[#01A2EB] rounded"></span>
+                <span class="h-[3px] w-10 bg-[#01A2EB] rounded"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- drawer component -->
+<div id="drawer" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
+    <div class="flex justify-between items-center">
+        <a href="/landing-pages/generic-dx/" class="inline-block">
+            <div class="flex items-center ml-4 lg:ml-12">
+                {{ .Scratch.Set "class" "h-[41px] w-[50px] lg:h-[54px] lg:w-[63px] 3xl:w-[91px] 3xl:h-[81px] mr-1 md:mr-4 object-contain" }}
+                {{ .Scratch.Set "src" .Site.Params.images.logoLine }}
+    
+                    {{ partial "atom/atom-picture.html" . }}
+    
+                {{ .Scratch.Delete "src" }}
+                {{ .Scratch.Delete "class" }}
+    
+                {{ .Scratch.Set "text" "Generic DX" }}
+                {{ .Scratch.Set "class" "text-[28px] md:text-[36px] 3xl:text-[45px]" }}
+    
+                    {{ partial "atom/span.html" . }}
+    
+                {{ .Scratch.Delete "class" }}
+                {{ .Scratch.Delete "text" }}
+                
+            </div>
+        </a>
+        <button type="button" data-drawer-hide="drawer" aria-controls="drawer" class="text-gray-800 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-3xl p-1.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+            <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            <span class="sr-only">Close menu</span>
+        </button>
+    </div>
+    <nav class="mt-8 text-center">
+        <ul class="flex justify-between flex-col gap-10 3xl:text-xl">
+            <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
+            <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
+            <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
+            <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
+            <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
+            <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</div>
