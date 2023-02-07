@@ -10,6 +10,7 @@ document.querySelector('#privacy').addEventListener("click", () => {
 document.getElementById('download_form').addEventListener("submit", (e) => {
     e.preventDefault();
     sendEmail();
+    gtag_report_conversion();
 });
 
 function sendEmail() {
@@ -44,7 +45,7 @@ function sendEmail() {
     ).then(
         multiDownload(files)
     )
-    
+
 }
 
 function btnEnableDisable() {
