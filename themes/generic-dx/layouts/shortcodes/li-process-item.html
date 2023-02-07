@@ -6,7 +6,7 @@
 {{ $annotation := .Scratch.Get "annotation" }}
 {{ $class := "" }}
 {{ if eq $annotation 4 }}
-    {{ $class = "z-50 after:top-[-50px] lg:after:left-[-200px] after:w-[80px] lg:after:w-[150px] before:content-[''] before:w-[50px] before:h-[57px] 3xl:before:w-[100px] 3xl:before:h-[114px] before:bg-none lg:before:bg-[url('../img/arrow_triangle.png')] over-size:before:bg-none before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-50px] 3xl:before:left-[-100px]" }}
+    {{ $class = "z-[15] after:top-[-50px] lg:after:left-[-200px] after:w-[80px] lg:after:w-[150px] before:content-[''] before:w-[50px] before:h-[57px] 3xl:before:w-[100px] 3xl:before:h-[114px] before:bg-none lg:before:bg-[url('../img/arrow_triangle.png')] over-size:before:bg-none before:bg-cover before:absolute before:top-1/2 before:-translate-y-1/2 before:left-[-50px] 3xl:before:left-[-100px]" }}
 {{ else if eq $annotation 5 }}
     {{ $class = "z-10 after:top-[-50px] lg:after:left-[-200px] after:w-[120px] lg:after:w-[200px]" }}
 {{ else if gt $annotation 5 }}
