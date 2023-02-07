@@ -5,7 +5,7 @@
     <title>{{ .Title }} | {{ .Site.Title | default "Example Site Title" }}</title>
     {{ hugo.Generator }}
     {{ template "_internal/google_analytics.html" . }}
+    {{- partialCached "atom/script-gtag_report_conversion.html" . -}}
     {{- partialCached "googlefonts.html" . -}}
     {{- partialCached "tailwindcss.postcss.html" . -}}
 </head>
-  
