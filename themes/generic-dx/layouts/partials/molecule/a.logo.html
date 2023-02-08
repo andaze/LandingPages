@@ -1,0 +1,26 @@
+{{ $class := default "" (.Scratch.Get "class") }}
+{{ $logo_image := default "" (.Scratch.Get "logo-img") }}
+
+<div class="{{ $class }}">
+    {{ .Scratch.Set "class" "h-[41px] w-[50px] lg:h-[54px] lg:w-[63px] 3xl:w-[91px] 3xl:h-[81px] mr-1 md:mr-4 object-contain" }}
+    {{ .Scratch.Set "src" $logo_image }}
+
+        {{ partial "atom/atom-picture.html" . }}
+
+    {{ .Scratch.Delete "src" }}
+    {{ .Scratch.Delete "class" }}
+
+    {{ .Scratch.Set "text" "Generic DX" }}
+    {{ if eq $logo_image .Site.Params.images.logoBlue }}
+        {{ .Scratch.Set "class" "text-[28px] md:text-[36px] 3xl:text-[45px] text-[#01A2EB]" }}
+    {{ else if eq $logo_image .Site.Params.images.logoLine }}
+        {{ .Scratch.Set "class" "text-[28px] md:text-[36px] 3xl:text-[45px]" }}
+    {{ else }}
+        {{ .Scratch.Set "class" "text-[28px] md:text-[36px] 3xl:text-[45px] text-white" }}
+    {{ end }}
+
+        {{ partial "atom/span.html" . }}
+
+    {{ .Scratch.Delete "class" }}
+    {{ .Scratch.Delete "text" }}
+</div>
