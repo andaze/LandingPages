@@ -40,16 +40,15 @@
                 
             </div>
         </a>
-        <nav class="lg:mr-12 hidden xl:block">
-            <ul class="flex justify-between text-white gap-6 3xl:gap-10 3xl:text-xl">
-                <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
-                <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
-                <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
-                <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
-                <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
-                <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+
+        {{ .Scratch.Set "nav-class" "lg:mr-12 hidden xl:block" }}
+        {{ .Scratch.Set "ul-class" "flex justify-between text-white gap-6 3xl:gap-10 3xl:text-xl" }}
+
+            {{ partial "molecule/nav.header-nav.html" . }}
+
+        {{ .Scratch.Delete "ul-class" }}
+        {{ .Scratch.Delete "nav-class" }}
+
         <!-- drawer init and toggle -->
         <div class="text-center xl:hidden">
             <div class="w-10 h-7 flex justify-between flex-col" data-drawer-target="drawer" data-drawer-show="drawer" aria-controls="drawer">
@@ -83,16 +82,15 @@
                 
             </div>
         </a>
-        <nav class="lg:mr-12 hidden xl:block">
-            <ul class="flex justify-between gap-6 3xl:gap-10 text-[#01A2EB] 3xl:text-xl">
-                <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
-                <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
-                <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
-                <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
-                <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
-                <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
-            </ul>
-        </nav>
+
+        {{ .Scratch.Set "nav-class" "lg:mr-12 hidden xl:block" }}
+        {{ .Scratch.Set "ul-class" "flex justify-between gap-6 3xl:gap-10 text-[#01A2EB] 3xl:text-xl" }}
+
+            {{ partial "molecule/nav.header-nav.html" . }}
+
+        {{ .Scratch.Delete "ul-class" }}
+        {{ .Scratch.Delete "nav-class" }}
+
         <!-- drawer init and toggle -->
         <div class="text-center xl:hidden">
             <div class="w-10 h-7 flex justify-between flex-col" data-drawer-target="drawer" data-drawer-show="drawer" aria-controls="drawer">
@@ -132,14 +130,13 @@
             <span class="sr-only">Close menu</span>
         </button>
     </div>
-    <nav class="mt-8 text-center">
-        <ul class="flex justify-between flex-col gap-10 3xl:text-xl">
-            <li class="hover:opacity-80"><a href="#Manga">ITコストの課題</a></li>
-            <li class="hover:opacity-80"><a href="#Features">ジェネリックDXの特徴</a></li>
-            <li class="hover:opacity-80"><a href="#Needs">多様なニーズに対応</a></li>
-            <li class="hover:opacity-80"><a href="#Pdca">サービス</a></li>
-            <li class="hover:opacity-80"><a href="#Process">運用までの流れ</a></li>
-            <li class="hover:opacity-80"><a href="#Contact">お問い合わせ</a></li>
-        </ul>
-    </nav>
+
+    {{ .Scratch.Set "nav-class" "mt-8 text-center" }}
+    {{ .Scratch.Set "ul-class" "flex justify-between flex-col gap-10 3xl:text-xl" }}
+
+        {{ partial "molecule/nav.header-nav.html" . }}
+
+    {{ .Scratch.Delete "ul-class" }}
+    {{ .Scratch.Delete "nav-class" }}
+
 </div>
