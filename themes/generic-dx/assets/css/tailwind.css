@@ -27,4 +27,16 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+#download_form_wrapper {
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+
+/*スクロールバー非表示（Chrome・Safari）*/
+#download_form_wrapper::-webkit-scrollbar{
+  display:none;
+}
+
 @tailwind utilities;
