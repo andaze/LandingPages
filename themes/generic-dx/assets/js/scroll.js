@@ -11,6 +11,7 @@ let options = {
 let scroll = new smoothScroll('a[href*="#"]', options);
 
 const fixed_header = document.getElementById('fixed-header');
+const request_form = document.getElementById('download_form_wrapper');
 
 window.addEventListener('scroll', () => {
     const scroll = window.scrollY;
@@ -21,4 +22,14 @@ window.addEventListener('scroll', () => {
     } else {
         fixed_header.style.top = "-200px";
     }
+    
+    if (scroll > 10) {
+        request_form.classList.remove("opacity-0", "invisible", "xl:translate-x-full");
+    } else {
+        request_form.classList.add("xl:translate-x-full");
+    }
+});
+
+window.addEventListener('load', () => {
+    document.getElementById("drawer").classList.remove("opacity-0");
 });
