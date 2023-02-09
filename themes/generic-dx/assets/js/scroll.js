@@ -24,9 +24,9 @@ window.addEventListener('scroll', () => {
     }
     
     if (scroll > 10) {
-        request_form.classList.remove("opacity-0", "invisible", "translate-x-80");
+        request_form.classList.remove("opacity-0", "invisible", "xl:translate-x-full");
     } else {
-        request_form.classList.add("translate-x-80");
+        request_form.classList.add("xl:translate-x-full");
     }
 });
 
