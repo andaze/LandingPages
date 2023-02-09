@@ -19,9 +19,17 @@ window.addEventListener('scroll', () => {
 
     if (scroll > target) {
         fixed_header.style.top = "0";
-        request_form.classList.remove("opacity-0", "invisible", "translate-x-80");
     } else {
         fixed_header.style.top = "-200px";
+    }
+    
+    if (scroll > 10) {
+        request_form.classList.remove("opacity-0", "invisible", "translate-x-80");
+    } else {
         request_form.classList.add("translate-x-80");
     }
+});
+
+window.addEventListener('load', () => {
+    document.getElementById("drawer").classList.remove("opacity-0");
 });
