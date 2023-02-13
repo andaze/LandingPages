@@ -1,9 +1,9 @@
-<div id="key-visual" class="bg-gradient-to-r from-[#34A7E1] to-blue-500 relative pb-4 lg:pb-[90px] after:content-[''] after:bg-[url('../img/bottom-path.png')] after:bg-contain 3xl:after:bg-cover after:bg-no-repeat after:w-full after:h-[7.2vw] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-2px] after:left-0 over-size:after:hidden pt-[97px] md:pt-[111px] 3xl:pt-[129px]">
+<div id="key-visual" class="bg-gradient-to-r from-[#34A7E1] to-blue-500 relative pb-16 lg:pb-[90px] after:content-[''] after:bg-[url('../img/bottom-path.png')] after:bg-contain 3xl:after:bg-cover after:bg-no-repeat after:w-full after:h-[7.2vw] after:max-w-[1920px] after:mx-auto after:absolute after:bottom-[-2px] after:left-0 over-size:after:hidden pt-[97px] md:pt-[111px] 3xl:pt-[129px]">
     <div class="max-w-[1920px] mx-auto h-[500px] md:h-auto relative z-10">
         <div class="pt-1 w-full 2xl:w-[95%] 2xl:mx-auto">
            
             <div class="w-full md:w-[95%] 2xl:w-full mx-auto mt-16 lg:mt-32 flex flex-col md:flex-row md:gap-20 lg:gap-0 justify-between">
-                <div class="ml-4 lg:ml-0 mt-[130px] md:mt-0 relative z-10 md:static text-shadow-md">
+                <div class="ml-4 lg:ml-0 mt-[130px] md:mt-0 relative z-30 text-shadow-md">
                     <p class="text-[32px] xl:text-[2.5vw] 3xl:text-[60px] font-bold text-white mb-5 md:mb-11">
                         <span class="text-[60px] lg:text-[90px] xl:text-[7vw] 3xl:text-[140px] text-[#FEF101] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-30px] lg:before:top-[-55px] 3xl:before:top-[-70px] before:left-1/2 before:-translate-x-1/2">1</span>
                         <span class="text-[60px] lg:text-[90px] xl:text-[7vw] 3xl:text-[140px] text-[#FEF101] leading-[1.1] relative before:content-['・'] before:absolute before:top-[-30px] lg:before:top-[-55px] 3xl:before:top-[-70px] before:left-1/2 before:-translate-x-1/2">5</span>
@@ -16,9 +16,9 @@
                     </h1>
                 </div>
 
-                <div class="absolute right-[-140px] top-24 md:relative md:right-auto md:top-auto">
+                <div class="absolute right-[-140px] top-4 md:top-24 md:relative md:right-auto md:top-auto">
 
-                    <div class="bg-[url('../img/fukidashi.webp')] bg-contain bg-no-repeat w-[200px] h-[113px] lg:w-[300px] lg:h-[180px] 3xl:w-[404px] 3xl:h-[225px] absolute top-10 md:top-[40px] lg:top-[-100px] xl:top-[-70px] left-[-80px] md:left-[-120px] lg:left-[-200px] xl:left-[-190px] 3xl:left-[-240px] z-20 flex flex-column items-center">
+                    <div class="bg-[url('../img/fukidashi.webp')] bg-contain bg-no-repeat w-[200px] h-[113px] lg:w-[300px] lg:h-[180px] 3xl:w-[404px] 3xl:h-[225px] absolute top-10 md:top-0 lg:top-[-80px] xl:top-[-70px] left-[-80px] md:left-[-140px] lg:left-[-200px] xl:left-[-190px] 3xl:left-[-240px] z-20 flex flex-column items-center">
                         <span class="text-[#E2017F] font-bold text-[22px] md:text-[20px] lg:text-[32px] lg:mt-[-15px] 3xl:text-[37px] w-full text-center">脱 クラウド宣言！</span>
                     </div>
 
@@ -39,7 +39,7 @@
             {{ .Scratch.Delete "src" }}
             {{ .Scratch.Delete "class" }}
 
-            {{ .Scratch.Set "class" "w-[850px] h-[506px] xl:w-[62vw] xl:h-auto 3xl:w-[1190px] 3xl:h-[716px] object-cover md:mt-[-20px] lg:mt-[-90px] ml-auto lg:mr-auto absolute bottom-0 3xl:bottom-5 right-14 z-10" }}
+            {{ .Scratch.Set "class" "w-[550px] h-[331px] xl:w-[62vw] xl:h-auto 3xl:w-[1190px] 3xl:h-[716px] object-cover md:mt-[-20px] lg:mt-[-90px] ml-auto lg:mr-auto absolute bottom-0 3xl:bottom-5 right-0 xl:right-14 z-10 hidden xl:block" }}
             {{ .Scratch.Set "src" .Site.Params.images.keyVisual }}
             {{ .Scratch.Set "type" "full" }}
 
