@@ -25,6 +25,7 @@ params:
     contactIcon: "images/envelope.png"
     logo: "images/mark_2w.png"
     president: "images/president.png"
+    keyVisual: "images/venn-diagram.png"
     logoLine: "images/mark_3k.png"
     logoBlue: "images/mark_blue.png"
   smtpjs:
