@@ -34,6 +34,21 @@
                     </div>
                 </div> 
             </div>
+
+            {{ .Scratch.Delete "type" }}
+            {{ .Scratch.Delete "src" }}
+            {{ .Scratch.Delete "class" }}
+
+            {{ .Scratch.Set "class" "w-[850px] h-[506px] object-cover md:mt-[-20px] lg:mt-[-90px] ml-auto lg:mr-auto absolute bottom-0 right-1 z-10" }}
+            {{ .Scratch.Set "src" .Site.Params.images.keyVisual }}
+            {{ .Scratch.Set "type" "full" }}
+
+                {{ partial "atom/atom-picture.html" . }}
+
+            {{ .Scratch.Delete "type" }}
+            {{ .Scratch.Delete "src" }}
+            {{ .Scratch.Delete "class" }}
+
         </div>
     </div>
 
