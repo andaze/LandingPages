@@ -8,22 +8,34 @@
         
         <div class="mb-2 flex justify-between gap-2">
             <div class="text-left border-2 border-gray-600 rounded p-2 w-full">
-                <label for="first_name" class="block font-bold">姓</label>
+                <div class="flex items-center">
+                    <label for="first_name" class="font-bold">姓</label>
+                    <span class="text-white bg-[#FD0D10] text-xs font-bold ml-2 py-0.5 px-1 rounded">必須</span>
+                </div>
                 <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg bg-transparent" type="text" id="first_name" name="first_name" placeholder="例）山田" required>
             </div>
             <div class="text-left border-2 border-gray-600 rounded p-2 w-full">
-                <label for="last_name" class="block font-bold">名</label>
+                <div class="flex items-center">
+                    <label for="last_name" class="font-bold">名</label>
+                    <span class="text-white bg-[#FD0D10] text-xs font-bold ml-2 py-0.5 px-1 rounded">必須</span>
+                </div>
                 <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg bg-transparent" type="text" id="last_name" name="last_name" placeholder="例）太郎" required>
             </div>
         </div>
 
         <div class="text-left border-2 border-gray-600 rounded p-2 mb-2">
-            <label for="email" class="block font-bold">メールアドレス</label>
+            <div class="flex items-center">
+                <label for="email" class="font-bold">メールアドレス</label>
+                <span class="text-white bg-[#FD0D10] text-xs font-bold ml-2 py-0.5 px-1 rounded">必須</span>
+            </div>
             <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg bg-transparent" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" name="email" placeholder="例）andaze@example.com" required>
         </div>
         
         <div class="text-left border-2 border-gray-600 rounded p-2">
-            <label for="company_name" class="block font-bold">企業名</label>
+            <div class="flex items-center">
+                <label for="company_name" class="font-bold">企業名</label>
+                <span class="text-white bg-[#FD0D10] text-xs font-bold ml-2 py-0.5 px-1 rounded">必須</span>
+            </div>
             <input class="w-full border-none text-black placeholder-gray-300 focus:ring-0 focus:!outline-0 focus:!outline-transpare px-0 py-2 2xl:py-4 3xl:text-lg bg-transparent" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
         </div>
 
@@ -39,7 +51,7 @@
 
         <div class="text-center">
             <div id="error_msg" class="text-red-600 bg-red-200 pl-2 mb-2 text-left text-sm"></div>
-            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none text-sm 3xl:text-lg opacity-50 bg-black pointer-events-none w-full" }}
+            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none text-sm 3xl:text-lg bg-gradient-to-r from-red-500 to-[#E01E5B] hover:from-white hover:to-white hover:text-[#E01E58] hover:border-[#E01E58] cursor-pointer w-full" }}
             {{ .Scratch.Set "btn-text" "ダウンロードする" }}
             {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
 

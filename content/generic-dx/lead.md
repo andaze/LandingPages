@@ -9,7 +9,7 @@ weight: 1
 {{< header-section-header 
     title="アンダーズが<span class='text-[#01A2EB]'>DXに革命</span>を！"
 >}}
-<p class="leading-[2.5]">
+<p class="leading-[3]">
 ジェネリックDXは、<strong class='text-[#01A2EB] text-xl lg:text-3xl'>150万円から始められる全社横断型プラットフォーム</strong>です。<br>
 自社システムなので会社のやり方に合わせて<strong class='text-[#01A2EB] text-xl lg:text-3xl'>オーダーメイドで設計</strong>できますし、<br>
 各部署に散在するサブスクを整理することで、<strong class='text-[#01A2EB] text-xl lg:text-3xl'>ITコストを大幅に削減</strong>できます。
