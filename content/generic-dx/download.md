@@ -4,7 +4,7 @@ date: 2022-12-22T17:07:01+09:00
 draft: false
 ---
 
-<section class="py-10 lg:py-20 bg-[url('../img/patternA.webp')] bg-cover" id="download">
+<section class="py-10 lg:py-20 bg-[url('../img/patternA.webp')] bg-cover mt-24" id="download">
 
 <div class="px-4 flex flex-col lg:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] 3xl:max-w-[1500px] mx-auto">
 
