@@ -17,7 +17,7 @@ weight: 10
     src="images/paas-no-susume-thumb.png"
     id="j_JhrVnCVFQ" 
     title="「PaaS のススメ」のご紹介"
-    description="PaaS のススメ式では<span class='text-[#FEF101]'>DX に関するコンサルティングサービス</span>を行っています。DX 推進について、まずはお気軽にご相談ください。コンサルティングは相応の料金をいただいておりますが、ご相談は無料で行っています。"
+    description="「PaaS のススメ」では、<span class='text-[#FEF101]'>DX に関するコンサルティングサービス</span>を行っています。DX 推進について、まずはお気軽にご相談ください。コンサルティングは相応の料金をいただいておりますが、ご相談は無料で行っています。"
 >}}
 
 {{< div-youtube-movie 
