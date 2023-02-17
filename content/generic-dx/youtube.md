@@ -11,7 +11,7 @@ weight: 10
     color="white"
 >}}
 
-<div class="flex flex-col md:flex-row gap-x-6 gap-y-10 lg:gap-x-52 md:gap-y-0 3xl:gap-y-0 justify-between md:justify-center items-center mx-auto md:w-11/12 md:max-w-[1500px]">
+<div class="flex flex-col md:flex-row gap-x-6 gap-y-10 lg:gap-x-10 md:gap-y-0 3xl:gap-y-0 justify-between md:justify-center mx-auto md:w-11/12 md:max-w-[1500px] items-start">
 
 {{< div-youtube-movie 
     src="images/paas-no-susume-thumb.png"
