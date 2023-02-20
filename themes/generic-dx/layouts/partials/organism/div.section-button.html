@@ -15,7 +15,7 @@
         {{ partial "atom/a.button.html" . }}
     </div>
     
-    <div class="{{ $color_class }} w-[44px] h-[44px] md:w-[54px] md:h-[54px] 3xl:w-[66px] 3xl:h-[66px] flex flex-col justify-center rounded-full absolute top-1/2 -translate-y-1/2 right-4 pointer-events-none">
+    <div class="{{ $color_class }} w-[44px] h-[44px] lg:w-[54px] lg:h-[54px] 3xl:w-[66px] 3xl:h-[66px] flex flex-col justify-center rounded-full absolute top-1/2 -translate-y-1/2 right-4 pointer-events-none">
         {{ .Scratch.Set "class" "w-[18px] h-[18px] md:w-[22px] md:h-[22px] mx-auto" }}
         {{ .Scratch.Set "src" "images/arrow.png" }}
         {{ .Scratch.Set "type" "content" }}
