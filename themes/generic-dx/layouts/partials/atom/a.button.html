@@ -2,4 +2,4 @@
 {{ $btn_text := .Scratch.Get "btn-text" }}
 {{ $outer := default true (.Scratch.Get "outer") }}
 
-<a href="{{ $link }}" class="bg-white block w-[340px] lg:w-[440px] 3xl:w-[540px] rounded-full relative p-5 cursor-pointer" {{if $outer}} target="_blank" rel="noopener noreferrer" {{end}}>{{ $btn_text }}</a>
+<a href="{{ $link }}" class="bg-white block w-[340px] lg:w-[440px] 3xl:w-[540px] rounded-full relative p-3 lg:p-5 cursor-pointer" {{if $outer}} target="_blank" rel="noopener noreferrer" {{end}}>{{ $btn_text }}</a>

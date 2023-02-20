@@ -7,7 +7,7 @@ weight: 10
 ---
 
 {{< header-section-header 
-    title="自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決について<br class='hidden lg:block'>弊社代表がYouTubeで解説！"
+    title="自社システム構築で使用する<br class='hidden lg:block'>「PaaS」の利点と特有の課題解決について<br class='hidden md:block'>弊社代表がYouTubeで解説！"
     color="white"
 >}}
 
@@ -16,14 +16,14 @@ weight: 10
 {{< div-youtube-movie 
     src="images/paas-no-susume-thumb.png"
     id="j_JhrVnCVFQ" 
-    title="「PaaS のススメ」のご紹介"
+    title="「PaaS のススメ」<br class='hidden md:block lg:hidden'>のご紹介"
     description="「PaaS のススメ」では、<span class='text-[#FEF101]'>DX に関するコンサルティングサービス</span>を行っています。DX 推進について、まずはお気軽にご相談ください。コンサルティングは相応の料金をいただいておりますが、ご相談は無料で行っています。"
 >}}
 
 {{< div-youtube-movie 
     src="images/generic-crm-thumb.png"
     id="nHCQjXzRPrg" 
-    title="「ジェネリックCRM」のご紹介"
+    title="「ジェネリックCRM」<br class='hidden md:block lg:hidden'>のご紹介"
     description="「PaaS のススメ」では、<span class='text-[#FEF101]'>マイクロソフトAzure を活用した高機能CRM ソリューション</span>を提供しています。様々な業務アプリケーションや情報プラットフォームをローコードで実現します。大手CRM 製品の代替品としてご活用いただいている事例もあります。"
 >}}
 
