@@ -7,7 +7,7 @@ weight: 9
 ---
 
 {{< header-section-header 
-    title="はじめてのDXでもアンダーズが<br class='hidden md:block'>ゼロからサポート<br class='hidden md:block'>プランニング・見積もりは無料！"
+    title="はじめてのDXでも<br class='md:hidden'>アンダーズが<br class='hidden md:block'>ゼロからサポート<br>プランニング・見積もりは無料！"
 >}}
 
 自社システム構築がはじめてという企業様も安心してご利用いただけるよう、<br class='hidden md:block'>

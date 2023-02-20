@@ -7,7 +7,7 @@ weight: 2
 ---
 
 {{< header-section-header 
-    title="サブスク費用の削減をマンガで解説"
+    title="サブスク費用の削減を<br class='md:hidden'>マンガで解説"
     color="blue"
 >}}
 
