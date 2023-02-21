@@ -8,7 +8,7 @@ draft: false
 
 <div class="px-4 flex flex-col lg:flex-row gap-x-32 md:gap-x-16 lg:w-11/12 max-w-[1280px] 3xl:max-w-[1500px] mx-auto">
 
-<div class="w-4/5 mx-auto lg:w-1/2">
+<div class="md:w-4/5 mx-auto lg:w-1/2">
 <p class="mb-10 lg:mb-16 text-[#01A2EB] font-bold text-[26px] md:text-[36px] 3xl:text-[40px] text-center">
 100万円からはじめられる自社システム構築「ジェネリックDX」
 </p>
@@ -18,7 +18,7 @@ draft: false
 </div>
 
 
-<div class="px-0 lg:w-3/5 mx-auto relative z-50">
+<div class="px-0 md:w-4/5 lg:w-3/5 mx-auto relative z-50">
 {{< request-form >}}
 </div>
 
