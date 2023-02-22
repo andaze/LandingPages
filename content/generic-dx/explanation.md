@@ -3,7 +3,7 @@ title: "Explanation"
 date: 2023-02-22T17:13:06+09:00
 draft: false
 isSection: true
-weight: 0
+weight: 1
 ---
 
 {{< header-section-header 

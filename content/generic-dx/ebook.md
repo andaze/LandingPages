@@ -3,7 +3,7 @@ title: "Ebook"
 date: 2022-12-10T17:32:26+09:00
 draft: false
 isSection: true
-weight: 5
+weight: 6
 ---
 
 <div class="py-10 lg:py-20 px-2 lg:px-0 md:w-11/12 mx-auto flex flex-col md:flex-row gap-x-32 md:gap-x-0 lg:gap-x-16 md:gap-x-16 relative z-10 text-white justify-center">
