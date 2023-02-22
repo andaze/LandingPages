@@ -2,4 +2,4 @@
 {{ $link := .Scratch.Get "link" }}
 {{ $text := .Scratch.Get "btn-text" }}
 
-<button type="submit" class="{{ $opt_class }} p-5 downloadButton" data-files="{{ `PaaSのススメ.zip` | absURL }}">{{ $text }}</button>
+<button type="submit" class="{{ $opt_class }} downloadButton" data-files="{{ `PaaSのススメ.zip` | absURL }}">{{ $text }}</button>
