@@ -1,6 +1,6 @@
 <aside id="download_form_wrapper" class="bg-white w-full xl:w-80 3xl:w-96 mx-auto xl:max-h-[calc(100vh_-_110px)] overflow-y-scroll py-6 px-5 border-4 border-gray-700 rounded-3xl opacity-0 invisible transition duration-1000 shadow-lg shadow-gray-500 md:absolute md:top-1/2 md:-translate-y-1/2 xl:static xl:top-auto xl:-translate-y-0 xl:translate-x-full">
     <div>
-        <p class="text-center !text-[#01A2EB] font-bold mb-5 hidden xl:block xl:text-2xl 3xl:text-3xl" data-accordion-target="#accordion-collapse-body-request" aria-expanded="false" aria-controls="accordion-collapse-body-request">
+        <p class="text-center !text-[#01A2EB] font-bold mb-5 hidden md:block lg:hidden xl:block md:text-2xl 3xl:text-3xl" data-accordion-target="#accordion-collapse-body-request" aria-expanded="false" aria-controls="accordion-collapse-body-request">
             ジェネリックDXの資料<br>ダウンロードはこちら
         </p>
     </div>
@@ -51,7 +51,7 @@
 
         <div class="text-center">
             <div id="error_msg" class="text-red-600 bg-red-200 pl-2 mb-2 text-left text-sm"></div>
-            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none text-sm 3xl:text-lg bg-gradient-to-r from-red-500 to-[#E01E5B] hover:from-white hover:to-white hover:text-[#E01E58] hover:border-[#E01E58] cursor-pointer w-full" }}
+            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none text-sm 3xl:text-lg bg-gradient-to-r from-red-500 to-[#E01E5B] hover:from-white hover:to-white hover:text-[#E01E58] hover:border-[#E01E58] hover:border-4 cursor-pointer w-full h-[60px]" }}
             {{ .Scratch.Set "btn-text" "ダウンロードする" }}
             {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
 
