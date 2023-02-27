@@ -21,7 +21,11 @@
     {{ range (where .Site.RegularPages.ByWeight ".Params.isSection" "eq" true) }}
 
         {{ $section_class := "" }}
-        {{ if eq .Title "Features" }}
+        {{ if eq .Title "Explanation" }}
+            {{ $section_class = "!pb-80" }}
+        {{ else if eq .Title "Lead" }}
+            {{ $section_class = "bg-sky-50" }}
+        {{ else if eq .Title "Features" }}
             {{ $section_class = "bg-[url('../img/patternA.webp')] bg-cover" }}
         {{ else if eq .Title "Ebook" }}
             {{ $section_class = "bg-[url('../img/patternB.webp')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 !text-left" }}

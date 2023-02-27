@@ -1,65 +1,69 @@
-<div class="flex justify-center h-[400px] mx-auto select-none mt-14 gap-52">
+<div class="flex justify-center h-[400px] mx-auto select-none gap-52">
     <div class="w-96 h-full flex flex-col justify-end text-[12px] relative">
-        <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-40 left-0">
+        <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-40 left-0 bg-white">
             <div class="relative">
                 <span>ずっと長く使える<br>システムはないだろうか？</span>
-                <span class="w-[25px] h-[15px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-28px] right-0"></span>
-                <span class="w-[15px] h-[9px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-40px] right-[-8px]"></span>
+                <span class="w-[25px] h-[15px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-28px] right-0 bg-white"></span>
+                <span class="w-[15px] h-[9px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-40px] right-[-8px] bg-white"></span>
             </div>
         </div>
-        <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-64 left-8">
+        <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-64 left-8 bg-white">
             <div class="relative">
                 <span>クラウドサービスの<br>利用料が膨れ上がり、<br>管理も大変</span>
-                <span class="w-[25px] h-[15px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-28px] right-0"></span>
-                <span class="w-[15px] h-[9px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-40px] right-[-8px]"></span>
+                <span class="w-[25px] h-[15px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-28px] right-0 bg-white"></span>
+                <span class="w-[15px] h-[9px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-40px] right-[-8px] bg-white"></span>
             </div>
         </div>
-        <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-48 right-0">
+        <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-48 right-0 bg-white">
             <div class="relative">
                 <span>システム間のデータ連携に<br>時間と費用がかかる</span>
-                <span class="w-[25px] h-[15px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-32px] left-2"></span>
-                <span class="w-[15px] h-[9px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-44px] left-0"></span>
+                <span class="w-[25px] h-[15px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-32px] left-2 bg-white"></span>
+                <span class="w-[15px] h-[9px] rounded-[50%] border-2 border-[#0D5FA4] absolute bottom-[-44px] left-0 bg-white"></span>
             </div>
         </div>
         <img src="{{ `img/icons.svg` | absURL }}" alt="" class="w-4/5 h-auto mb-6 mx-auto">
-        <div class="absolute right-[-180px] top-20 z-[15]">
-            <span class="text-[#E2017F] text-[20px]">「PaaSのススメ」<br>の実践</span>
-            <div class="w-[180px] h-auto mt-4">
+        <div class="absolute right-[-220px] top-20 z-[15]">
+            <span class="text-[20px]">「PaaSのススメ」<br>の実践</span>
+            <div class="w-[180px] h-auto rotate-[318deg]">
                 <img src="{{ `img/arrow.svg` | absURL }}" alt="" class="w-full h-auto">
             </div>
         </div>
     </div>
-    <div class="w-fit h-full rounded-full flex flex-col justify-end relative">
-        <p class="text-[14px] text-[#FEF101] relative z-[15]">「利益の出るDX」、「跳躍的な事業推進」<br>を実現する目途が立ちます</p>
-        <div class="relative w-[300px] h-48 mt-4 mx-auto z-10">
-            <div class="absolute top-0 left-0">
-                {{ .Scratch.Set "class" "w-48 h-auto" }}
-                {{ .Scratch.Set "src" "images/explanation/ui_1.png" }}
-                {{ .Scratch.Set "type" "content" }}
-                {{ .Scratch.Set "quolity" "100" }}
-            
-                    {{ partial "atom/atom-picture.html" . }}
-            
-                {{ .Scratch.Delete "quolity" }}
-                {{ .Scratch.Delete "type" }}
-                {{ .Scratch.Delete "src" }}
-                {{ .Scratch.Delete "class" }}
-            </div>
-            <div class="absolute bottom-0 right-0">
-                {{ .Scratch.Set "class" "w-48 h-auto" }}
-                {{ .Scratch.Set "src" "images/explanation/ui_2.png" }}
-                {{ .Scratch.Set "type" "content" }}
-                {{ .Scratch.Set "quolity" "100" }}
-            
-                    {{ partial "atom/atom-picture.html" . }}
-            
-                {{ .Scratch.Delete "quolity" }}
-                {{ .Scratch.Delete "type" }}
-                {{ .Scratch.Delete "src" }}
-                {{ .Scratch.Delete "class" }}
+    <div class="h-96 w-96 relative">
+        <div class="absolute bottom-[-270px] h-full w-full">
+            <div class="w-full h-fit rounded-full flex flex-col justify-end relative">
+                <p class="text-[14px] relative z-[15]">「利益の出るDX」、「跳躍的な事業推進」<br>を実現する目途が立ちます</p>
+                <div class="relative w-[300px] h-48 mt-2 mx-auto z-10">
+                    <div class="absolute top-0 left-0">
+                        {{ .Scratch.Set "class" "w-48 h-auto" }}
+                        {{ .Scratch.Set "src" "images/explanation/ui_1.png" }}
+                        {{ .Scratch.Set "type" "content" }}
+                        {{ .Scratch.Set "quolity" "100" }}
+                    
+                            {{ partial "atom/atom-picture.html" . }}
+                    
+                        {{ .Scratch.Delete "quolity" }}
+                        {{ .Scratch.Delete "type" }}
+                        {{ .Scratch.Delete "src" }}
+                        {{ .Scratch.Delete "class" }}
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        {{ .Scratch.Set "class" "w-48 h-auto" }}
+                        {{ .Scratch.Set "src" "images/explanation/ui_2.png" }}
+                        {{ .Scratch.Set "type" "content" }}
+                        {{ .Scratch.Set "quolity" "100" }}
+                    
+                            {{ partial "atom/atom-picture.html" . }}
+                    
+                        {{ .Scratch.Delete "quolity" }}
+                        {{ .Scratch.Delete "type" }}
+                        {{ .Scratch.Delete "src" }}
+                        {{ .Scratch.Delete "class" }}
+                    </div>
+                </div>
+                <div class="h-96 w-96 bg-gradient-to-r from-amber-200 to-amber-200 rounded-[50%] absolute bottom-[-80px] left-1/2 -translate-x-1/2 border-2 border-[#333333]"></div>
             </div>
         </div>
-        <div class="h-96 w-96 bg-gradient-to-r from-[#34A7E1] to-blue-500 rounded-[50%] absolute bottom-[-75px] left-1/2 -translate-x-1/2"></div>
     </div>
       
 </div>
