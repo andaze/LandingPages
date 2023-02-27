@@ -7,19 +7,14 @@ weight: 1
 ---
 
 {{< header-section-header 
-    title="<span class='text-[#01A2EB]'>「PaaS のススメ」</span>とは?"
+    title="アンダーズが提唱する<span class='text-[#01A2EB]'>「PaaS のススメ」</span>"
 >}}
 
-<p class ="mb-12">
-成果の出るシステムとは、システムの拡張に制限がなく、ライセンスやアドオン費用が抑えられ、<br>
-問題が起こっても深部まで手が入り、いざとなればシステム上物のリプレイスができるものです。
-</p>
-
-<p>
-私たちアンダーズは、既存SaaS やパッケージをなるべく使わず、<br>
-PaaS の「統合データベース・レイク」を自社内につくり、<br>
-データ活用を後発CRM（ジェネリックCRM）を使って外部業者に頼り切らずに実践できる、<br>
-投資対効果に重点に置いたシステム構築を「PaaSのススメ」という呼び名で提唱しています。
+<p class="leading-[3]">
+私たちアンダーズは、<strong class='text-[#01A2EB] text-xl lg:text-3xl'>既存SaaS やパッケージをなるべく使わず</strong>、<br>
+PaaS の<strong class='text-[#01A2EB] text-xl lg:text-3xl'>「統合データベース・レイク」を自社内につくり</strong>、<br>
+データ活用をジェネリックCRMを使って<strong class='text-[#01A2EB] text-xl lg:text-3xl'>外部業者に頼り切らずに実践できる</strong>、<br>
+<strong class='text-[#01A2EB] text-xl lg:text-3xl'>投資対効果に重点に置いたシステム構築</strong>を「PaaSのススメ」と呼んでいます。
 </p>
 
 {{< div-explanetion-images >}}
