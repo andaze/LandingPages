@@ -1,4 +1,4 @@
-<div class="flex justify-center h-[400px] mx-auto select-none gap-52">
+<div class="flex justify-center h-[400px] mx-auto select-none gap-32">
     <div class="w-96 h-full flex flex-col justify-end text-[12px] relative">
         <div class="p-4 rounded-[50%] border-2 border-[#0D5FA4] w-fit absolute bottom-40 left-0 bg-white">
             <div class="relative">
@@ -23,19 +23,19 @@
         </div>
         <img src="{{ `img/icons.svg` | absURL }}" alt="" class="w-4/5 h-auto mb-6 mx-auto">
         <div class="absolute right-[-220px] top-20 z-[15]">
-            <span class="text-[20px]">「PaaSのススメ」<br>の実践</span>
+            <span class="text-[20px] block mb-[-20px]">「PaaSのススメ」<br>の実践</span>
             <div class="w-[180px] h-auto rotate-[318deg]">
                 <img src="{{ `img/arrow.svg` | absURL }}" alt="" class="w-full h-auto">
             </div>
         </div>
     </div>
-    <div class="h-96 w-96 relative">
-        <div class="absolute bottom-[-270px] h-full w-full">
+    <div class="h-[450px] w-[450px] relative">
+        <div class="absolute bottom-[-220px] h-full w-full">
             <div class="w-full h-fit rounded-full flex flex-col justify-end relative">
-                <p class="text-[14px] relative z-[15]">「利益の出るDX」、「跳躍的な事業推進」<br>を実現する目途が立ちます</p>
-                <div class="relative w-[300px] h-48 mt-2 mx-auto z-10">
+                <p class="text-[24px] relative z-[15] font-bold text-[#FEF101]">「利益の出るDX」<br>「跳躍的な事業推進」を実現</p>
+                <div class="relative w-[350px] h-60 mt-2 mx-auto z-10">
                     <div class="absolute top-0 left-0">
-                        {{ .Scratch.Set "class" "w-48 h-auto" }}
+                        {{ .Scratch.Set "class" "w-60 h-auto" }}
                         {{ .Scratch.Set "src" "images/explanation/ui_1.png" }}
                         {{ .Scratch.Set "type" "content" }}
                         {{ .Scratch.Set "quolity" "100" }}
@@ -48,7 +48,7 @@
                         {{ .Scratch.Delete "class" }}
                     </div>
                     <div class="absolute bottom-0 right-0">
-                        {{ .Scratch.Set "class" "w-48 h-auto" }}
+                        {{ .Scratch.Set "class" "w-60 h-auto" }}
                         {{ .Scratch.Set "src" "images/explanation/ui_2.png" }}
                         {{ .Scratch.Set "type" "content" }}
                         {{ .Scratch.Set "quolity" "100" }}
@@ -61,7 +61,7 @@
                         {{ .Scratch.Delete "class" }}
                     </div>
                 </div>
-                <div class="h-96 w-96 bg-gradient-to-r from-amber-200 to-amber-300 rounded-[50%] absolute bottom-[-80px] left-1/2 -translate-x-1/2 border-2 border-[#333333] shadow-xl"></div>
+                <div class="h-[450px] w-[450px] bg-gradient-to-r from-[#34A7E1] to-blue-500 rounded-[50%] absolute bottom-[-80px] left-1/2 -translate-x-1/2 border-2 border-[#FEF101] shadow-xl"></div>
             </div>
         </div>
     </div>
