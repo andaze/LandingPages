@@ -1,5 +1,5 @@
-<div class="flex justify-center h-[400px] mx-auto select-none gap-32">
-    <div class="w-96 h-full flex flex-col justify-end text-[12px] relative">
+<div class="flex justify-center flex-col lg:flex-row mt-60 h-[400px] mx-auto select-none gap-20 lg:gap-32">
+    <div class="lg:w-96 h-full flex flex-col justify-end text-[12px] relative">
         <div class="p-4 rounded-[50%] border-4 border-[#404040] w-fit absolute bottom-40 left-0 bg-gray-200">
             <div class="relative">
                 <span class="text-[#E2017F]">ずっと長く使える<br>システムはないだろうか？</span>
@@ -7,7 +7,7 @@
                 <span class="w-[15px] h-[9px] rounded-[50%] border-4 border-[#404040] absolute bottom-[-40px] right-[-8px] bg-gray-200"></span>
             </div>
         </div>
-        <div class="p-4 rounded-[50%] border-4 border-[#404040] w-fit absolute bottom-64 left-8 bg-gray-200">
+        <div class="p-4 rounded-[50%] border-4 border-[#404040] w-fit absolute bottom-[270px] lg:bottom-64 left-8 bg-gray-200">
             <div class="relative">
                 <span class="text-[#E2017F]">クラウドサービスの<br>利用料が膨れ上がり、<br>管理も大変</span>
                 <span class="w-[25px] h-[15px] rounded-[50%] border-4 border-[#404040] absolute bottom-[-28px] right-0 bg-gray-200"></span>
@@ -22,20 +22,20 @@
             </div>
         </div>
         <img src="{{ `img/icons.svg` | absURL }}" alt="" class="w-4/5 h-auto mb-6 mx-auto">
-        <div class="absolute right-[-220px] top-20 z-[15]">
-            <span class="text-[20px] block mb-[-20px]">「PaaSのススメ」<br>の実践</span>
-            <div class="w-[180px] h-auto rotate-[318deg]">
+        <div class="absolute right-16 lg:right-[-220px] top-52 lg:top-20 z-[15] flex items-center lg:block">
+            <span class="text-[20px] block mb-[-20px] absolute left-[-100px] top-8 lg:static">「PaaSのススメ」<br>の実践</span>
+            <div class="w-[180px] h-auto rotate-[22deg] lg:rotate-[318deg]">
                 <img src="{{ `img/arrow.svg` | absURL }}" alt="" class="w-full h-auto">
             </div>
         </div>
     </div>
-    <div class="h-[450px] w-[450px] relative">
+    <div class="h-[350px] w-[350px] mx-auto lg:mx-0 lg:h-[450px] lg:w-[450px] relative">
         <div class="absolute bottom-[-220px] h-full w-full">
             <div class="w-full h-fit rounded-full flex flex-col justify-end relative">
-                <p class="text-[24px] relative z-[15] font-bold text-[#FEF101]">「利益の出るDX」<br>「跳躍的な事業推進」を実現</p>
-                <div class="relative w-[350px] h-60 mt-2 mx-auto z-10">
+                <p class="text-[20px] lg:text-[24px] relative z-[15] font-bold text-[#FEF101]">「利益の出るDX」<br>「跳躍的な事業推進」を実現</p>
+                <div class="relative w-[280px] lg:w-[350px] h-36 lg:h-60 mt-2 mx-auto z-10">
                     <div class="absolute top-0 left-0">
-                        {{ .Scratch.Set "class" "w-60 h-auto" }}
+                        {{ .Scratch.Set "class" "w-36 lg:w-60 h-auto" }}
                         {{ .Scratch.Set "src" "images/explanation/ui_1.png" }}
                         {{ .Scratch.Set "type" "content" }}
                         {{ .Scratch.Set "quolity" "100" }}
@@ -48,7 +48,7 @@
                         {{ .Scratch.Delete "class" }}
                     </div>
                     <div class="absolute bottom-0 right-0">
-                        {{ .Scratch.Set "class" "w-60 h-auto" }}
+                        {{ .Scratch.Set "class" "w-36 lg:w-60 h-auto" }}
                         {{ .Scratch.Set "src" "images/explanation/ui_2.png" }}
                         {{ .Scratch.Set "type" "content" }}
                         {{ .Scratch.Set "quolity" "100" }}
@@ -61,7 +61,7 @@
                         {{ .Scratch.Delete "class" }}
                     </div>
                 </div>
-                <div class="h-[450px] w-[450px] bg-gradient-to-r from-[#34A7E1] to-blue-500 rounded-[50%] absolute bottom-[-80px] left-1/2 -translate-x-1/2 border-4 border-[#FEF101] shadow-xl"></div>
+                <div class="h-[350px] w-[350px] lg:h-[450px] lg:w-[450px] bg-gradient-to-r from-[#34A7E1] to-blue-500 rounded-[50%] absolute bottom-[-80px] left-1/2 -translate-x-1/2 border-4 border-[#FEF101] shadow-xl"></div>
             </div>
         </div>
     </div>

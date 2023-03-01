@@ -22,7 +22,7 @@
 
         {{ $section_class := "" }}
         {{ if eq .Title "Explanation" }}
-            {{ $section_class = "!pb-80" }}
+            {{ $section_class = "!pb-[500px] lg:!pb-80" }}
         {{ else if eq .Title "Lead" }}
             {{ $section_class = "bg-sky-50" }}
         {{ else if eq .Title "Features" }}
