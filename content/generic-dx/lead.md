@@ -3,7 +3,7 @@ title: "Lead"
 date: 2022-12-10T14:15:42+09:00
 draft: false
 isSection: true
-weight: 1
+weight: 2
 ---
 
 {{< header-section-header 

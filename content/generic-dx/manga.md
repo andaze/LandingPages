@@ -3,7 +3,7 @@ title: "Manga"
 date: 2022-12-10T15:39:16+09:00
 draft: false
 isSection: true
-weight: 2
+weight: 3
 ---
 
 {{< header-section-header 
