@@ -45,4 +45,48 @@ html.is-animating .transition-fade {
   display:none;
 }
 
+.fukidashi::before {
+  content: "";
+  position: absolute;
+  top: -31px;
+  left: 50%;
+  margin-top: -38px;
+  border: 33px solid transparent;
+  border-bottom: 42px solid #FFF;
+  z-index: 2;
+  transform: translateX(-50%);
+}
+
+.fukidashi::after {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  margin-top: -37px;
+  border: 32px solid transparent;
+  border-bottom: 40px solid #9D9D9D;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width:768px) {
+  .fukidashi::before {
+    top: 50%;
+    left: -70px;
+    margin-top: -38px;
+    border: 33px solid transparent;
+    border-right: 42px solid #FFF;
+    transform: translateX(0);
+  }
+  
+  .fukidashi::after {
+    top: 50%;
+    left: -73px;
+    margin-top: -37px;
+    border: 32px solid transparent;
+    border-right: 40px solid #9D9D9D;
+    transform: translateX(0);
+  }
+}
+
 @tailwind utilities;
