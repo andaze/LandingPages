@@ -11,6 +11,13 @@ weight: 3
     color="blue"
 >}}
 
+<p class="mb-16">
+DX 化にあたって注視すべき指標はたった１つ、<br class="md:hidden">それは「投資対効果」です。<br>
+「PaaS のススメ」ではPaaSを原価調達し、<br class="md:hidden">システム基盤を構築していきますので<br>
+投資対効果が格段に上がります。<br>
+「PaaS のススメ」によるサブスク費用の削減についてマンガでわかりやすく解説します。
+</p>
+
 {{< div-manga-part 
     src="images/manga/A.png"
     title="ここがポイント！"

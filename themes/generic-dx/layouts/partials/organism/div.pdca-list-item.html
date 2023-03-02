@@ -27,11 +27,11 @@
 {{ end }}
 
 <div class="flex flex-col gap-y-8 md:gap-0 md:flex-row lg:mb-2 lg:mr-[-80px] 3xl:mr-0 relative">
-    <div class="text-[24px] md:text-[20px] 3xl:text-[31px] font-bold text-white absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[105px] h-[105px] 3xl:w-[140px] 3xl:h-[140px] text-center rounded-full {{ $color }}">
+    <div class="text-[24px] md:text-[20px] 3xl:text-[31px] font-bold text-white absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-[105px] h-[105px] xl:w-[117px] xl:h-[117px] 3xl:w-[140px] 3xl:h-[140px] text-center rounded-full {{ $color }}">
         <p class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 block">{{ $annotation }}</p>
     </div>
 
-    <div class="w-[200px] h-[200px] 3xl:w-[270px] 3xl:h-[250px] shrink-0 rounded-full flex flex-col justify-center shadow-xl">
+    <div class="w-[200px] h-[200px] xl:w-[230px] xl:h-[230px] 3xl:w-[270px] 3xl:h-[250px] shrink-0 rounded-full flex flex-col justify-center shadow-xl">
         {{ .Scratch.Set "class" "w-full h-full mx-auto" }}
         {{ .Scratch.Set "src" $image_src }}
         {{ .Scratch.Set "type" "thumbnail" }}
@@ -44,22 +44,8 @@
     </div>
 </div>
 
-<div class="relative w-full">
-    <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1154.707 253" class="lg:ml-10 2xl:ml-0 3xl:ml-[-80px] hidden md:block md:h-[200px] 3xl:h-auto">
-        <g transform="translate(-504.293 -11463)">
-          <g transform="translate(508.924 11606.828) rotate(-97)" fill="#fff">
-            <path d="M 33.34041595458984 122.5 L 4.659587383270264 122.5 C 3.92957329750061 122.5 3.238173246383667 122.1823196411133 2.762673377990723 121.6284027099609 C 2.287158966064453 121.0744857788086 2.077859163284302 120.3429489135742 2.188430547714233 119.6213455200195 L 16.52884483337402 26.03130340576172 C 16.76875877380371 24.46553230285645 18.00998687744141 23.90994644165039 19.00000190734863 23.90994644165039 C 19.99001693725586 23.90994644165039 21.23124504089355 24.46553230285645 21.47115898132324 26.03130340576172 L 35.81157302856445 119.6213455200195 C 35.92214584350586 120.3429489135742 35.71284484863281 121.0744857788086 35.23733139038086 121.6284027099609 C 34.7618293762207 122.1823196411133 34.07043075561523 122.5 33.34041595458984 122.5 Z" stroke="none"/>
-            <path d="M 18.99998664855957 25.40992736816406 C 18.74209403991699 25.40992736816406 18.49814033508301 25.48542022705078 18.33067893981934 25.61705017089844 C 18.22287940979004 25.70178985595703 18.072509765625 25.86046600341797 18.01152420043945 26.25848388671875 L 3.671123504638672 119.8485412597656 C 3.610572814941406 120.2437133789062 3.789047241210938 120.5211563110352 3.90081787109375 120.6513595581055 C 4.012603759765625 120.7815704345703 4.259803771972656 121.0000076293945 4.659587860107422 121.0000076293945 L 33.34041595458984 121.0000076293945 C 33.74020385742188 121.0000076293945 33.98740386962891 120.7815704345703 34.09918594360352 120.6513595581055 C 34.21095657348633 120.5211563110352 34.38943099975586 120.2437133789062 34.32888031005859 119.8485260009766 L 19.98846435546875 26.25849914550781 C 19.9274787902832 25.86048126220703 19.7770938873291 25.70178985595703 19.6692943572998 25.61705017089844 C 19.50183296203613 25.48542022705078 19.25787925720215 25.40992736816406 18.99998664855957 25.40992736816406 M 18.9999942779541 22.40993499755859 C 20.80356407165527 22.40993499755859 22.60713195800781 23.54132843017578 22.95384788513184 25.80411529541016 L 37.29426193237305 119.394157409668 C 37.66543197631836 121.8164520263672 35.79096984863281 124.0000076293945 33.34041595458984 124.0000076293945 L 4.659587860107422 124.0000076293945 C 2.209033966064453 124.0000076293945 0.3345718383789062 121.8164520263672 0.7057418823242188 119.394157409668 L 15.04614067077637 25.80411529541016 C 15.39285659790039 23.54132843017578 17.19642448425293 22.40993499755859 18.9999942779541 22.40993499755859 Z" stroke="none" fill="#707070"/>
-          </g>
-          <g transform="translate(607 11470)" fill="#fff" stroke="#707070" stroke-width="3">
-            <rect width="1052" height="180" rx="15" stroke="none"/>
-            <rect x="1.5" y="1.5" width="85%" height="240" rx="13.5" fill="none"/>
-          </g>
-          <line y2="25" transform="translate(609 11563)" fill="none" stroke="#fff" stroke-width="5"/>
-        </g>
-    </svg>
-    
-    <div class="md:w-5/6 3xl:h-[253px] flex flex-col justify-center z-10 border-[#9D9D9D] border-2 md:border-[3.5px] md:border-0 rounded-3xl p-4 3xl:p-0 md:ml-12 lg:ml-28 3xl:ml-0 md:absolute inset-0">
+<div class="relative md:h-[220px] 3xl:h-[270px] md:w-4/5 3xl:w-3/5">
+    <div class="w-full md:w-11/12 3xl:w-full 3xl:h-[253px] flex flex-col justify-center z-10 border-[#9D9D9D] border-2 md:border-[3.5px] rounded-3xl p-4 3xl:p-0 md:ml-8 lg:ml-28 3xl:ml-0 md:absolute inset-0 shadow-xl fukidashi">
         <h2 class="mb-5 3xl:ml-12 text-[24px] lg:text-[28px] 3xl:text-[40px] text-black font-bold text-center md:text-left {{ $textColor }}">{{ $title  | markdownify }}</h2>
         <p class="mb-4 3xl:ml-12 text-[15px] lg:text-[20px] 3xl:text-[28px] text-black text-center md:text-left">{{ $text  | markdownify  }}</p>
     </div>
