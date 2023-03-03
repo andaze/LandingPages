@@ -7,8 +7,7 @@ weight: 3
 ---
 
 {{< header-section-header 
-    title="サブスク費用の削減を<br class='md:hidden'>マンガで解説"
-    color="blue"
+    title="「PaaSのススメ」で <span class='text-[#01A2EB]'>IT費用を削減</span>"
 >}}
 
 <p class="mb-16">
