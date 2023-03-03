@@ -10,7 +10,10 @@ weight: 5
     title="豊富な機能で<br class='md:hidden'><span class='text-[#01A2EB]'>あらゆるニーズ</span>に対応"
 >}}
 
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-11/12 3xl:w-screen 3xl:max-w-[1300px]">
+日本特有のスクラッチ市場にも対応。  
+アプリケーションを自由に設計して独自性をアピールできます。
+
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 lg:gap-x-[65px] gap-y-[40px] mx-auto md:w-11/12 3xl:w-screen 3xl:max-w-[1300px] mt-16">
 
 {{< div-card-with-image 
     text="ログイン・権限"

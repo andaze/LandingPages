@@ -1,18 +1,7 @@
 {{ .Scratch.Set "title" (.Get "title") }}
-{{ .Scratch.Set "color" (.Get "color") }}
 
-{{ $color := default "black" (.Scratch.Get "color") }}
-{{ if eq $color "white" }}
-    {{ $color = "text-white" }}
-{{ else if eq $color "blue" }}
-    {{ $color = "text-[#01A2EB]" }}
-{{ else }}
-    {{ $color = "text-black" }}
-{{ end }}
-
-<header class="mb-10 lg:mb-16 text-[26px] md:text-[44px] 3xl:text-[60px] font-bold text-center {{ $color }}">
+<header class="mb-10 lg:mb-16 text-[26px] md:text-[44px] 3xl:text-[60px] font-bold text-center">
     {{ partial "atom/h2.html" . }}
 </header>
 
-{{ .Scratch.Delete "color" }}
 {{ .Scratch.Delete "title" }}
