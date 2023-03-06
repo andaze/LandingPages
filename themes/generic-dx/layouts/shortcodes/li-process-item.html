@@ -16,7 +16,7 @@
 {{ end }}
 
 {{ if eq $annotation 1 }}
-<a href="#Contact" class="cursor-pointer">
+<a href="#Contact" class="cursor-pointer transition duration-500 hover:scale-110">
     <li class="w-[250px] h-[250px] 3xl:w-[350px] 3xl:h-[350px] bg-gradient-to-r from-blue-600 via-blue-700 to-[#1264A3] rounded-[117px] rounded-[70px] 3xl:rounded-[117px] flex flex-col justify-center relative after:content-[''] after:absolute lg:after:top-1/2 after:-translate-y-1/2 after:left-1/2 after:-translate-x-1/2 lg:after:translate-x-0 after:bg-[#1264A3] after:h-[20px] 3xl:after:h-[40px] after:rotate-90 lg:after:rotate-0 over-size:after:hidden shadow-2xl {{ $class }}">
         {{ partial "molecule/div.process-item.html" . }}
     </li>
