@@ -17,28 +17,28 @@ weight: 7
 {{< li-pdca-list-item 
     annotation="PLAN"
     title="データの洗い出しと<br class='md:hidden'>システム機能・効果の<br class='md:hidden'>仮説設定"
-    text="収集したデータをもとに、<br class='md:hidden'>必要な機能や効果について仮説を立てる"
+    text="現状の課題や要望と既存の関連データを照らし合わせながら、システムに必要な機能や目的・効果について仮説を立てる"
     image-src="images/pdca/A.png"
 >}}
 
 {{< li-pdca-list-item 
     annotation="DO"
     title="自動・手動で効果的に<br class='md:hidden'>データ収集"
-    text="課題の優先度を決めたあと、<br class='md:hidden'>自社データベースにデータを収集・蓄積"
+    text="「インパクト」と「リソース」の２軸で収集するデータに優先順位をつけて、データベースにデータを収集・蓄積する"
     image-src="images/pdca/B.png"
 >}}
 
 {{< li-pdca-list-item 
     annotation="CHECK"
     title="IT／現場での<br class='md:hidden'>データ加工・分析"
-    text="「三層データ加工設計」で<br class='md:hidden'>分析に適した粒度のデータに加工・分析"
+    text="「三層データ加工設計」でビジネス要件に合致した加工を行い、BIツールで可視化できる水準にまで処理されたデータにして分析する"
     image-src="images/pdca/C.png"
 >}}
 
 {{< li-pdca-list-item 
     annotation="ACTION"
     title="分析結果を<br class='md:hidden'>ビジネスに活用"
-    text="データ分析結果を<br class='md:hidden'>課題解決や新ビジネスの創出に活かす"
+    text="AIやBIツールによるデータ分析結果を課題解決や新ビジネスの創出に活かす"
     image-src="images/pdca/D.png"
 >}}
 
