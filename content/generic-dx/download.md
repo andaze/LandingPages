@@ -10,7 +10,7 @@ draft: false
 
 <div class="md:w-4/5 mx-auto lg:w-1/2">
 <p class="mb-10 lg:mb-16 text-[#01A2EB] font-bold text-[26px] md:text-[36px] 3xl:text-[40px] text-center">
-100万円からはじめられる自社システム構築「ジェネリックDX」
+150万円からはじめられる自社システム構築「ジェネリックDX」
 </p>
 <div>
 {{< picture alt="Image Not Available" src="images/ebook.png" type="content" quolity="100" class="mx-auto object-contain shadow-lg shadow-gray-500 w-full">}}
