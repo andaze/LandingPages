@@ -31,8 +31,10 @@
             {{ $section_class = "bg-[url('../img/patternB.webp')] bg-cover relative after:content-[''] after:bg-black after:w-full after:h-full after:absolute after:top-0 after:left-0 after:bg-opacity-50 !text-left" }}
         {{ else if eq .Title "Process" }}
             {{ $section_class = "bg-[url('../img/patternC.webp')] bg-contain overflow-x-hidden" }}
-        {{ else if or (eq .Title "Youtube") (eq .Title "Suggestion") }}
+        {{ else if eq .Title "Suggestion" }}
             {{ $section_class = "bg-gradient-to-r from-[#34A7E1] to-blue-500 border border-[#707070]" }}
+        {{ else if eq .Title "Youtube" }}
+            {{ $section_class = "bg-gradient-to-r from-[#34A7E1] to-blue-500 border border-[#707070] text-white" }}
         {{ end }}
 
         <section class="text-center py-14 md:py-32 px-2 3xl:pr-2 {{ $section_class }}" id="{{ .Title }}">
