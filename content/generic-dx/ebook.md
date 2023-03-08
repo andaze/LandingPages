@@ -11,7 +11,7 @@ weight: 6
 <div>
 
 <h2 class="text-[24px] md:text-[32px] 3xl:text-[52px] font-bold mb-[60px]">
-100万円からはじめられる<br class='hidden lg:block'>
+150万円からはじめられる<br class='hidden lg:block'>
 自社システム構築（PaaS）<br class='hidden lg:block'>
 「ジェネリックDX」のことを<br class='hidden lg:block'>
 もっと詳しく！
