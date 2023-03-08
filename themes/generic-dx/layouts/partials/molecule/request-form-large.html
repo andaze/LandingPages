@@ -1,4 +1,4 @@
-<aside class="bg-white lg:w-4/5 3xl:w-full mx-auto py-6 px-2 md:px-8 lg:px-2 mt-10 lg:mt-0 rounded-xl shadow-2xl">
+<aside class="bg-white mx-auto py-6 px-2 md:px-8 lg:px-2 mt-10 lg:mt-0 rounded-xl shadow-2xl">
     <div class="mb-10">
         <p class="text-[24px] 3xl:text-[40px] text-center !text-[#01A2EB] font-bold mb-5 !bg-white">
             ジェネリックDXの資料<br>ダウンロードはこちら
@@ -7,8 +7,8 @@
             下記フォームへ必須事項をご記入の上、<br>送信をお願いいたします。
         </p>
     </div>
-    <form id="download_form">
-        <div class="flex flex-col justify-between gap-10 px-2 lg:px-10 3xl:text-xl">
+    <form id="download_form" class="px-2 lg:px-14">
+        <div class="flex flex-col justify-between gap-10 3xl:text-xl">
             <div class="text-left border border-gray-600 rounded p-2">
                 <div class="flex items-center">
                     <label for="first_name" class="block font-bold">姓</label>
@@ -37,27 +37,31 @@
                 </div>
                 <input class="w-full border-none text-black placeholder-gray-300 border-none focus:ring-0 px-0 py-2 3xl:py-6 3xl:text-xl" type="text" id="company_name" name="company_name" placeholder="例）アンダーズ株式会社" required>
             </div>
-            <div class="p-2 mt-4">
-                <p class="3xl:text-xl">
+
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <div class="p-2 mt-12">
+                <p class="text-sm 3xl:text-lg">
                     <a href="https://andaze.com/ja/privacy-policy/" target="_blank" rel="noopener noreferrer" class="underline text-[#01A2EB]">プライバシーポリシー</a>に同意いただいた上でお問い合わせください。
                 </p>
             </div>
-            <div class="text-left p-2 relative mt-2 mb-8">
+            <div class="text-left p-2 relative mt-2 mb-12">
                 <input class="absolute top-[11px] scale-75 3xl:scale-100" type="checkbox" id="privacy">
                 <label for="privacy" class="block ml-5 text-sm  3xl:text-lg font-bold">ご提供いただく個人情報のお取り扱いに同意する</label>
             </div>
-    
-            <div class="text-center w-full ">
-                {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none inline-block w-full bg-gradient-to-r from-red-500 to-[#E01E5B] hover:from-white hover:to-white hover:text-[#E01E58] hover:border-[#E01E58] cursor-pointer 3xl:text-xl hover:border-4 cursor-pointer w-full h-16 lg:h-20 transition-colors duration-500" }}
-                {{ .Scratch.Set "btn-text" "ダウンロードする" }}
-                {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
-    
-                {{ partial "atom/button.downloadButton.html" . }}
-    
-                {{ .Scratch.Delete "link" }}
-                {{ .Scratch.Delete "btn-text" }}
-                {{ .Scratch.Delete "class" }}
-            </div>
+        </div>
+
+        <div class="text-center w-full ">
+            {{ .Scratch.Set "class" "border text-white rounded-2xl font-bold select-none inline-block w-full bg-gradient-to-r from-red-500 to-[#E01E5B] hover:from-white hover:to-white hover:text-[#E01E58] hover:border-[#E01E58] cursor-pointer 3xl:text-xl hover:border-4 cursor-pointer w-full h-16 lg:h-20 transition-colors duration-500" }}
+            {{ .Scratch.Set "btn-text" "ダウンロードする" }}
+            {{ .Scratch.Set "link" "PaaSのススメ.zip" }}
+
+            {{ partial "atom/button.downloadButton.html" . }}
+
+            {{ .Scratch.Delete "link" }}
+            {{ .Scratch.Delete "btn-text" }}
+            {{ .Scratch.Delete "class" }}
         </div>
     </form>
 
