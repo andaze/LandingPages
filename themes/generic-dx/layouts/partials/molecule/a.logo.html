@@ -10,7 +10,7 @@
     {{ .Scratch.Delete "src" }}
     {{ .Scratch.Delete "class" }}
 
-    {{ .Scratch.Set "text" "Generic DX" }}
+    {{ .Scratch.Set "text" "" }}
     {{ if eq $logo_image .Site.Params.images.logoBlue }}
         {{ .Scratch.Set "class" "text-[28px] md:text-[36px] 3xl:text-[45px] text-[#01A2EB]" }}
     {{ else if eq $logo_image .Site.Params.images.logoLine }}
